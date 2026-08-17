@@ -1,0 +1,47 @@
+{
+  "siteName": "vozpópuli",
+  "tagline": "EL VALOR DE SER LIBRES Y FIABLES",
+  "mainNav": [
+    { "label": "Spain", "href": "/spain" },
+    { "label": "Economy", "href": "/economy" },
+    { "label": "International", "href": "/international" },
+    { "label": "Opinion", "href": "/opinion" },
+    { "label": "Legal", "href": "/legal" },
+    { "label": "Dolcefita", "href": "/dolcefita" },
+    { "label": "Welfare", "href": "/welfare" },
+    { "label": "Culture", "href": "/culture" },
+    { "label": "Gastropoli", "href": "/gastropoli" },
+    { "label": "Indux", "href": "/indux" }
+  ],
+  "latestNewsPlaceholder": "Markets close higher as inflation data beats expectations",
+  "footer": {
+    "highlightLabel": "We highlight",
+    "highlightTags": [
+      { "label": "World Cup 2026", "href": "/tag/world-cup-2026" },
+      { "label": "Shoemaker", "href": "/tag/shoemaker" },
+      { "label": "Leire Diez", "href": "/tag/leire-diez" },
+      { "label": "Pedro Sánchez", "href": "/tag/pedro-sanchez" },
+      { "label": "SEPI", "href": "/tag/sepi" },
+      { "label": "PSOE", "href": "/tag/psoe" },
+      { "label": "More tags", "href": "/tags" }
+    ],
+    "legalLinks": [
+      { "label": "The team", "href": "/the-team" },
+      { "label": "Legal notice", "href": "/legal-notice" },
+      { "label": "Privacy Policy", "href": "/privacy-policy" },
+      { "label": "Cookie settings", "href": "/cookie-settings" },
+      { "label": "Cookies", "href": "/cookies" },
+      { "label": "Stake", "href": "/stake" },
+      { "label": "Contributions", "href": "/contributions" }
+    ],
+    "copyright": "© Copyright 2026 vozpopuli.com",
+    "socialLinks": [
+      { "label": "Facebook", "icon": "facebook", "href": "https://facebook.com" },
+      { "label": "X", "icon": "x", "href": "https://x.com" },
+      { "label": "Instagram", "icon": "instagram", "href": "https://instagram.com" },
+      { "label": "TikTok", "icon": "tiktok", "href": "https://tiktok.com" },
+      { "label": "YouTube", "icon": "youtube", "href": "https://youtube.com" },
+      { "label": "Flipboard", "icon": "flipboard", "href": "https://flipboard.com" }
+    ]
+  }
+}

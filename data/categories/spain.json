@@ -1,0 +1,109 @@
+{
+  "articles": [
+    {
+      "slug": "reinforcement-security-review-capital",
+      "title": "Officials weigh a reinforced security plan for the capital ahead of the autumn session",
+      "subCategoryLabel": "Dispositivo",
+      "excerpt": "The proposal would add extra personnel at key checkpoints while a wider review of the protocol is completed before parliament returns.",
+      "author": "jose-sanchez",
+      "date": "2026-08-14",
+      "time": "09:20 CEST",
+      "commentCount": 6,
+      "featured": true,
+      "imageCaption": "Officers stationed near a checkpoint in the capital ahead of the autumn session | EP",
+      "content": [
+        "Officials are weighing a reinforced security plan for the capital as the autumn parliamentary session approaches, according to people familiar with the discussions.",
+        "The proposal under review would add extra personnel at several key checkpoints across the city while a broader review of the existing protocol is completed in the coming weeks.",
+        "Supporters of the plan argue that recent events have exposed gaps in coordination between agencies, while critics say the additional deployment does not address the underlying causes of the tension.",
+        "A final decision is expected before lawmakers reconvene, with several regional leaders pressing for clarity on funding and staffing before committing further resources."
+      ],
+      "relatedPicks": ["committee-session-closes-debate", "case-escalates-national-court"]
+    },
+    {
+      "slug": "committee-session-closes-debate",
+      "title": "Committee session closes the debate over the summer's handling of the regional crisis",
+      "subCategoryLabel": "Comision",
+      "excerpt": "Opposition leaders say the session failed to answer basic questions about coordination between ministries during the busiest weeks of the crisis.",
+      "author": "luis-casal",
+      "date": "2026-08-14",
+      "time": "08:05 CEST",
+      "commentCount": 2,
+      "featured": true,
+      "imageCaption": "The committee room during Thursday's closing session | EP",
+      "content": [
+        "A closely watched committee session drew to a close on Thursday without the government offering new commitments on the handling of the regional crisis over the summer months.",
+        "Opposition leaders said the session failed to answer basic questions about coordination between ministries during the busiest weeks, while government representatives maintained that the response was proportionate given available resources.",
+        "The exchange is likely to feature prominently when parliament returns from recess, with several committees expected to request further documentation."
+      ],
+      "relatedPicks": ["reinforcement-security-review-capital", "wildfire-respite-andalusia"]
+    },
+    {
+      "slug": "case-escalates-national-court",
+      "title": "The case will escalate to the National Court after the summer recess concludes",
+      "subCategoryLabel": "Avance",
+      "excerpt": "Investigators are expected to formally request additional testimony once judicial activity resumes in September.",
+      "author": "jose-sanchez",
+      "date": "2026-08-14",
+      "time": "07:40 CEST",
+      "commentCount": 0,
+      "imageCaption": "The National Court building in Madrid | EP",
+      "content": [
+        "The long-running case is expected to escalate to the National Court once the summer recess concludes, according to legal sources close to the proceedings.",
+        "Investigators are expected to formally request additional testimony once judicial activity resumes in September, a step that could extend the timeline of the case well into next year.",
+        "Defense representatives have signaled they will contest several of the procedural steps taken so far."
+      ],
+      "relatedPicks": ["committee-session-closes-debate", "storm-warning-heavy-rain"]
+    },
+    {
+      "slug": "wildfire-respite-andalusia",
+      "title": "The region's worst wildfire on record eases as containment lines hold",
+      "subCategoryLabel": "Mejora",
+      "excerpt": "More than sixty of the roughly eight hundred residents evacuated have been able to return to their homes so far.",
+      "author": "alejandro-cascon",
+      "date": "2026-08-14",
+      "time": "06:55 CEST",
+      "commentCount": 2,
+      "imageCaption": "Burnt hillside near the containment line in Andalusia | EP",
+      "content": [
+        "The worst wildfire on record for the region eased over the weekend as containment lines held despite continued high temperatures.",
+        "More than sixty of the roughly eight hundred residents evacuated have been able to return to their homes so far, local authorities said, though several areas remain off limits pending safety inspections.",
+        "Firefighting crews from neighbouring regions remain on standby as forecasters warn conditions could deteriorate again later in the week."
+      ],
+      "relatedPicks": ["storm-warning-heavy-rain", "reinforcement-security-review-capital"]
+    },
+    {
+      "slug": "storm-warning-heavy-rain",
+      "title": "Forecasters warn of a sharp change in weather with storms and possible flooding",
+      "subCategoryLabel": "Tormentas",
+      "excerpt": "The national weather agency has issued warnings covering several regions through the coming days.",
+      "author": "alejandro-cascon",
+      "date": "2026-08-14",
+      "time": "06:10 CEST",
+      "commentCount": 0,
+      "imageCaption": "Storm clouds gathering over an inland province | EP",
+      "content": [
+        "The national weather agency has issued warnings covering several regions through the coming days, citing a sharp change in conditions after weeks of stable, hot weather.",
+        "Forecasters say the shift could bring localized flooding in low-lying areas, along with the risk of hail in some inland provinces.",
+        "Residents in affected areas are being advised to secure loose outdoor items and avoid unnecessary travel during the peak of the storms."
+      ],
+      "relatedPicks": ["wildfire-respite-andalusia", "case-escalates-national-court"]
+    },
+    {
+      "slug": "coalition-partners-clash-budget-timeline",
+      "title": "Coalition partners clash over the timeline for next year's budget negotiations",
+      "subCategoryLabel": "Parlamento",
+      "excerpt": "Junior partners are pushing for talks to begin before the autumn session, while the lead party wants to wait until October.",
+      "author": "luis-casal",
+      "date": "2026-08-11",
+      "time": "10:20 CEST",
+      "commentCount": 4,
+      "imageCaption": "Party leaders speaking to reporters outside parliament | EP",
+      "content": [
+        "Coalition partners are at odds over when budget negotiations for next year should formally begin, with junior partners pushing to start talks before the autumn session opens.",
+        "The lead governing party has signalled a preference for waiting until October, arguing that key economic forecasts due that month should inform the opening position.",
+        "Analysts say the disagreement is unlikely to derail the coalition itself but could compress the negotiating window if talks are delayed."
+      ],
+      "relatedPicks": ["committee-session-closes-debate"]
+    }
+  ]
+}

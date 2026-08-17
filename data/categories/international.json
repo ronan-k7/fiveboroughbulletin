@@ -1,0 +1,73 @@
+{
+  "articles": [
+    {
+      "slug": "spain-morocco-immigration-gap",
+      "title": "Employment, freedom and democracy: the triple chasm between Spain and Morocco that encourages youth immigration",
+      "subCategoryLabel": "Morocco",
+      "excerpt": "The two neighboring countries maintain constant geopolitical tensions stemming largely from the difference in prosperity and their political systems.",
+      "author": "javier-collado",
+      "date": "2026-08-14",
+      "time": "09:10 CEST",
+      "commentCount": 4,
+      "featured": true,
+      "imageCaption": "A border fence separating the two countries | EP",
+      "content": [
+        "The gap in employment opportunities, personal freedoms and democratic participation between Spain and Morocco continues to drive youth migration across the strait, according to researchers who study the region.",
+        "Analysts point to three converging factors: a stark difference in youth unemployment rates, restrictions on civil and political freedoms, and limited channels for legal migration that push many toward irregular routes instead.",
+        "Both governments have periodically discussed joint economic initiatives aimed at narrowing the gap, though implementation has been slow and inconsistent."
+      ],
+      "relatedPicks": ["nato-jet-shoots-down-drone", "taliban-five-years-power"]
+    },
+    {
+      "slug": "nato-jet-shoots-down-drone",
+      "title": "A Spanish NATO F-18 fighter jet shoots down a drone that violated Romanian airspace",
+      "subCategoryLabel": "Drones",
+      "excerpt": "The drone, which originated in Moldova, was detected by radar entering Romanian airspace north of the city of Galati.",
+      "author": "javier-collado",
+      "date": "2026-08-14",
+      "time": "07:50 CEST",
+      "commentCount": 6,
+      "imageCaption": "NATO F-18 fighter jets on a joint patrol | EP",
+      "content": [
+        "A Spanish F-18 fighter jet operating under NATO command shot down a drone that had violated Romanian airspace early Thursday morning, alliance officials confirmed.",
+        "The drone, which originated in Moldova, was detected by radar at 04:44 local time entering Romanian airspace roughly 24 kilometres north of the city of Galati.",
+        "NATO said the incident underscores the alliance's continued vigilance along its eastern flank amid ongoing regional tensions."
+      ],
+      "relatedPicks": ["spain-morocco-immigration-gap", "taliban-five-years-power"]
+    },
+    {
+      "slug": "taliban-five-years-power",
+      "title": "The Taliban mark five years in power in Afghanistan: they ask for world support amidst 'gender apartheid'",
+      "subCategoryLabel": "Afghanistan",
+      "excerpt": "Kabul celebrates the anniversary of the \"victory\" while the regime consolidates a system of exclusion that erases women from the public sphere.",
+      "author": "javier-collado",
+      "date": "2026-08-13",
+      "time": "16:30 CEST",
+      "commentCount": 3,
+      "imageCaption": "A gathering marking the anniversary in Kabul | EP",
+      "content": [
+        "The Taliban marked five years in power this week with public celebrations in Kabul, even as human rights groups renewed calls for international pressure over what they describe as a system of gender apartheid.",
+        "Restrictions on women's education, employment and movement have deepened steadily since the takeover, with UN officials warning the exclusion is now near total in several provinces.",
+        "Taliban representatives used the anniversary to appeal for broader international recognition and economic engagement, arguing that isolation has done little to change their approach."
+      ],
+      "relatedPicks": ["spain-morocco-immigration-gap", "nato-jet-shoots-down-drone"]
+    },
+    {
+      "slug": "press-secretary-bloodthirsty-work",
+      "title": "Karoline Leavitt and the work of the bloodthirsty",
+      "subCategoryLabel": "United States",
+      "excerpt": "As Trump's press secretary, she has shown that she doesn't care at all about lying, that she despises reality, and that she hates and persecutes journalists who are not subservient to her.",
+      "author": "javier-collado",
+      "date": "2026-08-13",
+      "time": "14:00 CEST",
+      "commentCount": 5,
+      "imageCaption": "A White House press briefing | EP",
+      "content": [
+        "The current press secretary has built a reputation over the past year for combative daily briefings that frequently blur the line between advocacy and factual reporting, according to correspondents who cover the briefing room regularly.",
+        "Press freedom advocates have documented a pattern of hostile exchanges directed at reporters seen as unsympathetic to the administration, along with repeated refusals to correct statements later shown to be false.",
+        "Supporters counter that the approach reflects a deliberate strategy to bypass traditional media gatekeeping in favour of direct communication with the public."
+      ],
+      "relatedPicks": ["taliban-five-years-power", "nato-jet-shoots-down-drone"]
+    }
+  ]
+}

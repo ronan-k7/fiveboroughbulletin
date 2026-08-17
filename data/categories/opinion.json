@@ -1,0 +1,59 @@
+{
+  "articles": [
+    {
+      "slug": "backstabbing-that-never-stops",
+      "title": "The rivalry that never stops: two ministries, one crisis, and no coordination",
+      "subCategoryLabel": "Columna",
+      "excerpt": "An opinion column on the friction between departments during the summer's most difficult weeks.",
+      "author": "gorka-maneiro",
+      "date": "2026-08-14",
+      "time": "07:00 CEST",
+      "commentCount": 0,
+      "italic": true,
+      "featured": true,
+      "imageCaption": "",
+      "content": [
+        "The friction between the two ministries has been an open secret in the capital for months, and the events of the past few weeks have only made it harder to ignore.",
+        "What should have been a straightforward exercise in coordination instead became a public display of mismatched priorities, and the cost of that mismatch is only now becoming clear.",
+        "None of this is new, but the summer's events have made the pattern impossible to explain away as coincidence."
+      ],
+      "relatedPicks": ["outlandish-trend-tourism", "long-eclipse"]
+    },
+    {
+      "slug": "outlandish-trend-tourism",
+      "title": "The outlandish trend of turning against tourism",
+      "subCategoryLabel": "Columna",
+      "excerpt": "A column on the growing backlash against visitors in several coastal towns this summer.",
+      "author": "gorka-maneiro",
+      "date": "2026-08-13",
+      "time": "19:30 CEST",
+      "commentCount": 0,
+      "italic": true,
+      "imageCaption": "",
+      "content": [
+        "A growing backlash against visitors has taken hold in several coastal towns this summer, and the tone of the debate has shifted noticeably compared to previous years.",
+        "It is worth asking what, exactly, the alternative is supposed to look like, and who is expected to pay for it.",
+        "The economics of the debate rarely survive contact with the numbers, but the sentiment behind it is real and deserves a serious answer rather than a dismissive one."
+      ],
+      "relatedPicks": ["backstabbing-that-never-stops", "long-eclipse"]
+    },
+    {
+      "slug": "long-eclipse",
+      "title": "A long stretch with no clear turning point in sight",
+      "subCategoryLabel": "Columna",
+      "excerpt": "A column reflecting on a season defined by drift rather than decision.",
+      "author": "victor-lenore",
+      "date": "2026-08-13",
+      "time": "12:15 CEST",
+      "commentCount": 9,
+      "italic": true,
+      "imageCaption": "",
+      "content": [
+        "There is a particular kind of political season defined less by events than by their absence, and this one qualifies.",
+        "Nothing has broken decisively in either direction, and that, in its own way, is the story.",
+        "Whether that changes once parliament returns is an open question, and probably a more interesting one than most of what has been debated this summer."
+      ],
+      "relatedPicks": ["backstabbing-that-never-stops", "outlandish-trend-tourism"]
+    }
+  ]
+}

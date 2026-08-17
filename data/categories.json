@@ -1,0 +1,64 @@
+{
+  "categories": [
+    {
+      "slug": "spain",
+      "label": "Spain",
+      "description": "The Spain section covers national politics, security, courts and daily events across the country's regions.",
+      "trendingTags": ["Ceuta", "Wildfires", "Interior Ministry", "Congress"]
+    },
+    {
+      "slug": "economy",
+      "label": "Economy",
+      "description": "The Economy section covers markets, inflation, employment and the policy decisions shaping the national economy.",
+      "trendingTags": ["Inflation", "Ibex 35", "Employment", "Energy"]
+    },
+    {
+      "slug": "international",
+      "label": "International",
+      "description": "The International section provides information on major political, economic, and social events outside of Spain. This includes news on international relations, conflicts, and diplomacy.",
+      "trendingTags": ["Donald Trump", "Iran", "Russia", "Ukraine"]
+    },
+    {
+      "slug": "opinion",
+      "label": "Opinion",
+      "description": "Opinion brings together columns and analysis from our writers on politics, society and public life.",
+      "trendingTags": ["Columnists", "Politics", "Society"]
+    },
+    {
+      "slug": "legal",
+      "label": "Legal",
+      "description": "The Legal section covers courts, regulation and major corporate and criminal proceedings.",
+      "trendingTags": ["Supreme Court", "Regulation", "Corporate law"]
+    },
+    {
+      "slug": "dolcefita",
+      "label": "Dolcefita",
+      "description": "Dolcefita covers design, home and lifestyle trends worth knowing about.",
+      "trendingTags": ["Interior design", "Trends", "Home"]
+    },
+    {
+      "slug": "welfare",
+      "label": "Welfare",
+      "description": "Welfare covers health, wellbeing and practical advice for everyday life.",
+      "trendingTags": ["Health", "Fitness", "Energy costs"]
+    },
+    {
+      "slug": "culture",
+      "label": "Culture",
+      "description": "Culture covers books, film, history and the ideas shaping public debate.",
+      "trendingTags": ["Cinema", "History", "Profiles"]
+    },
+    {
+      "slug": "gastropoli",
+      "label": "Gastropoli",
+      "description": "Gastropoli covers restaurants, producers and the business of food and dining.",
+      "trendingTags": ["Restaurants", "Chefs", "Food trends"]
+    },
+    {
+      "slug": "indux",
+      "label": "Indux",
+      "description": "Indux covers industry, manufacturing and the companies driving the country's industrial base.",
+      "trendingTags": ["Manufacturing", "Automation", "Industry"]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "sidebar": {
+    "latest": [
+      { "category": "spain", "slug": "reinforcement-security-review-capital" },
+      { "category": "economy", "slug": "grid-investment-approved" },
+      { "category": "dolcefita", "slug": "elegant-living-room-colour" },
+      { "category": "welfare", "slug": "air-conditioning-night-advice" },
+      { "category": "spain", "slug": "wildfire-respite-andalusia" },
+      { "category": "international", "slug": "spain-morocco-immigration-gap" },
+      { "category": "legal", "slug": "sepi-grant-thornton-legal-fees" },
+      { "category": "spain", "slug": "storm-warning-heavy-rain" },
+      { "category": "culture", "slug": "century-old-printing-press-history" },
+      { "category": "gastropoli", "slug": "madrid-tasting-menu-under-40" }
+    ],
+    "trending": [
+      { "category": "culture", "slug": "profile-separatist-intellectual" },
+      { "category": "opinion", "slug": "backstabbing-that-never-stops" },
+      { "category": "economy", "slug": "seven-day-contracts-employment" },
+      { "category": "dolcefita", "slug": "elegant-living-room-colour" },
+      { "category": "welfare", "slug": "air-conditioning-night-advice" },
+      { "category": "international", "slug": "nato-jet-shoots-down-drone" },
+      { "category": "indux", "slug": "factory-automation-hiring-shift" },
+      { "category": "legal", "slug": "threat-vetoes-embargoes-made-in-spain" }
+    ],
+    "mostRead": [
+      { "category": "opinion", "slug": "long-eclipse" },
+      { "category": "spain", "slug": "committee-session-closes-debate" },
+      { "category": "economy", "slug": "inflation-gap-widens-europe" },
+      { "category": "welfare", "slug": "exercise-routine-fitness-later-life" },
+      { "category": "culture", "slug": "century-old-printing-press-history" },
+      { "category": "international", "slug": "taliban-five-years-power" },
+      { "category": "economy", "slug": "housing-prices-forecast-2028" },
+      { "category": "legal", "slug": "sepi-grant-thornton-legal-fees" },
+      { "category": "international", "slug": "press-secretary-bloodthirsty-work" },
+      { "category": "culture", "slug": "hemingway-reflects-on-spain" }
+    ]
+  }
+}

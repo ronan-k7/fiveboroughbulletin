@@ -1,0 +1,94 @@
+{
+  "articles": [
+    {
+      "slug": "madrid-tasting-menu-under-40",
+      "title": "Five tasting menus under 40 euros that prove Madrid's mid-range dining scene is thriving",
+      "subCategoryLabel": "Restaurants",
+      "excerpt": "A new wave of small kitchens is closing the gap between casual dining and serious cooking.",
+      "author": "pablo-uria",
+      "date": "2026-08-14",
+      "time": "09:00 CEST",
+      "commentCount": 0,
+      "featured": true,
+      "imageCaption": "A plated dish from one of the featured kitchens | EP",
+      "content": [
+        "A new wave of small, chef-owned kitchens is closing the gap between casual dining and serious cooking in the capital, with several offering full tasting menus for under 40 euros.",
+        "Industry figures say the trend reflects both rising costs at the top end of the market and a generation of chefs prioritising accessibility over spectacle.",
+        "Reservations at several of the featured spots are already booked out for weeks."
+      ],
+      "relatedPicks": []
+    },
+    {
+      "slug": "vermouth-bars-comeback-cities",
+      "title": "Vermouth bars are making a comeback in Spain's mid-sized cities",
+      "subCategoryLabel": "Food trends",
+      "excerpt": "What used to be a Sunday-before-lunch ritual is turning into an all-week draw for younger drinkers.",
+      "author": "pablo-uria",
+      "date": "2026-08-13",
+      "time": "11:30 CEST",
+      "commentCount": 2,
+      "featured": false,
+      "imageCaption": "A glass of vermouth served with an olive garnish | EP",
+      "content": [
+        "Vermouth bars, long associated with a Sunday-before-lunch ritual in Spain's larger cities, are opening in growing numbers in mid-sized cities as well.",
+        "Owners say the format's low overhead and simple menu make it an easier bet than a full restaurant, while younger drinkers are treating it as a weeknight destination rather than a weekend one.",
+        "Several bars in the wave have added house-made vermouths to differentiate themselves from supermarket brands."
+      ],
+      "relatedPicks": ["madrid-tasting-menu-under-40"]
+    },
+    {
+      "slug": "olive-oil-prices-ease-harvest",
+      "title": "Olive oil prices ease as producers report a stronger harvest outlook",
+      "subCategoryLabel": "Producers",
+      "excerpt": "After two difficult years, growers say rainfall this spring has meaningfully improved yield forecasts.",
+      "author": "sofia-marin",
+      "date": "2026-08-12",
+      "time": "08:45 CEST",
+      "commentCount": 5,
+      "featured": false,
+      "imageCaption": "Olives ready for harvest on a grove | EP",
+      "content": [
+        "Olive oil prices have started to ease at wholesale level as producers report a stronger harvest outlook than in the previous two seasons.",
+        "Growers point to more favourable rainfall this spring as the main driver, after prolonged drought had pushed yields to historic lows and driven retail prices sharply higher.",
+        "Analysts caution that prices are unlikely to return to pre-drought levels this year, even if the improved forecast holds through the autumn harvest."
+      ],
+      "relatedPicks": []
+    },
+    {
+      "slug": "chefs-embrace-tasting-menu-shorter-format",
+      "title": "Chefs are trading 12-course tasting menus for shorter, faster formats",
+      "subCategoryLabel": "Chefs",
+      "excerpt": "Diners increasingly want a memorable meal without the three-hour commitment, kitchens say.",
+      "author": "pablo-uria",
+      "date": "2026-08-10",
+      "time": "13:00 CEST",
+      "commentCount": 1,
+      "featured": false,
+      "imageCaption": "A chef plating a dish in an open kitchen | EP",
+      "content": [
+        "A number of well-regarded kitchens are shortening their tasting menus, trading the once-standard 12-course format for six or seven courses served over roughly ninety minutes.",
+        "Chefs say the shift responds to diners who want a memorable meal without committing an entire evening, particularly on weeknights.",
+        "Several restaurants report the shorter format has also let them turn tables twice in a service, improving margins without raising prices."
+      ],
+      "relatedPicks": ["madrid-tasting-menu-under-40"]
+    },
+    {
+      "slug": "food-markets-revival-neighbourhood-vendors",
+      "title": "Neighbourhood food markets see a revival as small vendors return",
+      "subCategoryLabel": "Food trends",
+      "excerpt": "After years of decline, several municipal markets report their first fully-let vendor stalls in over a decade.",
+      "author": "sofia-marin",
+      "date": "2026-08-08",
+      "time": "09:30 CEST",
+      "commentCount": 0,
+      "featured": false,
+      "imageCaption": "Fresh produce stalls inside a municipal market | EP",
+      "content": [
+        "Several municipal food markets are reporting their first fully-let vendor stalls in more than a decade, reversing a long decline driven by the rise of supermarkets and online grocery delivery.",
+        "Local authorities in a handful of cities credit reduced rents and small-business grants aimed at keeping markets viable as anchors for surrounding neighbourhoods.",
+        "Vendors say demand has been strongest for specialty goods that are harder to find in large chains, from artisanal cheese to regional produce."
+      ],
+      "relatedPicks": []
+    }
+  ]
+}

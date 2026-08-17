@@ -1,0 +1,94 @@
+{
+  "articles": [
+    {
+      "slug": "elegant-living-room-colour",
+      "title": "Interior designers agree: this one colour makes any living room feel instantly more refined",
+      "subCategoryLabel": "Design",
+      "excerpt": "\"People want emotion, and colour creates it,\" one designer explains.",
+      "author": "anabel-blazquez",
+      "date": "2026-08-14",
+      "time": "10:00 CEST",
+      "commentCount": 0,
+      "featured": true,
+      "imageCaption": "A living room styled in a warm, muted tone | EP",
+      "content": [
+        "Interior designers say a single muted, earthy tone has become the most requested choice for living rooms this year.",
+        "\"People want emotion, and colour creates it,\" one designer explains, noting that clients are moving away from stark neutrals toward warmer, more grounded palettes.",
+        "The shift mirrors a broader trend toward rooms that feel lived-in rather than showroom-perfect."
+      ],
+      "relatedPicks": []
+    },
+    {
+      "slug": "small-kitchen-storage-trends",
+      "title": "Small-kitchen storage is the design problem everyone is trying to solve this year",
+      "subCategoryLabel": "Home",
+      "excerpt": "As flats shrink, designers say clever vertical storage has replaced open shelving as the must-have feature.",
+      "author": "anabel-blazquez",
+      "date": "2026-08-12",
+      "time": "09:15 CEST",
+      "commentCount": 3,
+      "featured": false,
+      "imageCaption": "A compact kitchen with floor-to-ceiling cabinetry | EP",
+      "content": [
+        "As new-build flats trend smaller, kitchen designers say demand has shifted decisively toward vertical, floor-to-ceiling storage solutions.",
+        "Open shelving, popular for much of the last decade, is losing ground to closed cabinetry that hides clutter in tighter spaces.",
+        "Several designers note that clients are now willing to pay a premium for custom joinery that makes full use of awkward corners."
+      ],
+      "relatedPicks": ["elegant-living-room-colour"]
+    },
+    {
+      "slug": "balcony-garden-trend-cities",
+      "title": "Balcony gardens are booming as city dwellers reclaim outdoor space",
+      "subCategoryLabel": "Trends",
+      "excerpt": "Garden centres report a sharp rise in sales of compact planters designed for balconies under four square metres.",
+      "author": "anabel-blazquez",
+      "date": "2026-08-10",
+      "time": "08:30 CEST",
+      "commentCount": 1,
+      "featured": false,
+      "imageCaption": "A small balcony filled with potted plants | EP",
+      "content": [
+        "Garden centres across the country are reporting a sharp rise in sales of compact planters and vertical growing systems designed specifically for small balconies.",
+        "Retailers say the trend accelerated after several years of flat sizes shrinking, pushing residents to treat balconies as a primary outdoor space rather than an afterthought.",
+        "Landscape designers now offer balcony-specific consultations, a service that barely existed five years ago."
+      ],
+      "relatedPicks": []
+    },
+    {
+      "slug": "second-hand-furniture-market-growth",
+      "title": "Second-hand furniture is having a moment, and it's not just about saving money",
+      "subCategoryLabel": "Trends",
+      "excerpt": "Buyers cite sustainability and character as much as price when explaining the shift away from flat-pack.",
+      "author": "victor-lenore",
+      "date": "2026-08-07",
+      "time": "12:00 CEST",
+      "commentCount": 4,
+      "featured": false,
+      "imageCaption": "A restored wooden sideboard in a showroom | EP",
+      "content": [
+        "Sales of second-hand and restored furniture have grown steadily over the past two years, according to several online marketplaces and dealers.",
+        "Buyers surveyed cite sustainability and a desire for pieces with character as much as price when explaining their move away from flat-pack furniture.",
+        "Restorers say demand for reupholstery and refinishing services has grown alongside the trend, with waiting lists at several workshops stretching past two months."
+      ],
+      "relatedPicks": []
+    },
+    {
+      "slug": "minimalist-bathroom-renovation-tips",
+      "title": "Bathroom renovations are trading tile patterns for minimalist, single-tone finishes",
+      "subCategoryLabel": "Design",
+      "excerpt": "Contractors say the shift is partly aesthetic and partly practical: fewer materials mean fewer things to source and match.",
+      "author": "anabel-blazquez",
+      "date": "2026-08-05",
+      "time": "10:45 CEST",
+      "commentCount": 0,
+      "featured": false,
+      "imageCaption": "A minimalist bathroom with a single-tone tile finish | EP",
+      "content": [
+        "Bathroom renovations this year have leaned heavily toward minimalist, single-tone finishes, a departure from the patterned tile schemes popular in recent years.",
+        "Contractors say the shift is partly aesthetic and partly practical, since using fewer materials means fewer things to source, match and eventually replace.",
+        "Designers add that the simpler palettes also tend to make small bathrooms feel larger, a persistent concern in older housing stock."
+      ],
+      "relatedPicks": ["elegant-living-room-colour"]
+    }
+  ]
+}

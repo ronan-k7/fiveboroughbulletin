@@ -1,0 +1,100 @@
+{
+  "authors": [
+    {
+      "slug": "jose-sanchez",
+      "name": "Jose Sanchez",
+      "role": "Courts and security writer",
+      "bio": "Staff writer with over 10 years covering courts, security and home affairs, previously at a regional daily before joining the national desk.",
+      "email": "jsanchez@vozpopuli.com",
+      "social": { "x": "https://x.com/jsanchez" }
+    },
+    {
+      "slug": "luis-casal",
+      "name": "Luis Casal",
+      "role": "Political correspondent",
+      "bio": "Political correspondent focused on parliament and party strategy, following committee sessions and coalition negotiations closely.",
+      "email": "lcasal@vozpopuli.com",
+      "social": { "x": "https://x.com/lcasal" }
+    },
+    {
+      "slug": "carlos-cozar",
+      "name": "Carlos R. Cozar",
+      "role": "Energy and infrastructure writer",
+      "bio": "Business reporter covering energy, infrastructure and utilities, with a focus on regulatory decisions and major investment programmes.",
+      "email": "ccozar@vozpopuli.com",
+      "social": { "x": "https://x.com/ccozar" }
+    },
+    {
+      "slug": "ruben-sampedro",
+      "name": "Ruben Sampedro",
+      "role": "Banking and business writer",
+      "bio": "Economic journalist with over 15 years of experience in various media outlets, including Expansion and Europa Press. Graduated in Journalism from the Carlos III University of Madrid and completed a postgraduate course in economic reporting.",
+      "email": "rsampedro@vozpopuli.com",
+      "social": { "x": "https://x.com/rsampedro" }
+    },
+    {
+      "slug": "gorka-maneiro",
+      "name": "Gorka Maneiro",
+      "role": "Opinion columnist",
+      "bio": "Opinion columnist writing on politics and public life, known for a direct style and a focus on the friction behind official narratives.",
+      "email": "gmaneiro@vozpopuli.com",
+      "social": { "x": "https://x.com/gmaneiro" }
+    },
+    {
+      "slug": "victor-lenore",
+      "name": "Victor Lenore",
+      "role": "Culture writer",
+      "bio": "Culture writer covering books, music and ideas, with a particular interest in how historical debates resurface in present-day politics.",
+      "email": "vlenore@vozpopuli.com",
+      "social": { "x": "https://x.com/vlenore" }
+    },
+    {
+      "slug": "alejandro-cascon",
+      "name": "Alejandro Cascon",
+      "role": "Weather and environment writer",
+      "bio": "Reporter covering weather, environment and daily life, tracking wildfire response and seasonal risk across the country.",
+      "email": "acascon@vozpopuli.com",
+      "social": { "x": "https://x.com/acascon" }
+    },
+    {
+      "slug": "anabel-blazquez",
+      "name": "Anabel Blazquez",
+      "role": "Lifestyle writer",
+      "bio": "Lifestyle writer covering travel, home and trends, translating expert advice from designers and trainers into practical everyday tips.",
+      "email": "ablazquez@vozpopuli.com",
+      "social": { "x": "https://x.com/ablazquez" }
+    },
+    {
+      "slug": "javier-collado",
+      "name": "Javier Collado",
+      "role": "International affairs writer",
+      "bio": "International affairs writer covering diplomacy, migration and cross-border relations across Europe, North Africa and the Middle East.",
+      "email": "jcollado@vozpopuli.com",
+      "social": { "x": "https://x.com/jcollado" }
+    },
+    {
+      "slug": "marta-ibanez",
+      "name": "Marta Ibanez",
+      "role": "Legal affairs writer",
+      "bio": "Legal affairs writer covering courts, regulation and corporate litigation, with a background in commercial law reporting.",
+      "email": "mibanez@vozpopuli.com",
+      "social": { "x": "https://x.com/mibanez" }
+    },
+    {
+      "slug": "pablo-uria",
+      "name": "Pablo Uria",
+      "role": "Food and dining writer",
+      "bio": "Food and dining writer covering restaurants, producers and the business side of the hospitality industry.",
+      "email": "puria@vozpopuli.com",
+      "social": { "x": "https://x.com/puria" }
+    },
+    {
+      "slug": "sofia-marin",
+      "name": "Sofia Marin",
+      "role": "Technology and industry writer",
+      "bio": "Technology and industry writer covering manufacturing, automation and the companies driving the country's industrial base.",
+      "email": "smarin@vozpopuli.com",
+      "social": { "x": "https://x.com/smarin" }
+    }
+  ]
+}
