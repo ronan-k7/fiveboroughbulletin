@@ -1,6 +1,7 @@
 import ArticleCard from "@/components/ArticleCard";
 import SidebarWidget from "@/components/SidebarWidget";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
+import TripleFeature from "@/components/TripleFeature";
 import { getArticlesByCategory, withRelations, getSidebarResolved } from "@/lib/content";
 
 function pick(categorySlug, slugs) {
@@ -12,10 +13,19 @@ export default function HomePage() {
   const sidebar = getSidebarResolved();
 
   const spain = getArticlesByCategory("spain").map((a) => withRelations(a, "spain"));
-  const hero = spain.find((a) => a.slug === "reinforcement-security-review-capital");
-  // Side rail carries the rest of the Spain feed so it runs the same length
-  // as the hero image instead of stopping after 2 short items.
-  const rail = spain.filter((a) => a.slug !== hero?.slug);
+
+  // Top feature: 3-column layout (left text list / centre story / right
+  // small-image items + opinion pick), replacing the old hero+rail block.
+  const featureLeft = pick("spain", [
+    "committee-session-closes-debate",
+    "case-escalates-national-court",
+    "coalition-partners-clash-budget-timeline",
+  ]);
+  const featureCenter = pick("economy", ["inflation-gap-widens-europe"])[0];
+  if (featureCenter) featureCenter.eyebrow = "Macroeconomy";
+  const featureRight = pick("spain", ["wildfire-respite-andalusia"]);
+  const featurePicks = pick("opinion", ["backstabbing-that-never-stops", "outlandish-trend-tourism"]);
+  featurePicks.forEach((a) => (a.opinionLabel = "Challenge"));
 
   const featuredEconomy = pick("economy", ["grid-investment-approved"])[0];
   const economyGrid = pick("economy", [
@@ -42,17 +52,15 @@ export default function HomePage() {
 
   return (
     <div className="mx-auto w-full max-w-[1440px] px-4 py-6 sm:px-6 md:py-8">
-      {/* Hero: big lead story + side rail of the rest of the Spain feed.
-          The rail is sticky so it keeps pace with the tall hero image
-          instead of leaving an empty gap once it runs out of items. */}
-      <section className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_360px]">
-        <div>{hero && <ArticleCard article={hero} variant="hero" imageAspect="aspect-[16/10]" />}</div>
-        <div className="lg:sticky lg:top-24 lg:self-start divide-y divide-hairline lg:border-l lg:border-hairline lg:pl-6">
-          {rail.map((a) => (
-            <ArticleCard key={a.slug} article={a} variant="sideRail" />
-          ))}
-        </div>
-      </section>
+      {/* Top feature: 3 columns on desktop (text list / centre story /
+          small-image items + opinion pick), stacking to a single column
+          on mobile with the centre story surfaced first. */}
+      <TripleFeature
+        leftItems={featureLeft}
+        center={featureCenter}
+        rightItems={featureRight}
+        rightPicks={featurePicks}
+      />
 
       {/* Economy section: featured story (image+excerpt) on the left,
           grid below, sticky "Latest" widget fills the right column for
