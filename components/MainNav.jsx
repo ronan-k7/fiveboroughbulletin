@@ -9,7 +9,7 @@ export default function MainNav({ className = "" }) {
           <li key={item.href}>
             <Link
               href={item.href}
-              className="block py-3 text-[13px] font-semibold uppercase tracking-wide text-ink hover:text-brand-green transition-colors"
+              className="block py-3 text-[13px] font-semibold uppercase tracking-wide text-ink hover:text-brand-teal transition-colors"
             >
               {item.label}
             </Link>

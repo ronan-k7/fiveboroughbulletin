@@ -61,13 +61,13 @@ function CenterStory({ article }) {
       </Link>
       {article.eyebrow && (
         <p className="mt-3 flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide text-ink-soft">
-          <span className="inline-block h-2.5 w-2.5 bg-brand-green" aria-hidden="true" />
+          <span className="inline-block h-2.5 w-2.5 bg-brand-teal" aria-hidden="true" />
           {article.eyebrow}
         </p>
       )}
       <h2 className={`font-serif text-2xl font-bold leading-tight text-ink ${article.eyebrow ? "mt-1.5" : "mt-3"}`}>
         <Link href={href} className="hover:underline decoration-2 underline-offset-2">
-          {subLabel && <span className="text-brand-green">{subLabel}. </span>}
+          {subLabel && <span className="text-brand-teal">{subLabel}. </span>}
           {article.title}
         </Link>
       </h2>
@@ -75,7 +75,7 @@ function CenterStory({ article }) {
         <p className="mt-3 text-[15px] leading-relaxed text-ink-soft">{article.excerpt}</p>
       )}
       <div className="mt-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-ink-soft">
-        <Link href={`/authors/${article.author}`} className="hover:text-brand-green transition-colors">
+        <Link href={`/authors/${article.author}`} className="hover:text-brand-teal transition-colors">
           {authorName}
         </Link>
         {article.commentCount > 0 && (
@@ -97,7 +97,7 @@ function TextItem({ article }) {
     <article className="py-4 first:pt-0">
       <h3 className="font-serif text-lg font-bold leading-snug text-ink">
         <Link href={href} className="hover:underline decoration-2 underline-offset-2">
-          {subLabel && <span className="text-brand-green">{subLabel}. </span>}
+          {subLabel && <span className="text-brand-teal">{subLabel}. </span>}
           {article.title}
         </Link>
       </h3>
@@ -105,7 +105,7 @@ function TextItem({ article }) {
         <p className="mt-2 text-[14px] leading-relaxed text-ink-soft line-clamp-3">{article.excerpt}</p>
       )}
       <div className="mt-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-ink-soft">
-        <Link href={`/authors/${article.author}`} className="hover:text-brand-green transition-colors">
+        <Link href={`/authors/${article.author}`} className="hover:text-brand-teal transition-colors">
           {authorName}
         </Link>
         {article.commentCount > 0 && (
@@ -130,12 +130,12 @@ function SmallImageItem({ article }) {
       </Link>
       <h3 className="mt-3 font-serif text-base font-bold leading-snug text-ink">
         <Link href={href} className="hover:underline decoration-2 underline-offset-2">
-          {subLabel && <span className="text-brand-green">{subLabel}. </span>}
+          {subLabel && <span className="text-brand-teal">{subLabel}. </span>}
           {article.title}
         </Link>
       </h3>
       <div className="mt-1.5 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-ink-soft">
-        <Link href={`/authors/${article.author}`} className="hover:text-brand-green transition-colors">
+        <Link href={`/authors/${article.author}`} className="hover:text-brand-teal transition-colors">
           {authorName}
         </Link>
         {article.commentCount > 0 && (
@@ -157,13 +157,13 @@ function OpinionPickItem({ article }) {
       <div className="min-w-0">
         <h3 className="font-serif text-base italic font-semibold leading-snug text-ink">
           <Link href={href} className="hover:underline decoration-2 underline-offset-2">
-            {article.opinionLabel && <span className="text-brand-green not-italic">{article.opinionLabel}. </span>}
+            {article.opinionLabel && <span className="text-brand-teal not-italic">{article.opinionLabel}. </span>}
             {article.title}
           </Link>
         </h3>
         <Link
           href={`/authors/${article.author}`}
-          className="mt-2 inline-block text-xs font-semibold uppercase tracking-wide text-ink-soft hover:text-brand-green transition-colors"
+          className="mt-2 inline-block text-xs font-semibold uppercase tracking-wide text-ink-soft hover:text-brand-teal transition-colors"
         >
           {authorName}
         </Link>

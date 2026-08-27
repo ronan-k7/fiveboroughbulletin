@@ -22,7 +22,7 @@ export default function Footer() {
             <Link
               key={tag.href}
               href={tag.href}
-              className="font-serif text-sm italic text-ink-soft hover:text-brand-green transition-colors"
+              className="font-serif text-sm italic text-ink-soft hover:text-brand-teal transition-colors"
             >
               {tag.label}
             </Link>
@@ -35,7 +35,7 @@ export default function Footer() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm text-link hover:text-brand-green transition-colors"
+              className="text-sm text-link hover:text-brand-teal transition-colors"
             >
               {link.label}
             </Link>

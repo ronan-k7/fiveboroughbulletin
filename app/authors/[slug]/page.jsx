@@ -64,7 +64,7 @@ export default async function AuthorPage({ params }) {
                 target="_blank"
                 rel="noreferrer"
                 aria-label={`${author.name} on X`}
-                className="flex items-center gap-1.5 hover:text-brand-green transition-colors"
+                className="flex items-center gap-1.5 hover:text-brand-teal transition-colors"
               >
                 <XIcon />
               </a>
@@ -72,7 +72,7 @@ export default async function AuthorPage({ params }) {
             {author.email && (
               <a
                 href={`mailto:${author.email}`}
-                className="flex items-center gap-1.5 hover:text-brand-green transition-colors"
+                className="flex items-center gap-1.5 hover:text-brand-teal transition-colors"
               >
                 <MailIcon />
                 {author.email}
@@ -87,7 +87,7 @@ export default async function AuthorPage({ params }) {
       )}
 
       <h2 className="mt-8 flex items-center gap-2 font-sans text-sm font-bold uppercase tracking-wide text-ink">
-        <span className="inline-block h-4 w-1.5 -skew-x-12 bg-brand-green" aria-hidden="true" />
+        <span className="inline-block h-4 w-1.5 -skew-x-12 bg-brand-teal" aria-hidden="true" />
         Published articles
       </h2>
 

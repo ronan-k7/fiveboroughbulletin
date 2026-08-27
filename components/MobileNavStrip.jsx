@@ -13,7 +13,7 @@ export default function MobileNavStrip() {
           <li key={item.href}>
             <Link
               href={item.href}
-              className="text-[12.5px] font-semibold uppercase tracking-wide text-ink hover:text-brand-green transition-colors"
+              className="text-[12.5px] font-semibold uppercase tracking-wide text-ink hover:text-brand-teal transition-colors"
             >
               {item.label}
             </Link>

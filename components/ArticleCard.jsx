@@ -27,12 +27,12 @@ export default function ArticleCard({ article, variant = "grid", imageAspect = "
         </Link>
         <h2 className="mt-3 font-serif text-2xl font-bold leading-tight text-ink md:text-[2rem]">
           <Link href={href} className="hover:underline decoration-2 underline-offset-2">
-            {subLabel && <span className="text-brand-green">{subLabel}. </span>}
+            {subLabel && <span className="text-brand-teal">{subLabel}. </span>}
             {article.title}
           </Link>
         </h2>
         <div className="mt-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-ink-soft">
-          <Link href={`/authors/${article.author}`} className="hover:text-brand-green transition-colors">
+          <Link href={`/authors/${article.author}`} className="hover:text-brand-teal transition-colors">
             {authorName}
           </Link>
           {article.commentCount > 0 && (
@@ -54,12 +54,12 @@ export default function ArticleCard({ article, variant = "grid", imageAspect = "
         <div className="min-w-0">
           <h3 className="font-serif text-base font-bold leading-snug text-ink line-clamp-3">
             <Link href={href} className="hover:underline decoration-2 underline-offset-2">
-              {subLabel && <span className="text-brand-green">{subLabel}. </span>}
+              {subLabel && <span className="text-brand-teal">{subLabel}. </span>}
               {article.title}
             </Link>
           </h3>
           <div className="mt-1.5 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-ink-soft">
-            <Link href={`/authors/${article.author}`} className="hover:text-brand-green transition-colors">
+            <Link href={`/authors/${article.author}`} className="hover:text-brand-teal transition-colors">
               {authorName}
             </Link>
             {article.commentCount > 0 && (
@@ -82,7 +82,7 @@ export default function ArticleCard({ article, variant = "grid", imageAspect = "
           </Link>
         </h3>
         <div className="mt-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-ink-soft">
-          <Link href={`/authors/${article.author}`} className="hover:text-brand-green transition-colors">
+          <Link href={`/authors/${article.author}`} className="hover:text-brand-teal transition-colors">
             {authorName}
           </Link>
           {article.commentCount > 0 && (
@@ -99,7 +99,7 @@ export default function ArticleCard({ article, variant = "grid", imageAspect = "
     return (
       <article className="py-2.5">
         <h4 className="font-serif text-[15px] font-semibold leading-snug text-ink">
-          <Link href={href} className="hover:text-brand-green transition-colors">
+          <Link href={href} className="hover:text-brand-teal transition-colors">
             {article.title}
           </Link>
         </h4>
@@ -125,7 +125,7 @@ export default function ArticleCard({ article, variant = "grid", imageAspect = "
             </Link>
           </h3>
           <div className="mt-1.5 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-ink-soft">
-            <Link href={`/authors/${article.author}`} className="hover:text-brand-green transition-colors">
+            <Link href={`/authors/${article.author}`} className="hover:text-brand-teal transition-colors">
               {authorName}
             </Link>
             {article.commentCount > 0 && (
@@ -150,12 +150,12 @@ export default function ArticleCard({ article, variant = "grid", imageAspect = "
       </Link>
       <h3 className="mt-3 font-serif text-lg font-bold leading-snug text-ink">
         <Link href={href} className="hover:underline decoration-2 underline-offset-2">
-          {subLabel && <span className="text-brand-green">{subLabel}. </span>}
+          {subLabel && <span className="text-brand-teal">{subLabel}. </span>}
           {article.title}
         </Link>
       </h3>
       <div className="mt-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-ink-soft">
-        <Link href={`/authors/${article.author}`} className="hover:text-brand-green transition-colors">
+        <Link href={`/authors/${article.author}`} className="hover:text-brand-teal transition-colors">
           {authorName}
         </Link>
         {article.commentCount > 0 && (

@@ -35,7 +35,7 @@ export default async function CategoryPage({ params }) {
   return (
     <div className="mx-auto w-full max-w-[1440px] px-4 py-8 sm:px-6">
       <p className="text-sm text-ink-soft">
-        <Link href="/" className="hover:text-brand-green transition-colors">
+        <Link href="/" className="hover:text-brand-teal transition-colors">
           Front page
         </Link>{" "}
         &rarr; {category.label}
@@ -43,7 +43,7 @@ export default async function CategoryPage({ params }) {
 
       <div className="mt-3 flex flex-wrap items-start justify-between gap-4">
         <h1 className="flex items-center gap-2 font-serif text-3xl font-black text-ink md:text-4xl">
-          <span className="inline-block h-8 w-2 -skew-x-12 bg-brand-green" aria-hidden="true" />
+          <span className="inline-block h-8 w-2 -skew-x-12 bg-brand-teal" aria-hidden="true" />
           {category.label.toUpperCase()}
         </h1>
         {category.trendingTags?.length > 0 && (

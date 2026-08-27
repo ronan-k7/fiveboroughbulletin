@@ -104,7 +104,7 @@ export default function Header() {
           aria-label="Open menu"
           aria-haspopup="dialog"
           aria-expanded={drawerOpen}
-          className="flex h-10 w-10 items-center justify-center text-ink hover:text-brand-green transition-colors"
+          className="flex h-10 w-10 items-center justify-center text-ink hover:text-brand-teal transition-colors"
         >
           <HamburgerIcon />
         </button>

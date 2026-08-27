@@ -45,7 +45,7 @@ export default async function ArticlePage({ params }) {
           {article.categoryInfo && (
             <Link
               href={`/${article.categoryInfo.slug}`}
-              className="text-xs font-bold uppercase tracking-wide text-brand-green hover:underline"
+              className="text-xs font-bold uppercase tracking-wide text-brand-teal hover:underline"
             >
               {article.categoryInfo.label}
             </Link>
@@ -58,7 +58,7 @@ export default async function ArticlePage({ params }) {
           <div className="mt-5 flex flex-wrap items-center gap-3 border-y border-hairline py-3 text-sm">
             <Link
               href={`/authors/${article.author}`}
-              className="font-semibold uppercase tracking-wide text-ink hover:text-brand-green transition-colors"
+              className="font-semibold uppercase tracking-wide text-ink hover:text-brand-teal transition-colors"
             >
               {article.authorInfo?.name}
             </Link>

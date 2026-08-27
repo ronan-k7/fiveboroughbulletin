@@ -11,7 +11,7 @@ export default function RelatedPicks({ items }) {
 
   return (
     <div className="my-8">
-      <h2 className="border-b-2 border-brand-green pb-2 text-sm font-bold uppercase tracking-wide text-ink">
+      <h2 className="border-b-2 border-brand-teal pb-2 text-sm font-bold uppercase tracking-wide text-ink">
         You might be interested in
       </h2>
       <div className="mt-4 divide-y divide-hairline">

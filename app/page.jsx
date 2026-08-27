@@ -66,7 +66,7 @@ export default function HomePage() {
           grid below, sticky "Latest" widget fills the right column for
           the full height of the section. */}
       <section className="mt-10 border-t-2 border-ink pt-6">
-        <h2 className="font-sans text-sm font-bold uppercase tracking-wide text-brand-green">Economy</h2>
+        <h2 className="font-sans text-sm font-bold uppercase tracking-wide text-brand-teal">Economy</h2>
         <div className="mt-4 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_360px]">
           <div>
             {featuredEconomy && (
@@ -74,14 +74,14 @@ export default function HomePage() {
                 <div>
                   <h3 className="font-serif text-2xl font-bold leading-tight text-ink">
                     <a href={`/economy/${featuredEconomy.slug}`} className="hover:underline decoration-2 underline-offset-2">
-                      <span className="text-brand-green">{featuredEconomy.subCategoryLabel}. </span>
+                      <span className="text-brand-teal">{featuredEconomy.subCategoryLabel}. </span>
                       {featuredEconomy.title}
                     </a>
                   </h3>
                   <p className="mt-3 text-[15px] leading-relaxed text-ink-soft">{featuredEconomy.excerpt}</p>
                   <a
                     href={`/authors/${featuredEconomy.author}`}
-                    className="mt-3 inline-block text-xs font-semibold uppercase tracking-wide text-ink-soft hover:text-brand-green transition-colors"
+                    className="mt-3 inline-block text-xs font-semibold uppercase tracking-wide text-ink-soft hover:text-brand-teal transition-colors"
                   >
                     {featuredEconomy.authorInfo?.name}
                   </a>
@@ -124,7 +124,7 @@ export default function HomePage() {
           well past the grid's height and leaves an oversized, uneven gap
           before the section ends. */}
       <section className="mt-10 border-t-2 border-ink pt-6">
-        <h2 className="font-sans text-sm font-bold uppercase tracking-wide text-brand-green">Culture</h2>
+        <h2 className="font-sans text-sm font-bold uppercase tracking-wide text-brand-teal">Culture</h2>
         <div className="mt-4 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_360px]">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {cultureGrid.map((a) => (
@@ -137,7 +137,7 @@ export default function HomePage() {
 
       {/* Lifestyle grid with sticky Most read widget */}
       <section className="mt-10 border-t-2 border-ink pt-6">
-        <h2 className="font-sans text-sm font-bold uppercase tracking-wide text-brand-green">Lifestyle</h2>
+        <h2 className="font-sans text-sm font-bold uppercase tracking-wide text-brand-teal">Lifestyle</h2>
         <div className="mt-4 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_360px]">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {lifestyleGrid.map((a) => (

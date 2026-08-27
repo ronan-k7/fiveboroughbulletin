@@ -77,7 +77,7 @@ export default function MobileNavDrawer({ open, onClose }) {
                   <Link
                     href={item.href}
                     onClick={onClose}
-                    className="flex items-center justify-between px-4 py-3.5 text-[15px] font-semibold uppercase tracking-wide text-ink hover:bg-neutral-50 hover:text-brand-green transition-colors"
+                    className="flex items-center justify-between px-4 py-3.5 text-[15px] font-semibold uppercase tracking-wide text-ink hover:bg-neutral-50 hover:text-brand-teal transition-colors"
                   >
                     {item.label}
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="opacity-40">

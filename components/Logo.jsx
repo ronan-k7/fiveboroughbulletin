@@ -27,7 +27,7 @@ export default function Logo({ className = "", shrink = false }) {
       ------------------------------------------------------------------ */}
 
       <span
-        className={`flex max-w-full items-center gap-1 overflow-hidden whitespace-nowrap font-bold tracking-wide text-brand-green uppercase transition-all duration-300 ease-out ${
+        className={`flex max-w-full items-center gap-1 overflow-hidden whitespace-nowrap font-bold tracking-wide text-brand-teal uppercase transition-all duration-300 ease-out ${
           shrink
             ? "max-h-0 opacity-0 text-[7.5px]"
             : "max-h-4 opacity-100 text-[7.5px] sm:text-[9px] md:text-[11px]"
@@ -42,7 +42,7 @@ export default function Logo({ className = "", shrink = false }) {
           className="shrink-0 -mb-0.5 md:h-2.5 md:w-3.5"
           aria-hidden="true"
         >
-          <path d="M0 9L14 1V9H0Z" fill="var(--color-brand-green)" />
+          <path d="M0 9L14 1V9H0Z" fill="var(--color-brand-teal)" />
         </svg>
       </span>
       <span

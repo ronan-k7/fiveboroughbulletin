@@ -27,7 +27,7 @@ export default function SidebarWidget({ title, items, sticky = false, numbered =
               </span>
             )}
             <h3 className="font-serif text-[15px] font-semibold leading-snug text-ink">
-              <Link href={`/${item.category}/${item.slug}`} className="hover:text-brand-green transition-colors">
+              <Link href={`/${item.category}/${item.slug}`} className="hover:text-brand-teal transition-colors">
                 {item.title}
               </Link>
             </h3>
