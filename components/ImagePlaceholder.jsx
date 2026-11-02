@@ -3,10 +3,15 @@
 /**
  * Image box used everywhere an article/author photo is needed.
  *
- * Points at /public/images/pay-for-power.webp — drop your image in with
- * that exact filename and it will appear in every placeholder across the
- * whole site at once (hero, grid cards, sidebar thumbnails, author photo,
- * detail page hero image, etc).
+ * Pass `src` with a filename that lives in /public/images/ (e.g. an
+ * article's `image` field or an author's `image` field) to show that
+ * specific photo. Drop the file in with that exact filename and it will
+ * appear wherever that article/author is rendered (hero, grid cards,
+ * sidebar thumbnails, author photo, detail page hero image, etc).
+ *
+ * When `src` is omitted (older data with no `image` field), this falls
+ * back to the single shared /public/images/pay-for-power.webp placeholder,
+ * so existing categories/authors are unaffected.
  *
  * The fallback icon+label sits underneath the <img> at all times (not
  * swapped in via onError), so it's visible immediately whether the file
@@ -14,11 +19,12 @@
  * image icon while the file/error event resolves.
  *
  * `variant="ad"` renders the dashed-border "ad space" box instead, which
- * intentionally does NOT use pay-for-power.webp since ad slots are a
- * separate concern from article photos.
+ * intentionally does NOT use an image since ad slots are a separate
+ * concern from article/author photos.
  */
-export default function ImagePlaceholder({ className = "", label, variant = "photo", rounded = "" }) {
+export default function ImagePlaceholder({ className = "", label, variant = "photo", rounded = "", src }) {
   const isAd = variant === "ad";
+  const imageSrc = src ? `/images/${src}` : "/images/pay-for-power.webp";
 
   if (isAd) {
     return (
@@ -46,7 +52,7 @@ export default function ImagePlaceholder({ className = "", label, variant = "pho
         </div>
       </div>
       <img
-        src="/images/pay-for-power.webp"
+        src={imageSrc}
         alt={label || ""}
         className="relative h-full w-full object-cover"
         onError={(e) => {

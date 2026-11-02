@@ -1,11 +1,12 @@
 {
   "siteName": "vozpópuli",
   "tagline": "EL VALOR DE SER LIBRES Y FIABLES",
+  "url": "https://www.vozpopuli.com",
   "mainNav": [
-    { "label": "Spain", "href": "/spain" },
-    { "label": "Economy", "href": "/economy" },
-    { "label": "International", "href": "/international" },
-    { "label": "Opinion", "href": "/opinion" },
+    { "label": "U.S.", "href": "/us" },
+    { "label": "Business", "href": "/business" },
+    { "label": "Finance", "href": "/finance" },
+    { "label": "World", "href": "/world" },
     { "label": "Legal", "href": "/legal" },
     { "label": "Dolcefita", "href": "/dolcefita" },
     { "label": "Welfare", "href": "/welfare" },
@@ -14,7 +15,26 @@
     { "label": "Indux", "href": "/indux" }
   ],
   "latestNewsPlaceholder": "Markets close higher as inflation data beats expectations",
+  "marketTicker": {
+    "label": "Markets",
+    "href": "/markets",
+    "index": "S&P 500",
+    "change": "+0.68%",
+    "direction": "up"
+  },
+  "headerSocialLinks": [
+    { "label": "Facebook", "icon": "facebook", "href": "https://facebook.com" },
+    { "label": "X", "icon": "x", "href": "https://x.com" },
+    { "label": "LinkedIn", "icon": "linkedin", "href": "https://linkedin.com" }
+  ],
   "footer": {
+    "sectionsLabel": "Sections",
+    "sections": [
+      { "label": "U.S.", "href": "/us" },
+      { "label": "Business", "href": "/business" },
+      { "label": "Finance", "href": "/finance" },
+      { "label": "World", "href": "/world" }
+    ],
     "highlightLabel": "We highlight",
     "highlightTags": [
       { "label": "World Cup 2026", "href": "/tag/world-cup-2026" },
@@ -30,9 +50,7 @@
       { "label": "Legal notice", "href": "/legal-notice" },
       { "label": "Privacy Policy", "href": "/privacy-policy" },
       { "label": "Cookie settings", "href": "/cookie-settings" },
-      { "label": "Cookies", "href": "/cookies" },
-      { "label": "Stake", "href": "/stake" },
-      { "label": "Contributions", "href": "/contributions" }
+      { "label": "Cookies", "href": "/cookies" }
     ],
     "copyright": "© Copyright 2026 vozpopuli.com",
     "socialLinks": [

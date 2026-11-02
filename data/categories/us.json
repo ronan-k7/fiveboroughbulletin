@@ -1,0 +1,90 @@
+{
+  "articles": [
+    {
+      "slug": "hurricane-season-outlook-below-normal",
+      "title": "NOAA sticks with below-normal Atlantic hurricane forecast as peak season nears",
+      "subCategoryLabel": "Weather",
+      "excerpt": "The agency's mid-season update points to a quieter Atlantic basin, even as forecasters warn the most dangerous weeks are still ahead.",
+      "author": "emily-carter",
+      "date": "2026-08-06",
+      "time": "10:00 ET",
+      "commentCount": 2,
+      "featured": true,
+      "image": "hurricane-season-outlook-below-normal.webp",
+      "keywords": ["NOAA hurricane forecast", "Atlantic hurricane season 2026", "below-normal season", "tropical storm outlook"],
+      "content": [
+        "The National Oceanic and Atmospheric Administration used its mid-season update this week to reaffirm a below-normal outlook for the 2026 Atlantic hurricane season, even as forecasters cautioned that the calendar's most active stretch has not yet arrived.",
+        "As of the update, the basin had produced two named storms, Arthur and Bertha, and no hurricanes. Arthur formed in the Gulf off the Texas coast in mid-June and dumped record rainfall on parts of Louisiana while spinning off several tornadoes. Bertha followed weeks later, taking shape in the Gulf south of the Florida Panhandle before coming ashore in St. Bernard Parish, Louisiana.",
+        "NOAA's updated numbers call for six to ten named storms this season, with two to five reaching hurricane strength and up to two becoming major hurricanes of Category 3 or higher. Separately, the tropical meteorology team at Colorado State University has also trimmed its own projections, putting the odds of a major hurricane making U.S. landfall well below the long-run average and estimating that overall storm energy for the season will run at roughly 40 to 45 percent of a typical year.",
+        "Forecasters attribute the quieter outlook to a mix of factors, including cooler pockets of water in parts of the tropical Atlantic and wind patterns that have made it harder for storm systems to organize. Even so, officials were careful to note that a below-normal season does not mean a harmless one, since it takes only a single storm making landfall in a populated area to produce serious damage.",
+        "The Atlantic season traditionally peaks between mid-September and mid-October, when ocean temperatures are at their warmest and wind shear tends to ease. Emergency management officials in Gulf Coast and Southeastern states used the update to repeat calls for residents to keep hurricane supply kits stocked and evacuation plans current heading into the season's final and typically busiest stretch."
+      ],
+      "relatedPicks": ["timber-fire-grows-big-sur-evacuations", "nasa-launches-roman-space-telescope"]
+    },
+    {
+      "slug": "supreme-court-clears-ballroom-construction",
+      "title": "Supreme Court allows White House ballroom construction to continue during legal fight",
+      "subCategoryLabel": "Courts",
+      "excerpt": "The justices did not rule on the legality of the project itself, finding instead that the preservation group challenging it had not shown it would suffer direct harm.",
+      "author": "emily-carter",
+      "date": "2026-08-31",
+      "time": "14:20 ET",
+      "commentCount": 7,
+      "image": "supreme-court-clears-ballroom-construction.webp",
+      "imageCaption": "Construction equipment on the White House grounds | AP",
+      "keywords": ["Supreme Court ruling", "White House ballroom", "East Wing demolition", "legal standing"],
+      "content": [
+        "The Supreme Court has cleared the way for construction of a large new ballroom on the White House grounds to continue while a lawsuit over the project works its way through the courts, declining to block the building work in the meantime.",
+        "The order came in response to a challenge from the National Trust for Historic Preservation, which argued the demolition of the East Wing to make room for the new structure violated federal preservation rules requiring review before altering a historic site. Lower courts had been weighing whether to pause work while the case proceeded.",
+        "Rather than ruling on the underlying question of whether the project itself is lawful, the justices found that the preservation group had not adequately demonstrated it would suffer the kind of direct, concrete injury needed to bring the case in the first place. That procedural finding means the legal fight over the ballroom's ultimate legality remains unresolved even as construction resumes.",
+        "The ballroom, which the administration has said will be funded through private donations rather than taxpayer money, has been estimated to cost at least $300 million. Supporters describe it as a long-overdue addition for hosting state dinners and large receptions that the existing East Room cannot comfortably accommodate.",
+        "Preservation advocates said they were disappointed but not deterred, noting that the ruling addressed only who has the right to sue and left the door open for the case to continue if a party with clearer standing steps forward. Historians who study the White House complex have said the East Wing's demolition marks one of the most significant physical changes to the building in decades."
+      ],
+      "relatedPicks": ["hurricane-season-outlook-below-normal", "timber-fire-grows-big-sur-evacuations"]
+    },
+    {
+      "slug": "timber-fire-grows-big-sur-evacuations",
+      "title": "Timber Fire becomes one of California's largest 2026 wildfires as it burns through Big Sur backcountry",
+      "subCategoryLabel": "Wildfires",
+      "excerpt": "Nearly three weeks after igniting in the Los Padres National Forest, the fire has forced repeated evacuation orders and shut down stretches of Highway 1.",
+      "author": "emily-carter",
+      "date": "2026-08-27",
+      "time": "18:45 ET",
+      "commentCount": 5,
+      "image": "timber-fire-grows-big-sur-evacuations.webp",
+      "imageCaption": "Smoke rising over the hills near Big Sur | Cal Fire",
+      "keywords": ["Timber Fire", "Big Sur wildfire", "California wildfires 2026", "Los Padres National Forest"],
+      "content": [
+        "The Timber Fire, burning in rugged backcountry near Big Sur in the Los Padres National Forest, has grown into one of California's largest wildfires of the year, with fire crews still working to gain a firm hold on its perimeter nearly three weeks after it first ignited.",
+        "The fire started on the night of August 8 in steep, hard-to-reach terrain in Monterey County. By late August it had burned more than 19,000 acres, with containment sitting at roughly one-fifth of the perimeter, according to figures from the multi-agency incident command overseeing the response.",
+        "More than 660 structures have been listed as threatened at various points in the fire's spread, and evacuation orders and warnings have been issued and expanded repeatedly for communities in the surrounding canyons. Stretches of the coastal Highway 1 have also been closed intermittently as crews worked to keep the road corridor clear for fire equipment and to protect it from falling debris.",
+        "At the height of the response, several hundred personnel were assigned to the fire, backed by dozens of engines, hand crews, bulldozers, water tenders and helicopters making repeated water and retardant drops on the steepest slopes, where the terrain has made direct ground attack difficult in places.",
+        "The cause of the fire remains under investigation. It is one of several large wildfires that have burned across California this year, a season fire officials describe as active but not unprecedented, shaped by a dry summer and the dense brush that has built up in parts of the Central Coast's national forest land after recent wetter winters.",
+        "Local officials have urged residents in the fire's path to monitor evacuation alerts closely, noting that shifting winds in the area's steep canyons can change containment lines quickly even after progress has been made on a given day."
+      ],
+      "relatedPicks": ["hurricane-season-outlook-below-normal", "nasa-launches-roman-space-telescope"]
+    },
+    {
+      "slug": "nasa-launches-roman-space-telescope",
+      "title": "NASA launches Nancy Grace Roman Space Telescope on mission to probe dark energy",
+      "subCategoryLabel": "Space",
+      "excerpt": "The observatory lifted off from Kennedy Space Center on a Falcon Heavy rocket and now begins a months-long journey to its final orbit.",
+      "author": "emily-carter",
+      "date": "2026-08-30",
+      "time": "08:10 ET",
+      "commentCount": 3,
+      "image": "nasa-launches-roman-space-telescope.webp",
+      "imageCaption": "The Roman Space Telescope lifts off atop a Falcon Heavy rocket | NASA",
+      "keywords": ["Nancy Grace Roman Space Telescope", "NASA launch", "dark energy", "Falcon Heavy"],
+      "content": [
+        "NASA's Nancy Grace Roman Space Telescope lifted off successfully from Kennedy Space Center on Sunday morning, riding a SpaceX Falcon Heavy rocket into orbit at the start of a mission designed to probe two of the biggest open questions in astrophysics: the nature of dark matter and dark energy.",
+        "The launch took place from Launch Complex 39A shortly after sunrise, and mission teams confirmed the spacecraft separated cleanly and began communicating with ground controllers as expected. Roman now begins a journey of roughly three months and about a million miles to its planned operating position, a gravitationally stable point beyond the Moon's orbit where it will remain in constant sunlight.",
+        "Named for the astronomer often credited as the mother of the Hubble Space Telescope, Roman is built around a wide-field instrument that will let it survey areas of sky roughly a hundred times larger than Hubble can capture in a single image, while still gathering the sharp, detailed views associated with space-based observatories.",
+        "Scientists plan to use that wide view to map the large-scale structure of the universe, tracking how galaxies are distributed and how that distribution has changed over cosmic time, data that researchers hope will sharpen our understanding of dark energy, the mysterious force thought to be accelerating the universe's expansion.",
+        "The telescope is also expected to be a powerful tool for finding exoplanets, using a technique that watches for the way a distant planet's gravity briefly magnifies the light of a star passing behind it. NASA has said Roman's data will be made public quickly after collection, through a cloud-based archive designed to let researchers around the world begin working with the observations soon after they come down from the spacecraft.",
+        "If the post-launch checkout goes as planned, mission managers expect Roman to begin its science operations within roughly a year, joining a small fleet of major space observatories that includes Hubble and the James Webb Space Telescope."
+      ],
+      "relatedPicks": ["timber-fire-grows-big-sur-evacuations", "supreme-court-clears-ballroom-construction"]
+    }
+  ]
+}

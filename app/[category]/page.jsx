@@ -17,7 +17,28 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { category: categorySlug } = await params;
   const category = getCategory(categorySlug);
-  return { title: category ? `${category.label} - vozpópuli` : "vozpópuli" };
+  if (!category) return { title: "vozpópuli" };
+
+  const description = category.description || `${category.label} news from vozpópuli.`;
+  const url = `/${category.slug}`;
+
+  return {
+    title: category.label,
+    description,
+    keywords: category.trendingTags,
+    alternates: { canonical: url },
+    openGraph: {
+      type: "website",
+      title: `${category.label} - vozpópuli`,
+      description,
+      url,
+    },
+    twitter: {
+      card: "summary",
+      title: `${category.label} - vozpópuli`,
+      description,
+    },
+  };
 }
 
 export default async function CategoryPage({ params }) {
@@ -36,7 +57,7 @@ export default async function CategoryPage({ params }) {
     <div className="mx-auto w-full max-w-[1440px] px-4 py-8 sm:px-6">
       <p className="text-sm text-ink-soft">
         <Link href="/" className="hover:text-brand-teal transition-colors">
-          Front page
+          Home
         </Link>{" "}
         &rarr; {category.label}
       </p>

@@ -1,64 +1,54 @@
 {
   "categories": [
     {
-      "slug": "spain",
-      "label": "Spain",
-      "description": "The Spain section covers national politics, security, courts and daily events across the country's regions.",
-      "trendingTags": ["Ceuta", "Wildfires", "Interior Ministry", "Congress"]
+      "slug": "us",
+      "label": "U.S.",
+      "description": "The U.S. section covers national politics, courts, natural disasters and the federal decisions shaping the country."
     },
     {
-      "slug": "economy",
-      "label": "Economy",
-      "description": "The Economy section covers markets, inflation, employment and the policy decisions shaping the national economy.",
-      "trendingTags": ["Inflation", "Ibex 35", "Employment", "Energy"]
+      "slug": "business",
+      "label": "Business",
+      "description": "The Business section covers corporate strategy, dealmaking, aviation and the companies shaping the economy."
     },
     {
-      "slug": "international",
-      "label": "International",
-      "description": "The International section provides information on major political, economic, and social events outside of Spain. This includes news on international relations, conflicts, and diplomacy.",
-      "trendingTags": ["Donald Trump", "Iran", "Russia", "Ukraine"]
+      "slug": "finance",
+      "label": "Finance",
+      "description": "The Finance section covers Wall Street, the Federal Reserve, interest rates and the flow of money through the economy."
     },
     {
-      "slug": "opinion",
-      "label": "Opinion",
-      "description": "Opinion brings together columns and analysis from our writers on politics, society and public life.",
-      "trendingTags": ["Columnists", "Politics", "Society"]
+      "slug": "world",
+      "label": "World",
+      "description": "The World section covers international affairs, diplomacy, natural disasters and major events beyond U.S. borders."
     },
     {
       "slug": "legal",
       "label": "Legal",
-      "description": "The Legal section covers courts, regulation and major corporate and criminal proceedings.",
-      "trendingTags": ["Supreme Court", "Regulation", "Corporate law"]
+      "description": "The Legal section covers courts, regulation and major corporate and criminal proceedings."
     },
     {
       "slug": "dolcefita",
       "label": "Dolcefita",
-      "description": "Dolcefita covers design, home and lifestyle trends worth knowing about.",
-      "trendingTags": ["Interior design", "Trends", "Home"]
+      "description": "Dolcefita covers design, home and lifestyle trends worth knowing about."
     },
     {
       "slug": "welfare",
       "label": "Welfare",
-      "description": "Welfare covers health, wellbeing and practical advice for everyday life.",
-      "trendingTags": ["Health", "Fitness", "Energy costs"]
+      "description": "Welfare covers health, wellbeing and practical advice for everyday life."
     },
     {
       "slug": "culture",
       "label": "Culture",
-      "description": "Culture covers books, film, history and the ideas shaping public debate.",
-      "trendingTags": ["Cinema", "History", "Profiles"]
+      "description": "Culture covers books, film, history and the ideas shaping public debate."
     },
     {
       "slug": "gastropoli",
       "label": "Gastropoli",
-      "description": "Gastropoli covers restaurants, producers and the business of food and dining.",
-      "trendingTags": ["Restaurants", "Chefs", "Food trends"]
+      "description": "Gastropoli covers restaurants, producers and the business of food and dining."
     },
     {
       "slug": "indux",
       "label": "Indux",
-      "description": "Indux covers industry, manufacturing and the companies driving the country's industrial base.",
-      "trendingTags": ["Manufacturing", "Automation", "Industry"]
+      "description": "Indux covers industry, manufacturing and the companies driving the country's industrial base."
     }
   ]
 }

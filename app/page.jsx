@@ -4,6 +4,25 @@ import ImagePlaceholder from "@/components/ImagePlaceholder";
 import TripleFeature from "@/components/TripleFeature";
 import { getArticlesByCategory, withRelations, getSidebarResolved } from "@/lib/content";
 
+export const metadata = {
+  title: "vozpópuli - U.S., Business, Finance and World news",
+  description:
+    "Home: the latest U.S., Business, Finance and World news from vozpópuli, plus Legal, Culture, Welfare and lifestyle coverage.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    title: "vozpópuli - U.S., Business, Finance and World news",
+    description:
+      "Home: the latest U.S., Business, Finance and World news from vozpópuli, plus Legal, Culture, Welfare and lifestyle coverage.",
+    url: "/",
+  },
+  twitter: {
+    card: "summary",
+    title: "vozpópuli - U.S., Business, Finance and World news",
+    description: "The latest U.S., Business, Finance and World news from vozpópuli.",
+  },
+};
+
 function pick(categorySlug, slugs) {
   const all = getArticlesByCategory(categorySlug).map((a) => withRelations(a, categorySlug));
   return slugs.map((slug) => all.find((a) => a.slug === slug)).filter(Boolean);
@@ -12,30 +31,35 @@ function pick(categorySlug, slugs) {
 export default function HomePage() {
   const sidebar = getSidebarResolved();
 
-  const spain = getArticlesByCategory("spain").map((a) => withRelations(a, "spain"));
-
   // Top feature: 3-column layout (left text list / centre story / right
-  // small-image items + opinion pick), replacing the old hero+rail block.
-  const featureLeft = pick("spain", [
-    "committee-session-closes-debate",
-    "case-escalates-national-court",
-    "coalition-partners-clash-budget-timeline",
+  // small-image items + world picks), replacing the old hero+rail block.
+  const featureLeft = pick("us", [
+    "hurricane-season-outlook-below-normal",
+    "supreme-court-clears-ballroom-construction",
+    "timber-fire-grows-big-sur-evacuations",
   ]);
-  const featureCenter = pick("economy", ["inflation-gap-widens-europe"])[0];
-  if (featureCenter) featureCenter.eyebrow = "Macroeconomy";
-  const featureRight = pick("spain", ["wildfire-respite-andalusia"]);
-  const featurePicks = pick("opinion", ["backstabbing-that-never-stops", "outlandish-trend-tourism"]);
-  featurePicks.forEach((a) => (a.opinionLabel = "Challenge"));
+  const featureCenter = pick("finance", ["sp500-closes-record-high-dow-54000"])[0];
+  if (featureCenter) featureCenter.eyebrow = "Markets";
+  const featureRight = pick("us", ["nasa-launches-roman-space-telescope"]);
+  const featurePicks = pick("world", [
+    "glacier-collapse-triggers-nepal-flooding",
+    "norway-king-harald-dies-son-becomes-king",
+  ]);
+  featurePicks.forEach((a) => (a.opinionLabel = "World"));
 
-  const featuredEconomy = pick("economy", ["grid-investment-approved"])[0];
-  const economyGrid = pick("economy", [
-    "inflation-gap-widens-europe",
-    "seven-day-contracts-employment",
-    "banks-raise-deposit-rates-fourth-time",
-    "housing-prices-forecast-2028",
+  const featuredBusiness = pick("business", ["lakers-sold-record-price-kushner-iger"])[0];
+  const businessGrid = pick("business", [
+    "lakers-sold-record-price-kushner-iger",
+    "faa-orders-boeing-737-max-inspections",
+    "zillow-cuts-jobs-real-estate-slowdown",
+    "nvidia-posts-record-quarterly-revenue",
   ]);
 
-  const opinionPicks = pick("opinion", ["backstabbing-that-never-stops", "outlandish-trend-tourism", "long-eclipse"]);
+  const financePicks = pick("finance", [
+    "fed-chair-warsh-flags-inflation-risk-jackson-hole",
+    "gold-hits-three-month-high-ahead-of-jackson-hole",
+    "treasury-expands-buyback-debt-tops-40-trillion",
+  ]);
 
   const cultureGrid = pick("culture", [
     "century-old-printing-press-history",
@@ -46,14 +70,13 @@ export default function HomePage() {
 
   const lifestyleGrid = [
     ...pick("welfare", ["air-conditioning-night-advice", "exercise-routine-fitness-later-life"]),
-    ...pick("dolcefita", ["elegant-living-room-colour"]),
-    ...pick("spain", ["storm-warning-heavy-rain"]),
+    ...pick("dolcefita", ["elegant-living-room-colour", "small-kitchen-storage-trends"]),
   ];
 
   return (
     <div className="mx-auto w-full max-w-[1440px] px-4 py-6 sm:px-6 md:py-8">
       {/* Top feature: 3 columns on desktop (text list / centre story /
-          small-image items + opinion pick), stacking to a single column
+          small-image items + world pick), stacking to a single column
           on mobile with the centre story surfaced first. */}
       <TripleFeature
         leftItems={featureLeft}
@@ -62,38 +85,38 @@ export default function HomePage() {
         rightPicks={featurePicks}
       />
 
-      {/* Economy section: featured story (image+excerpt) on the left,
+      {/* Business section: featured story (image+excerpt) on the left,
           grid below, sticky "Latest" widget fills the right column for
           the full height of the section. */}
       <section className="mt-10 border-t-2 border-ink pt-6">
-        <h2 className="font-sans text-sm font-bold uppercase tracking-wide text-brand-teal">Economy</h2>
+        <h2 className="font-sans text-sm font-bold uppercase tracking-wide text-brand-teal">Business</h2>
         <div className="mt-4 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_360px]">
           <div>
-            {featuredEconomy && (
+            {featuredBusiness && (
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:items-start">
                 <div>
                   <h3 className="font-serif text-2xl font-bold leading-tight text-ink">
-                    <a href={`/economy/${featuredEconomy.slug}`} className="hover:underline decoration-2 underline-offset-2">
-                      <span className="text-brand-teal">{featuredEconomy.subCategoryLabel}. </span>
-                      {featuredEconomy.title}
+                    <a href={`/business/${featuredBusiness.slug}`} className="hover:underline decoration-2 underline-offset-2">
+                      <span className="text-brand-teal">{featuredBusiness.subCategoryLabel}. </span>
+                      {featuredBusiness.title}
                     </a>
                   </h3>
-                  <p className="mt-3 text-[15px] leading-relaxed text-ink-soft">{featuredEconomy.excerpt}</p>
+                  <p className="mt-3 text-[15px] leading-relaxed text-ink-soft">{featuredBusiness.excerpt}</p>
                   <a
-                    href={`/authors/${featuredEconomy.author}`}
+                    href={`/authors/${featuredBusiness.author}`}
                     className="mt-3 inline-block text-xs font-semibold uppercase tracking-wide text-ink-soft hover:text-brand-teal transition-colors"
                   >
-                    {featuredEconomy.authorInfo?.name}
+                    {featuredBusiness.authorInfo?.name}
                   </a>
                 </div>
-                <a href={`/economy/${featuredEconomy.slug}`} className="block">
-                  <ImagePlaceholder className="aspect-[4/3] w-full" />
+                <a href={`/business/${featuredBusiness.slug}`} className="block">
+                  <ImagePlaceholder className="aspect-[4/3] w-full" src={featuredBusiness.image} />
                 </a>
               </div>
             )}
 
             <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {economyGrid.map((a) => (
+              {businessGrid.map((a) => (
                 <ArticleCard key={a.slug} article={a} variant="grid" imageAspect="aspect-[4/3]" />
               ))}
             </div>
@@ -103,12 +126,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Opinion strip */}
+      {/* Finance strip */}
       <section className="mt-10 border-t-2 border-ink pt-6">
-        <h2 className="font-sans text-sm font-bold uppercase tracking-wide text-ink">Opinion</h2>
+        <h2 className="font-sans text-sm font-bold uppercase tracking-wide text-ink">Finance</h2>
         <div className="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-3">
-          {opinionPicks.map((a) => (
-            <ArticleCard key={a.slug} article={a} variant="opinion" />
+          {financePicks.map((a) => (
+            <ArticleCard key={a.slug} article={a} variant="grid" imageAspect="aspect-[4/3]" />
           ))}
         </div>
       </section>

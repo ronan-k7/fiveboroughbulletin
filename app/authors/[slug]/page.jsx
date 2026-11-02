@@ -17,7 +17,30 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const author = getAuthor(slug);
-  return { title: author ? `${author.name} - vozpópuli` : "vozpópuli" };
+  if (!author) return { title: "vozpópuli" };
+
+  const description = author.bio || `${author.name}, ${author.role || "writer"} at vozpópuli.`;
+  const images = author.image ? [{ url: `/images/${author.image}` }] : undefined;
+  const url = `/authors/${slug}`;
+
+  return {
+    title: author.name,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      type: "profile",
+      title: `${author.name} - vozpópuli`,
+      description,
+      url,
+      images,
+    },
+    twitter: {
+      card: images ? "summary_large_image" : "summary",
+      title: `${author.name} - vozpópuli`,
+      description,
+      images,
+    },
+  };
 }
 
 function XIcon() {
@@ -53,7 +76,7 @@ export default async function AuthorPage({ params }) {
   return (
     <div className="mx-auto w-full max-w-[1440px] px-4 py-8 sm:px-6">
       <div className="flex flex-col gap-4 border-b border-hairline pb-6 sm:flex-row sm:items-center">
-        <ImagePlaceholder className="h-24 w-24 shrink-0 rounded-full" rounded="rounded-full" label="" />
+        <ImagePlaceholder className="h-24 w-24 shrink-0 rounded-full" rounded="rounded-full" label="" src={author.image} />
         <div>
           <h1 className="font-serif text-2xl font-black text-ink md:text-3xl">{author.name}</h1>
           {author.role && <p className="mt-0.5 text-sm text-ink-soft">{author.role}</p>}

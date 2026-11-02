@@ -1,4 +1,4 @@
-const ICONS = {
+export const ICONS = {
   facebook: (
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path d="M13.5 21v-7.6h2.6l.4-3H13.5V8.4c0-.87.24-1.46 1.5-1.46h1.6V4.28c-.28-.04-1.23-.12-2.34-.12-2.32 0-3.9 1.4-3.9 4V10.4H8v3h2.36V21h3.14z" />

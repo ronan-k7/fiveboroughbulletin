@@ -12,6 +12,16 @@
   --color-link: #1a2a4a;
   --color-hairline: #e2e2e2;
   --color-hairline-dark: #171717;
+
+  /* Header redesign: deep-navy ticker bar + electric-cyan accent used by
+     LatestNewsBar, the header's Subscribe button, and the active nav state. */
+  --color-header-navy: #050b18;
+  --color-header-navy-deep: #02060f;
+  --color-header-navy-light: #0d1f36;
+  --color-header-cyan: #0ea5e9;
+  --color-header-cyan-bright: #22d3ee;
+  --color-header-cyan-dark: #075985;
+  --color-header-green: #22e06b;
 }
 
 :root {

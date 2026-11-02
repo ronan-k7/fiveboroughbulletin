@@ -57,7 +57,7 @@ function CenterStory({ article }) {
   return (
     <article>
       <Link href={href} className="block">
-        <ImagePlaceholder className="aspect-[4/3] w-full" />
+        <ImagePlaceholder className="aspect-[4/3] w-full" src={article.image} />
       </Link>
       {article.eyebrow && (
         <p className="mt-3 flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide text-ink-soft">
@@ -126,7 +126,7 @@ function SmallImageItem({ article }) {
   return (
     <article className="py-4 first:pt-0">
       <Link href={href} className="block">
-        <ImagePlaceholder className="aspect-[16/10] w-full" />
+        <ImagePlaceholder className="aspect-[16/10] w-full" src={article.image} />
       </Link>
       <h3 className="mt-3 font-serif text-base font-bold leading-snug text-ink">
         <Link href={href} className="hover:underline decoration-2 underline-offset-2">
@@ -169,7 +169,7 @@ function OpinionPickItem({ article }) {
         </Link>
       </div>
       <Link href={`/authors/${article.author}`} className="shrink-0">
-        <ImagePlaceholder className="h-14 w-14" rounded="rounded-full" />
+        <ImagePlaceholder className="h-14 w-14" rounded="rounded-full" src={article.authorInfo?.image} />
       </Link>
     </article>
   );

@@ -1,0 +1,90 @@
+{
+  "articles": [
+    {
+      "slug": "lakers-sold-record-price-kushner-iger",
+      "title": "Lakers sale to Josh Kushner and Bob Iger values team at record $12.5 billion",
+      "subCategoryLabel": "Deals",
+      "excerpt": "The agreement marks the largest valuation ever placed on a North American sports franchise and hands control to two of the buyers who lost out on the team a year earlier.",
+      "author": "daniel-whitfield",
+      "date": "2026-08-12",
+      "time": "16:30 ET",
+      "commentCount": 11,
+      "featured": true,
+      "image": "lakers-sold-record-price-kushner-iger.webp",
+      "keywords": ["Lakers sale", "Josh Kushner", "Bob Iger", "NBA franchise valuation", "Mark Walter"],
+      "content": [
+        "The Los Angeles Lakers are being sold in a deal that values the franchise at a record $12.5 billion, according to terms confirmed this week, marking the highest price ever placed on a professional sports team in North America.",
+        "The buying group is led by venture capitalist Josh Kushner, founder of Thrive Capital, alongside Bob Iger, the former longtime chief executive of Disney. The seller is Mark Walter, chief executive of TWG Global and controlling owner of the Los Angeles Dodgers, who had taken control of the Lakers just over a year earlier in a deal that valued the team at roughly $10 billion.",
+        "That earlier transaction effectively ended the Buss family's decades-long ownership of the franchise, though Jeanie Buss is expected to remain the team's governor for at least five years under continuity terms attached to the sale, preserving her public role in overseeing basketball operations.",
+        "The new deal still requires approval from the NBA's Board of Governors, a process that typically takes several weeks as the league reviews buyer financing and ownership structure. Neither the WNBA's Los Angeles Sparks nor the Dodgers are included in the transaction, which is limited to the Lakers franchise itself.",
+        "The jump in valuation over such a short period underscores how aggressively sports franchise prices have climbed in recent years, driven by lucrative media rights deals, rising interest from private equity and wealthy individual investors, and the scarcity of marquee teams that ever come up for sale. Sports business analysts said the price also reflects the Lakers' particular standing as one of the most recognizable brands in global sports.",
+        "Kushner and Iger have not detailed plans for the franchise's day-to-day operations, though people familiar with the deal said continuity in the front office and coaching staff is expected in the near term as the ownership transition is finalized."
+      ],
+      "relatedPicks": ["nvidia-posts-record-quarterly-revenue", "faa-orders-boeing-737-max-inspections"]
+    },
+    {
+      "slug": "nvidia-posts-record-quarterly-revenue",
+      "title": "Nvidia posts record $96.2 billion quarter as data center demand keeps climbing",
+      "subCategoryLabel": "Earnings",
+      "excerpt": "Revenue more than doubled from a year earlier, extending the chipmaker's streak of beating Wall Street expectations to fifteen straight quarters.",
+      "author": "daniel-whitfield",
+      "date": "2026-08-26",
+      "time": "16:15 ET",
+      "commentCount": 9,
+      "image": "nvidia-posts-record-quarterly-revenue.webp",
+      "imageCaption": "Nvidia's logo",
+      "keywords": ["Nvidia earnings", "data center revenue", "Jensen Huang", "AI chip demand"],
+      "content": [
+        "Nvidia reported record quarterly revenue of $96.2 billion for the three months ended in late July, a 106 percent jump from the same period a year earlier, as demand for the chips underpinning artificial intelligence systems continued to outpace even the company's own aggressive production plans.",
+        "The data center segment, which sells the processors used to train and run large AI models, accounted for the bulk of that growth, with revenue in the division rising 117 percent year over year to $89 billion. Overall revenue also climbed 18 percent from the prior quarter, a pace few companies of Nvidia's size have managed to sustain for this long.",
+        "Profitability held up alongside the revenue growth, with the company reporting a gross margin of 75 percent. Chief executive Jensen Huang described the current period of AI infrastructure buildout as reaching a new stage in which the computing capacity being deployed is now generating meaningful revenue for the customers buying it, rather than remaining a purely speculative expense.",
+        "It was the fifteenth consecutive quarter in which Nvidia's results topped Wall Street analysts' consensus estimates, a run that has made its earnings report one of the most closely watched events on the corporate calendar for investors trying to gauge the broader health of AI spending.",
+        "Chief financial officer Colette Kress told analysts the company expects continued growth into the current quarter, though she cautioned that gross margins are likely to narrow slightly, into the low seventies percentage range, as the cost of memory components used in its newest chips rises.",
+        "Shares moved in after-hours trading following the report before settling into a more mixed pattern the next day, as some investors weighed the strong headline numbers against questions about how long the current pace of data center spending by big technology companies can continue."
+      ],
+      "relatedPicks": ["lakers-sold-record-price-kushner-iger", "zillow-cuts-jobs-real-estate-slowdown"]
+    },
+    {
+      "slug": "faa-orders-boeing-737-max-inspections",
+      "title": "FAA orders crack inspections on hundreds of Boeing 737 MAX jets",
+      "subCategoryLabel": "Aviation",
+      "excerpt": "The directive covers 471 U.S.-registered aircraft after a structural issue previously found on older 737 models turned up in planes sharing the same design.",
+      "author": "daniel-whitfield",
+      "date": "2026-08-07",
+      "time": "13:00 ET",
+      "commentCount": 4,
+      "image": "faa-orders-boeing-737-max-inspections.webp",
+      "imageCaption": "A Boeing 737 MAX",
+      "keywords": ["FAA airworthiness directive", "Boeing 737 MAX", "aircraft inspection", "aviation safety"],
+      "content": [
+        "The Federal Aviation Administration has finalized a directive ordering airlines to inspect 471 U.S.-registered Boeing 737 MAX jets for potential cracking in a structural support near the aircraft's forward service door and galley area, extending a safety issue previously identified on older 737 models to the newer MAX family.",
+        "The affected component, known as a bear strap, reinforces the fuselage around the forward entry area. Regulators say cracking had already been confirmed on a number of older 737 NG aircraft that share a similar structural design and assembly process, prompting the FAA to require operators of MAX 8, MAX 9 and 737-8200 variants to check for the same issue even though no cracks have yet been confirmed on those newer jets.",
+        "The directive takes effect in mid-September and sets out an inspection schedule tied to how heavily each aircraft has been used, requiring operators to repair any cracking found before returning a plane to passenger service. The FAA said the order does not require any aircraft to be grounded immediately, since the inspection window is designed to catch the issue well before it could become a safety concern.",
+        "Boeing said in a statement that it supports the directive and is working with airline customers to complete the inspections on the standard timeline, characterizing the issue as one that its engineering teams identified proactively as part of ongoing structural reviews across the 737 fleet.",
+        "The order lands amid a period of heightened regulatory attention on Boeing's manufacturing quality, following several years of scrutiny that intensified after a door plug panel blew out on a 737 MAX 9 during an Alaska Airlines flight in early 2024. Aviation regulators and airlines alike have since adopted a lower threshold for ordering precautionary inspections on the MAX family.",
+        "Airlines operating the affected jets, including several of the largest U.S. domestic carriers, said they expect to complete the required checks within routine maintenance schedules without significant disruption to flight operations."
+      ],
+      "relatedPicks": ["lakers-sold-record-price-kushner-iger", "zillow-cuts-jobs-real-estate-slowdown"]
+    },
+    {
+      "slug": "zillow-cuts-jobs-real-estate-slowdown",
+      "title": "Zillow cuts more than 500 jobs as it resets its cost structure",
+      "subCategoryLabel": "Layoffs",
+      "excerpt": "The real estate platform's chief executive told staff the cuts were about discipline rather than any single new project or technology.",
+      "author": "daniel-whitfield",
+      "date": "2026-08-04",
+      "time": "11:40 ET",
+      "commentCount": 6,
+      "image": "zillow-cuts-jobs-real-estate-slowdown.webp",
+      "keywords": ["Zillow layoffs", "real estate technology", "Jeremy Wacksman", "tech job cuts 2026"],
+      "content": [
+        "Zillow is cutting just over 500 jobs, the online real estate company confirmed this week, in a restructuring that chief executive Jeremy Wacksman described to staff as an effort to keep the company's cost base disciplined rather than a response to any single business setback.",
+        "In an internal message announcing the cuts, Wacksman said the changes were intended to sharpen focus on the company's core priorities and were not primarily driven by the adoption of artificial intelligence tools, pushing back on a narrative that has accompanied a number of other technology-sector layoffs this year.",
+        "The reductions touch multiple divisions of the company, according to people familiar with the plan, and come as the broader housing market has cooled from the frantic pace of previous years, with elevated mortgage rates continuing to weigh on the volume of home sales that platforms like Zillow rely on for advertising and referral revenue.",
+        "Affected employees are being offered severance packages and continued benefits for a transition period, the company said, consistent with the terms it has used in prior rounds of job cuts. Zillow has trimmed staff several times since 2022, including a larger restructuring tied to the wind-down of its home-flipping business.",
+        "The cuts add to a wider pattern across the real estate and technology sectors this year, as companies balance continued investment in artificial intelligence features against pressure from investors to show tighter cost control. Zillow's stock has been volatile in recent months as investors weigh slower transaction volumes against the company's efforts to expand into rentals, mortgages and other adjacent services."
+      ],
+      "relatedPicks": ["nvidia-posts-record-quarterly-revenue", "faa-orders-boeing-737-max-inspections"]
+    }
+  ]
+}

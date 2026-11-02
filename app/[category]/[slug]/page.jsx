@@ -6,6 +6,7 @@ import RelatedPicks from "@/components/RelatedPicks";
 import {
   getAllArticlesFlat,
   getArticleBySlug,
+  getAuthor,
   withRelations,
   getSidebarResolved,
   getRelatedPicks,
@@ -18,7 +19,36 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { category, slug } = await params;
   const article = getArticleBySlug(category, slug);
-  return { title: article ? `${article.title} - vozpópuli` : "vozpópuli" };
+  if (!article) return { title: "vozpópuli" };
+
+  const author = getAuthor(article.author);
+  const description = article.excerpt || article.content?.[0] || "";
+  const images = article.image ? [{ url: `/images/${article.image}` }] : undefined;
+  const url = `/${category}/${slug}`;
+
+  return {
+    title: article.title,
+    description,
+    keywords: article.keywords,
+    alternates: { canonical: url },
+    openGraph: {
+      type: "article",
+      title: article.title,
+      description,
+      url,
+      publishedTime: article.date,
+      authors: author ? [author.name] : undefined,
+      section: article.subCategoryLabel,
+      tags: article.keywords,
+      images,
+    },
+    twitter: {
+      card: images ? "summary_large_image" : "summary",
+      title: article.title,
+      description,
+      images,
+    },
+  };
 }
 
 export default async function ArticlePage({ params }) {
@@ -75,7 +105,7 @@ export default async function ArticlePage({ params }) {
             )}
           </div>
 
-          <ImagePlaceholder className="mt-6 aspect-[16/9] w-full" />
+          <ImagePlaceholder className="mt-6 aspect-[16/9] w-full" src={article.image} />
           {article.imageCaption && (
             <p className="mt-2 text-xs text-ink-soft">{article.imageCaption}</p>
           )}
