@@ -1,88 +1,12 @@
 {
   "authors": [
     {
-      "slug": "emily-carter",
-      "name": "Emily Carter",
-      "role": "National affairs writer",
-      "bio": "National affairs writer covering U.S. politics, the federal courts and disaster response, reporting from Washington and across the country.",
-      "email": "ecarter@vozpopuli.com",
-      "image": "emily-carter.webp",
-      "social": { "x": "https://x.com/ecarter" }
-    },
-    {
-      "slug": "daniel-whitfield",
-      "name": "Daniel Whitfield",
-      "role": "Business writer",
-      "bio": "Business writer covering corporate strategy, dealmaking and the aviation industry, with a focus on how major companies respond to a shifting economy.",
-      "email": "dwhitfield@vozpopuli.com",
-      "image": "daniel-whitfield.webp",
-      "social": { "x": "https://x.com/dwhitfield" }
-    },
-    {
-      "slug": "nathan-william",
-      "name": "Nathan William",
-      "role": "Markets and finance writer",
-      "bio": "Markets and finance writer covering Wall Street, the Federal Reserve and the Treasury, translating monetary policy into plain-language explanations for everyday readers.",
-      "email": "pnathan@vozpopuli.com",
-      "image": "nathan-william.webp",
-      "social": { "x": "https://x.com/pnathan" }
-    },
-    {
-      "slug": "marcus-webb",
-      "name": "Marcus Webb",
-      "role": "Foreign affairs writer",
-      "bio": "Foreign affairs writer covering international diplomacy, natural disasters and global events, with a particular focus on how climate change is reshaping vulnerable regions.",
-      "email": "mwebb@vozpopuli.com",
-      "image": "marcus-webb.webp",
-      "social": { "x": "https://x.com/mwebb" }
-    },
-    {
-      "slug": "carlos-cozar",
-      "name": "Carlos R. Cozar",
-      "role": "Energy and infrastructure writer",
-      "bio": "Business reporter covering energy, infrastructure and utilities, with a focus on regulatory decisions and major investment programmes.",
-      "email": "ccozar@vozpopuli.com",
-      "social": { "x": "https://x.com/ccozar" }
-    },
-    {
-      "slug": "victor-lenore",
-      "name": "Victor Lenore",
-      "role": "Culture writer",
-      "bio": "Culture writer covering books, music and ideas, with a particular interest in how historical debates resurface in present-day politics.",
-      "email": "vlenore@vozpopuli.com",
-      "social": { "x": "https://x.com/vlenore" }
-    },
-    {
-      "slug": "anabel-blazquez",
-      "name": "Anabel Blazquez",
-      "role": "Lifestyle writer",
-      "bio": "Lifestyle writer covering travel, home and trends, translating expert advice from designers and trainers into practical everyday tips.",
-      "email": "ablazquez@vozpopuli.com",
-      "social": { "x": "https://x.com/ablazquez" }
-    },
-    {
-      "slug": "marta-ibanez",
-      "name": "Marta Ibanez",
-      "role": "Legal affairs writer",
-      "bio": "Legal affairs writer covering courts, regulation and corporate litigation, with a background in commercial law reporting.",
-      "email": "mibanez@vozpopuli.com",
-      "social": { "x": "https://x.com/mibanez" }
-    },
-    {
-      "slug": "pablo-uria",
-      "name": "Pablo Uria",
-      "role": "Food and dining writer",
-      "bio": "Food and dining writer covering restaurants, producers and the business side of the hospitality industry.",
-      "email": "puria@vozpopuli.com",
-      "social": { "x": "https://x.com/puria" }
-    },
-    {
-      "slug": "sofia-marin",
-      "name": "Sofia Marin",
-      "role": "Technology and industry writer",
-      "bio": "Technology and industry writer covering manufacturing, automation and the companies driving the country's industrial base.",
-      "email": "smarin@vozpopuli.com",
-      "social": { "x": "https://x.com/smarin" }
+      "slug": "fiveboroughbulletin-staff",
+      "name": "FiveBoroughBulletin Staff",
+      "role": "Newsroom",
+      "bio": "Reporting and analysis from the FiveBoroughBulletin newsroom, covering U.S., business, finance, world and politics news.",
+      "image": "fbb-staff.png",
+      "type": "Organization"
     }
   ]
 }

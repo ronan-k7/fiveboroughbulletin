@@ -1,7 +1,7 @@
-# vozpópuli clone — Frontend
+# Five Borough Bulletin — Frontend
 
-Next.js (Pages Router) + JavaScript + Tailwind CSS v4 clone of the vozpópuli
-header and footer, built from the provided reference screenshots.
+Next.js + JavaScript + Tailwind CSS v4 news site (site name, logo and domain are
+in `data/siteConfig.json` and `public/images/`).
 
 ## Getting started
 

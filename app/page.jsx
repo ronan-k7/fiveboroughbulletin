@@ -2,79 +2,69 @@ import ArticleCard from "@/components/ArticleCard";
 import SidebarWidget from "@/components/SidebarWidget";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import TripleFeature from "@/components/TripleFeature";
-import { getArticlesByCategory, withRelations, getSidebarResolved } from "@/lib/content";
+import JsonLd from "@/components/JsonLd";
+import {
+  buildPageMetadata,
+  collectionPageNode,
+  graph,
+  SITE_TITLE,
+  SITE_NAME,
+  SITE_DESCRIPTION,
+  SITE_KEYWORDS,
+} from "@/lib/seo";
+import { getArticlesByCategory, getLatestArticles, withRelations, getSidebarResolved } from "@/lib/content";
 
-export const metadata = {
-  title: "vozpópuli - U.S., Business, Finance and World news",
-  description:
-    "Home: the latest U.S., Business, Finance and World news from vozpópuli, plus Legal, Culture, Welfare and lifestyle coverage.",
-  alternates: { canonical: "/" },
-  openGraph: {
-    type: "website",
-    title: "vozpópuli - U.S., Business, Finance and World news",
-    description:
-      "Home: the latest U.S., Business, Finance and World news from vozpópuli, plus Legal, Culture, Welfare and lifestyle coverage.",
-    url: "/",
-  },
-  twitter: {
-    card: "summary",
-    title: "vozpópuli - U.S., Business, Finance and World news",
-    description: "The latest U.S., Business, Finance and World news from vozpópuli.",
-  },
-};
+export const metadata = buildPageMetadata({
+  title: SITE_TITLE,
+  absoluteTitle: true,
+  description: SITE_DESCRIPTION,
+  path: "/",
+  keywords: SITE_KEYWORDS,
+});
 
-function pick(categorySlug, slugs) {
-  const all = getArticlesByCategory(categorySlug).map((a) => withRelations(a, categorySlug));
-  return slugs.map((slug) => all.find((a) => a.slug === slug)).filter(Boolean);
+/** Newest-first articles of one category, minus anything already shown higher up the page. */
+function newestIn(categorySlug, count, usedKeys) {
+  return getArticlesByCategory(categorySlug)
+    .filter((a) => !usedKeys.has(`${categorySlug}/${a.slug}`))
+    .slice(0, count)
+    .map((a) => withRelations(a, categorySlug));
 }
 
 export default function HomePage() {
   const sidebar = getSidebarResolved();
 
-  // Top feature: 3-column layout (left text list / centre story / right
-  // small-image items + world picks), replacing the old hero+rail block.
-  const featureLeft = pick("us", [
-    "hurricane-season-outlook-below-normal",
-    "supreme-court-clears-ballroom-construction",
-    "timber-fire-grows-big-sur-evacuations",
-  ]);
-  const featureCenter = pick("finance", ["sp500-closes-record-high-dow-54000"])[0];
-  if (featureCenter) featureCenter.eyebrow = "Markets";
-  const featureRight = pick("us", ["nasa-launches-roman-space-telescope"]);
-  const featurePicks = pick("world", [
-    "glacier-collapse-triggers-nepal-flooding",
-    "norway-king-harald-dies-son-becomes-king",
-  ]);
-  featurePicks.forEach((a) => (a.opinionLabel = "World"));
+  // Everything on this page is picked by date (newest first, then time) --
+  // nothing is hand-picked. A new article added to any data/categories/*.json
+  // file lands in the top block automatically, and pushes the oldest one out.
+  //
+  // Top feature, 7 newest stories site-wide: 1 centre story, 3 text items on
+  // the left, 1 small-image item on the right and 2 picks under it.
+  const top = getLatestArticles(7);
+  const featureCenter = top[0];
+  const featureLeft = top.slice(1, 4);
+  const featureRight = top.slice(4, 5);
+  const featurePicks = top.slice(5, 7);
 
-  const featuredBusiness = pick("business", ["lakers-sold-record-price-kushner-iger"])[0];
-  const businessGrid = pick("business", [
-    "lakers-sold-record-price-kushner-iger",
-    "faa-orders-boeing-737-max-inspections",
-    "zillow-cuts-jobs-real-estate-slowdown",
-    "nvidia-posts-record-quarterly-revenue",
-  ]);
+  // Stories already shown in the top block aren't repeated in the sections below.
+  const used = new Set(top.map((a) => `${a.category}/${a.slug}`));
 
-  const financePicks = pick("finance", [
-    "fed-chair-warsh-flags-inflation-risk-jackson-hole",
-    "gold-hits-three-month-high-ahead-of-jackson-hole",
-    "treasury-expands-buyback-debt-tops-40-trillion",
-  ]);
-
-  const cultureGrid = pick("culture", [
-    "century-old-printing-press-history",
-    "profile-separatist-intellectual",
-    "spanish-thriller-review",
-    "hemingway-reflects-on-spain",
-  ]);
-
-  const lifestyleGrid = [
-    ...pick("welfare", ["air-conditioning-night-advice", "exercise-routine-fitness-later-life"]),
-    ...pick("dolcefita", ["elegant-living-room-colour", "small-kitchen-storage-trends"]),
-  ];
+  const businessGrid = newestIn("business", 4, used);
+  const featuredBusiness = businessGrid[0];
+  const financePicks = newestIn("finance", 3, used);
 
   return (
     <div className="mx-auto w-full max-w-[1440px] px-4 py-6 sm:px-6 md:py-8">
+      <JsonLd
+        data={graph(
+          collectionPageNode({
+            path: "/",
+            name: SITE_TITLE,
+            description: SITE_DESCRIPTION,
+            articles: getLatestArticles(10),
+          })
+        )}
+      />
+      <h1 className="sr-only">{SITE_NAME}: U.S., Business, Finance and World News</h1>
       {/* Top feature: 3 columns on desktop (text list / centre story /
           small-image items + world pick), stacking to a single column
           on mobile with the centre story surfaced first. */}
@@ -97,17 +87,11 @@ export default function HomePage() {
                 <div>
                   <h3 className="font-serif text-2xl font-bold leading-tight text-ink">
                     <a href={`/business/${featuredBusiness.slug}`} className="hover:underline decoration-2 underline-offset-2">
-                      <span className="text-brand-teal">{featuredBusiness.subCategoryLabel}. </span>
+                      <span className="text-brand-teal">{featuredBusiness.categoryInfo?.label}. </span>
                       {featuredBusiness.title}
                     </a>
                   </h3>
                   <p className="mt-3 text-[15px] leading-relaxed text-ink-soft">{featuredBusiness.excerpt}</p>
-                  <a
-                    href={`/authors/${featuredBusiness.author}`}
-                    className="mt-3 inline-block text-xs font-semibold uppercase tracking-wide text-ink-soft hover:text-brand-teal transition-colors"
-                  >
-                    {featuredBusiness.authorInfo?.name}
-                  </a>
                 </div>
                 <a href={`/business/${featuredBusiness.slug}`} className="block">
                   <ImagePlaceholder className="aspect-[4/3] w-full" src={featuredBusiness.image} />
@@ -115,7 +99,11 @@ export default function HomePage() {
               </div>
             )}
 
-            <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div
+              className={`mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 ${
+                businessGrid.length >= 4 ? "lg:grid-cols-4" : "lg:grid-cols-3"
+              }`}
+            >
               {businessGrid.map((a) => (
                 <ArticleCard key={a.slug} article={a} variant="grid" imageAspect="aspect-[4/3]" />
               ))}
@@ -140,36 +128,6 @@ export default function HomePage() {
       <div className="mt-10">
         <ImagePlaceholder className="h-32 w-full sm:h-40" label="Ad space — 728x90 / 970x250" variant="ad" />
       </div>
-
-      {/* Culture section with Trending widget. The grid renders as a single
-          row of 4 cards on desktop, so the Trending list is capped to the
-          same number of items — otherwise the list (up to 8 items) grows
-          well past the grid's height and leaves an oversized, uneven gap
-          before the section ends. */}
-      <section className="mt-10 border-t-2 border-ink pt-6">
-        <h2 className="font-sans text-sm font-bold uppercase tracking-wide text-brand-teal">Culture</h2>
-        <div className="mt-4 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_360px]">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {cultureGrid.map((a) => (
-              <ArticleCard key={a.slug} article={a} variant="grid" imageAspect="aspect-[4/3]" />
-            ))}
-          </div>
-          <SidebarWidget title="Trending" items={sidebar.trending.slice(0, cultureGrid.length)} />
-        </div>
-      </section>
-
-      {/* Lifestyle grid with sticky Most read widget */}
-      <section className="mt-10 border-t-2 border-ink pt-6">
-        <h2 className="font-sans text-sm font-bold uppercase tracking-wide text-brand-teal">Lifestyle</h2>
-        <div className="mt-4 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_360px]">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {lifestyleGrid.map((a) => (
-              <ArticleCard key={a.slug} article={a} variant="grid" imageAspect="aspect-[16/10]" />
-            ))}
-          </div>
-          <SidebarWidget title="Most read" items={sidebar.mostRead} sticky />
-        </div>
-      </section>
     </div>
   );
 }

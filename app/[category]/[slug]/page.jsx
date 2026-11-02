@@ -11,6 +11,8 @@ import {
   getSidebarResolved,
   getRelatedPicks,
 } from "@/lib/content";
+import JsonLd from "@/components/JsonLd";
+import { articleImageAlt, articleMetadata, articlePath, breadcrumbNode, graph, newsArticleNode } from "@/lib/seo";
 
 export function generateStaticParams() {
   return getAllArticlesFlat().map((a) => ({ category: a.category, slug: a.slug }));
@@ -18,37 +20,9 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { category, slug } = await params;
-  const article = getArticleBySlug(category, slug);
-  if (!article) return { title: "vozpópuli" };
-
-  const author = getAuthor(article.author);
-  const description = article.excerpt || article.content?.[0] || "";
-  const images = article.image ? [{ url: `/images/${article.image}` }] : undefined;
-  const url = `/${category}/${slug}`;
-
-  return {
-    title: article.title,
-    description,
-    keywords: article.keywords,
-    alternates: { canonical: url },
-    openGraph: {
-      type: "article",
-      title: article.title,
-      description,
-      url,
-      publishedTime: article.date,
-      authors: author ? [author.name] : undefined,
-      section: article.subCategoryLabel,
-      tags: article.keywords,
-      images,
-    },
-    twitter: {
-      card: images ? "summary_large_image" : "summary",
-      title: article.title,
-      description,
-      images,
-    },
-  };
+  const raw = getArticleBySlug(category, slug);
+  if (!raw) return { title: "Article not found", robots: { index: false, follow: false } };
+  return articleMetadata(withRelations(raw, category), getAuthor(raw.author));
 }
 
 export default async function ArticlePage({ params }) {
@@ -58,7 +32,7 @@ export default async function ArticlePage({ params }) {
 
   const article = withRelations(raw, categorySlug);
   const related = getRelatedPicks(raw, categorySlug);
-  const sidebar = getSidebarResolved();
+  const sidebar = getSidebarResolved({ exclude: { category: categorySlug, slug } });
 
   // Body paragraphs: insert the related-picks block after the first couple
   // of paragraphs (matches the reference video), then continue the rest,
@@ -70,8 +44,20 @@ export default async function ArticlePage({ params }) {
 
   return (
     <div className="mx-auto w-full max-w-[1440px] px-4 py-8 sm:px-6">
-      <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_360px]">
-        <article className="max-w-3xl">
+      <JsonLd
+        data={graph(
+          newsArticleNode(article, article.authorInfo),
+          breadcrumbNode([
+            { name: "Home", path: "/" },
+            ...(article.categoryInfo
+              ? [{ name: article.categoryInfo.label, path: `/${article.categoryInfo.slug}` }]
+              : []),
+            { name: article.title, path: articlePath(article) },
+          ])
+        )}
+      />
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_360px] lg:gap-10">
+        <article className="min-w-0">
           {article.categoryInfo && (
             <Link
               href={`/${article.categoryInfo.slug}`}
@@ -87,25 +73,25 @@ export default async function ArticlePage({ params }) {
 
           <div className="mt-5 flex flex-wrap items-center gap-3 border-y border-hairline py-3 text-sm">
             <Link
-              href={`/authors/${article.author}`}
-              className="font-semibold uppercase tracking-wide text-ink hover:text-brand-teal transition-colors"
+              href={`/authors/${article.authorInfo.slug}`}
+              className="flex items-center gap-2.5 font-semibold text-ink hover:text-brand-teal transition-colors"
             >
-              {article.authorInfo?.name}
+              <ImagePlaceholder
+                className="h-9 w-9 shrink-0"
+                rounded="rounded-full"
+                label=""
+                src={article.authorInfo.image}
+              />
+              {article.authorInfo.name}
             </Link>
             <span className="text-hairline-dark">&middot;</span>
             <span className="text-ink-soft">
               Published: {article.date}
               {article.time ? ` · ${article.time}` : ""}
             </span>
-            {article.commentCount > 0 && (
-              <>
-                <span className="text-hairline-dark">&middot;</span>
-                <span className="text-ink-soft">{article.commentCount} comments</span>
-              </>
-            )}
           </div>
 
-          <ImagePlaceholder className="mt-6 aspect-[16/9] w-full" src={article.image} />
+          <ImagePlaceholder className="mt-6 aspect-[16/9] w-full" src={article.image} alt={articleImageAlt(article)} />
           {article.imageCaption && (
             <p className="mt-2 text-xs text-ink-soft">{article.imageCaption}</p>
           )}

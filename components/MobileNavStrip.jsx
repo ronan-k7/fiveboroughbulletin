@@ -13,7 +13,7 @@ export default function MobileNavStrip() {
 
   return (
     <div className="no-scrollbar overflow-x-auto border-t border-hairline md:hidden">
-      <ul className="flex items-center gap-5 whitespace-nowrap px-4 py-2.5">
+      <ul className="flex w-max min-w-full items-center gap-5 whitespace-nowrap px-4 py-2.5">
         {siteConfig.mainNav.map((item) => {
           const isActive = pathname === item.href || pathname?.startsWith(`${item.href}/`);
           return (

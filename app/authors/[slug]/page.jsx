@@ -9,6 +9,8 @@ import {
   withRelations,
   getSidebarResolved,
 } from "@/lib/content";
+import JsonLd from "@/components/JsonLd";
+import { authorMetadata, authorRef, breadcrumbNode, collectionPageNode, graph, imageUrl } from "@/lib/seo";
 
 export function generateStaticParams() {
   return getAllAuthors().map((a) => ({ slug: a.slug }));
@@ -17,30 +19,8 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const author = getAuthor(slug);
-  if (!author) return { title: "vozpópuli" };
-
-  const description = author.bio || `${author.name}, ${author.role || "writer"} at vozpópuli.`;
-  const images = author.image ? [{ url: `/images/${author.image}` }] : undefined;
-  const url = `/authors/${slug}`;
-
-  return {
-    title: author.name,
-    description,
-    alternates: { canonical: url },
-    openGraph: {
-      type: "profile",
-      title: `${author.name} - vozpópuli`,
-      description,
-      url,
-      images,
-    },
-    twitter: {
-      card: images ? "summary_large_image" : "summary",
-      title: `${author.name} - vozpópuli`,
-      description,
-      images,
-    },
-  };
+  if (!author) return { title: "Author not found", robots: { index: false, follow: false } };
+  return authorMetadata(author, getArticlesByAuthor(author.slug).length);
 }
 
 function XIcon() {
@@ -75,6 +55,23 @@ export default async function AuthorPage({ params }) {
 
   return (
     <div className="mx-auto w-full max-w-[1440px] px-4 py-8 sm:px-6">
+      <JsonLd
+        data={graph(
+          {
+            ...collectionPageNode({
+              path: `/authors/${author.slug}`,
+              name: `${author.name} - published articles`,
+              description: author.bio,
+              articles,
+            }),
+            about: { ...authorRef(author), image: author.image ? imageUrl(author.image) : undefined, description: author.bio },
+          },
+          breadcrumbNode([
+            { name: "Home", path: "/" },
+            { name: author.name, path: `/authors/${author.slug}` },
+          ])
+        )}
+      />
       <div className="flex flex-col gap-4 border-b border-hairline pb-6 sm:flex-row sm:items-center">
         <ImagePlaceholder className="h-24 w-24 shrink-0 rounded-full" rounded="rounded-full" label="" src={author.image} />
         <div>
@@ -117,7 +114,7 @@ export default async function AuthorPage({ params }) {
       <div className="mt-2 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_360px]">
         <div className="divide-y divide-hairline">
           {articles.length === 0 ? (
-            <p className="py-6 text-ink-soft">No articles from this author yet.</p>
+            <p className="py-6 text-ink-soft">No articles published yet.</p>
           ) : (
             articles.map((a) => <ArticleCard key={a.slug} article={withRelations(a, a.category)} variant="list" />)
           )}

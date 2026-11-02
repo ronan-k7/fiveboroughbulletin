@@ -20,7 +20,6 @@ export default function FooterPattern({ className = "" }) {
         </pattern>
         <mask id="fp-dot-mask">
           <ellipse cx="120" cy="60" rx="260" ry="150" fill="white" />
-          <ellipse cx="1300" cy="300" rx="220" ry="140" fill="white" />
           <ellipse cx="60" cy="300" rx="120" ry="80" fill="white" />
         </mask>
       </defs>
@@ -29,8 +28,8 @@ export default function FooterPattern({ className = "" }) {
       <polygon points="1380,360 1110,360 880,0 1150,0" fill="#e2f6ff" opacity="0.03" />
       <polygon points="1110,360 1010,360 780,0 880,0" fill="#e2f6ff" opacity="0.045" />
 
-      {/* faint dot-cluster texture, spread across both bottom corners */}
-      <rect x="0" y="0" width="1440" height="360" fill="url(#fp-dots)" opacity="0.3" mask="url(#fp-dot-mask)" />
+      {/* faint dot-cluster texture, kept to the left side only (clear of the social icons) */}
+      <rect x="0" y="0" width="1440" height="360" fill="url(#fp-dots)" opacity="0.1" mask="url(#fp-dot-mask)" />
     </svg>
   );
 }

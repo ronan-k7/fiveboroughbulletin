@@ -77,3 +77,109 @@ main {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+/* Header market ticker: smooth "roll" flip between items.
+   The outgoing quote tips up and away while the incoming one tips in from
+   below at the same time, so there is never an empty frame in between. */
+@keyframes ticker-roll-out {
+  from {
+    transform: translateY(0) rotateX(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-45%) rotateX(80deg);
+    opacity: 0;
+  }
+}
+@keyframes ticker-roll-in {
+  from {
+    transform: translateY(45%) rotateX(-80deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) rotateX(0deg);
+    opacity: 1;
+  }
+}
+.ticker-roll-out {
+  animation: ticker-roll-out 420ms cubic-bezier(0.4, 0, 0.7, 0.2) both;
+}
+.ticker-roll-in {
+  animation: ticker-roll-in 560ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ticker-roll-out,
+  .ticker-roll-in {
+    animation: none;
+  }
+}
+
+/* Mobile header: logo fades back in after the search box closes */
+@keyframes logo-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.logo-fade-in {
+  animation: logo-fade-in 250ms ease-out both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo-fade-in {
+    animation: none;
+  }
+}
+
+/* "Latest" bar (header) ------------------------------------------------ */
+/* Desktop/tablet: each headline fades in, holds, fades out.
+   Total = 2500ms, matching SLOT_MS in components/LatestNewsBar.jsx. */
+@keyframes latest-fade {
+  0% {
+    opacity: 0;
+  }
+  16% {
+    opacity: 1;
+  }
+  84% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.latest-fade {
+  animation: latest-fade 2500ms ease-in-out both;
+}
+
+/* Mobile: headlines scroll to the left forever. The track holds two copies
+   of the list, so sliding by -50% lands exactly on the start again. */
+@keyframes latest-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.latest-marquee {
+  animation: latest-marquee 40s linear infinite;
+  will-change: transform;
+}
+.latest-marquee:hover {
+  animation-play-state: paused;
+}
+/* soft fade at the left/right edges of the scrolling strip */
+.latest-marquee-mask {
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 14px, #000 calc(100% - 14px), transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, #000 14px, #000 calc(100% - 14px), transparent 100%);
+}
+@media (prefers-reduced-motion: reduce) {
+  .latest-fade {
+    animation: none;
+  }
+  .latest-marquee {
+    animation: none;
+  }
+}

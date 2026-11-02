@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Link from "next/link";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Logo from "./Logo";
 import MainNav from "./MainNav";
 import LatestNewsBar from "./LatestNewsBar";
@@ -18,18 +17,25 @@ function HamburgerIcon() {
   );
 }
 
-function AccountIcon() {
-  return (
-    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-      <circle cx="12" cy="8" r="3.6" />
-      <path d="M4.5 20c1.4-3.6 4.3-5.5 7.5-5.5s6.1 1.9 7.5 5.5" strokeLinecap="round" />
-    </svg>
-  );
-}
-
-export default function Header() {
+export default function Header({ latestHeadlines = [] }) {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  // Mobile search: the logo is removed from the row the moment search opens
+  // (so it can never be squeezed/cut), and comes back only after the input
+  // has finished sliding shut.
+  const [logoHidden, setLogoHidden] = useState(false);
+  const [searchUsed, setSearchUsed] = useState(false);
+  const logoTimer = useRef(null);
+  const handleMobileSearchOpen = useCallback((isOpen) => {
+    clearTimeout(logoTimer.current);
+    if (isOpen) {
+      setSearchUsed(true);
+      setLogoHidden(true);
+    } else {
+      logoTimer.current = setTimeout(() => setLogoHidden(false), 320);
+    }
+  }, []);
+  useEffect(() => () => clearTimeout(logoTimer.current), []);
 
   // Shrinks the header/logo once the page scrolls past the top strip,
   // matching the reference video's compact sticky header on scroll.
@@ -91,7 +97,7 @@ export default function Header() {
           scrolled ? "max-h-0 opacity-0" : "max-h-20 opacity-100"
         }`}
       >
-        <LatestNewsBar />
+        <LatestNewsBar headlines={latestHeadlines} />
       </div>
 
       {/* Desktop / tablet header row */}
@@ -137,15 +143,13 @@ export default function Header() {
             <HamburgerIcon />
           </button>
 
-          <Logo className="min-w-0 flex-1" />
+          {/* Not rendered at all while mobile search is open (so no part of it can
+              show, even squeezed); fades back in after the search closes */}
+          {!logoHidden && (
+            <Logo className={`min-w-0 flex-1 ${searchUsed ? "logo-fade-in" : ""}`} />
+          )}
 
-          <Link
-            href="/account"
-            aria-label="Account"
-            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-header-navy text-white shadow-[0_0_0_1px_rgba(34,211,238,0.45),0_6px_16px_-4px_rgba(14,165,233,0.6)]"
-          >
-            <AccountIcon />
-          </Link>
+          <HeaderSearch mobile onOpenChange={handleMobileSearchOpen} />
         </div>
       </div>
       <MobileNavStrip />

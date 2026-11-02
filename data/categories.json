@@ -3,52 +3,112 @@
     {
       "slug": "us",
       "label": "U.S.",
-      "description": "The U.S. section covers national politics, courts, natural disasters and the federal decisions shaping the country."
+      "description": "The U.S. section covers national politics, courts, natural disasters and the federal decisions shaping the country.",
+      "seoTitle": "U.S. News: National Headlines, Courts and Disasters",
+      "keywords": [
+        "U.S. news",
+        "national news",
+        "Supreme Court",
+        "federal government",
+        "natural disasters"
+      ]
     },
     {
       "slug": "business",
       "label": "Business",
-      "description": "The Business section covers corporate strategy, dealmaking, aviation and the companies shaping the economy."
+      "description": "The Business section covers corporate strategy, dealmaking, aviation and the companies shaping the economy.",
+      "seoTitle": "Business News: Companies, Deals and the Economy",
+      "keywords": [
+        "business news",
+        "corporate deals",
+        "earnings",
+        "aviation industry",
+        "economy"
+      ]
     },
     {
       "slug": "finance",
       "label": "Finance",
-      "description": "The Finance section covers Wall Street, the Federal Reserve, interest rates and the flow of money through the economy."
+      "description": "The Finance section covers Wall Street, the Federal Reserve, interest rates and the flow of money through the economy.",
+      "seoTitle": "Finance News: Wall Street, the Fed and Interest Rates",
+      "keywords": [
+        "finance news",
+        "stock market",
+        "Federal Reserve",
+        "interest rates",
+        "Treasury"
+      ]
     },
     {
       "slug": "world",
       "label": "World",
-      "description": "The World section covers international affairs, diplomacy, natural disasters and major events beyond U.S. borders."
+      "description": "The World section covers international affairs, diplomacy, natural disasters and major events beyond U.S. borders.",
+      "seoTitle": "World News: International Affairs and Global Events",
+      "keywords": [
+        "world news",
+        "international news",
+        "diplomacy",
+        "global events",
+        "climate disasters"
+      ]
     },
     {
-      "slug": "legal",
-      "label": "Legal",
-      "description": "The Legal section covers courts, regulation and major corporate and criminal proceedings."
+      "slug": "politics",
+      "label": "Politics",
+      "description": "The Politics section covers Washington, elections, policy fights and the people shaping public decisions.",
+      "seoTitle": "Politics News: Washington, Elections and Policy",
+      "keywords": [
+        "politics news",
+        "Washington",
+        "elections",
+        "public policy",
+        "Congress"
+      ]
     },
     {
-      "slug": "dolcefita",
-      "label": "Dolcefita",
-      "description": "Dolcefita covers design, home and lifestyle trends worth knowing about."
+      "slug": "investigation",
+      "label": "Investigation",
+      "description": "The Investigation section covers in-depth reporting, document-driven stories and accountability journalism.",
+      "seoTitle": "Investigations: In-Depth and Accountability Reporting",
+      "keywords": [
+        "investigative journalism",
+        "accountability reporting",
+        "document-driven stories"
+      ]
     },
     {
-      "slug": "welfare",
-      "label": "Welfare",
-      "description": "Welfare covers health, wellbeing and practical advice for everyday life."
+      "slug": "puerto-rico",
+      "label": "Puerto Rico",
+      "description": "The Puerto Rico section covers politics, the economy, courts and daily life on the island.",
+      "seoTitle": "Puerto Rico News: Politics, Economy and Daily Life",
+      "keywords": [
+        "Puerto Rico news",
+        "Puerto Rico politics",
+        "Puerto Rico economy"
+      ]
     },
     {
-      "slug": "culture",
-      "label": "Culture",
-      "description": "Culture covers books, film, history and the ideas shaping public debate."
+      "slug": "technology",
+      "label": "Technology",
+      "description": "The Technology section covers AI, big tech, cybersecurity and the products and policies changing how we live and work.",
+      "seoTitle": "Technology News: AI, Big Tech and Cybersecurity",
+      "keywords": [
+        "technology news",
+        "artificial intelligence",
+        "big tech",
+        "cybersecurity"
+      ]
     },
     {
-      "slug": "gastropoli",
-      "label": "Gastropoli",
-      "description": "Gastropoli covers restaurants, producers and the business of food and dining."
-    },
-    {
-      "slug": "indux",
-      "label": "Indux",
-      "description": "Indux covers industry, manufacturing and the companies driving the country's industrial base."
+      "slug": "sports",
+      "label": "Sports",
+      "description": "The Sports section covers major leagues, big events, business of sport and the stories behind the results.",
+      "seoTitle": "Sports News: Leagues, Events and the Business of Sport",
+      "keywords": [
+        "sports news",
+        "major leagues",
+        "sports business"
+      ]
     }
   ]
 }

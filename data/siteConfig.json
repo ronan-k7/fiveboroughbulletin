@@ -1,49 +1,39 @@
 {
-  "siteName": "vozpópuli",
+  "siteName": "Five Borough Bulletin",
   "tagline": "EL VALOR DE SER LIBRES Y FIABLES",
-  "url": "https://www.vozpopuli.com",
+  "url": "https://www.fiveboroughbulletin.com",
+  "title": "Five Borough Bulletin | U.S., Business, Finance and World News",
+  "description": "Five Borough Bulletin brings you the latest U.S., Business, Finance and World news, plus Politics, Investigation, Puerto Rico, Technology and Sports coverage.",
+  "shortDescription": "The latest U.S., Business, Finance and World news from Five Borough Bulletin.",
+  "keywords": ["Five Borough Bulletin", "U.S. news", "business news", "finance news", "world news", "breaking news", "Puerto Rico news"],
+  "locale": "en_US",
+  "language": "en-US",
+  "ogImage": "/images/og-default.jpg",
+  "logo": "/icon-512.png",
+  "themeColor": "#050b18",
   "mainNav": [
     { "label": "U.S.", "href": "/us" },
     { "label": "Business", "href": "/business" },
     { "label": "Finance", "href": "/finance" },
     { "label": "World", "href": "/world" },
-    { "label": "Legal", "href": "/legal" },
-    { "label": "Dolcefita", "href": "/dolcefita" },
-    { "label": "Welfare", "href": "/welfare" },
-    { "label": "Culture", "href": "/culture" },
-    { "label": "Gastropoli", "href": "/gastropoli" },
-    { "label": "Indux", "href": "/indux" }
+    { "label": "Politics", "href": "/politics" },
+    { "label": "Investigation", "href": "/investigation" },
+    { "label": "Puerto Rico", "href": "/puerto-rico" },
+    { "label": "Technology", "href": "/technology" },
+    { "label": "Sports", "href": "/sports" }
   ],
   "latestNewsPlaceholder": "Markets close higher as inflation data beats expectations",
-  "marketTicker": {
-    "label": "Markets",
-    "href": "/markets",
-    "index": "S&P 500",
-    "change": "+0.68%",
-    "direction": "up"
-  },
-  "headerSocialLinks": [
-    { "label": "Facebook", "icon": "facebook", "href": "https://facebook.com" },
-    { "label": "X", "icon": "x", "href": "https://x.com" },
-    { "label": "LinkedIn", "icon": "linkedin", "href": "https://linkedin.com" }
-  ],
   "footer": {
-    "sectionsLabel": "Sections",
     "sections": [
       { "label": "U.S.", "href": "/us" },
       { "label": "Business", "href": "/business" },
       { "label": "Finance", "href": "/finance" },
-      { "label": "World", "href": "/world" }
-    ],
-    "highlightLabel": "We highlight",
-    "highlightTags": [
-      { "label": "World Cup 2026", "href": "/tag/world-cup-2026" },
-      { "label": "Shoemaker", "href": "/tag/shoemaker" },
-      { "label": "Leire Diez", "href": "/tag/leire-diez" },
-      { "label": "Pedro Sánchez", "href": "/tag/pedro-sanchez" },
-      { "label": "SEPI", "href": "/tag/sepi" },
-      { "label": "PSOE", "href": "/tag/psoe" },
-      { "label": "More tags", "href": "/tags" }
+      { "label": "World", "href": "/world" },
+      { "label": "Politics", "href": "/politics" },
+      { "label": "Investigation", "href": "/investigation" },
+      { "label": "Puerto Rico", "href": "/puerto-rico" },
+      { "label": "Technology", "href": "/technology" },
+      { "label": "Sports", "href": "/sports" }
     ],
     "legalLinks": [
       { "label": "The team", "href": "/the-team" },
@@ -52,14 +42,12 @@
       { "label": "Cookie settings", "href": "/cookie-settings" },
       { "label": "Cookies", "href": "/cookies" }
     ],
-    "copyright": "© Copyright 2026 vozpopuli.com",
+    "copyright": "© Copyright 2026 fiveboroughbulletin.com",
     "socialLinks": [
-      { "label": "Facebook", "icon": "facebook", "href": "https://facebook.com" },
-      { "label": "X", "icon": "x", "href": "https://x.com" },
       { "label": "Instagram", "icon": "instagram", "href": "https://instagram.com" },
-      { "label": "TikTok", "icon": "tiktok", "href": "https://tiktok.com" },
-      { "label": "YouTube", "icon": "youtube", "href": "https://youtube.com" },
-      { "label": "Flipboard", "icon": "flipboard", "href": "https://flipboard.com" }
+      { "label": "X", "icon": "x", "href": "https://x.com" },
+      { "label": "Substack", "icon": "substack", "href": "https://substack.com" },
+      { "label": "Medium", "icon": "medium", "href": "https://medium.com" }
     ]
   }
 }

@@ -18,11 +18,13 @@
  * is missing, still loading, or a broken link — no flash of a raw broken
  * image icon while the file/error event resolves.
  *
+ * `alt` sets the <img> alt text (defaults to `label`, then empty).
+ *
  * `variant="ad"` renders the dashed-border "ad space" box instead, which
  * intentionally does NOT use an image since ad slots are a separate
  * concern from article/author photos.
  */
-export default function ImagePlaceholder({ className = "", label, variant = "photo", rounded = "", src }) {
+export default function ImagePlaceholder({ className = "", label, variant = "photo", rounded = "", src, alt }) {
   const isAd = variant === "ad";
   const imageSrc = src ? `/images/${src}` : "/images/pay-for-power.webp";
 
@@ -53,7 +55,7 @@ export default function ImagePlaceholder({ className = "", label, variant = "pho
       </div>
       <img
         src={imageSrc}
-        alt={label || ""}
+        alt={alt ?? label ?? ""}
         className="relative h-full w-full object-cover"
         onError={(e) => {
           e.currentTarget.style.visibility = "hidden";

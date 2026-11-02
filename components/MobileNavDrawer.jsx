@@ -55,9 +55,16 @@ export default function MobileNavDrawer({ open, onClose }) {
       >
         <div className="flex h-full flex-col overflow-y-auto">
           <div className="flex items-center justify-between border-b border-hairline px-5 py-4">
-            <span className="font-serif text-2xl font-black text-ink">
-              {siteConfig.siteName}
-            </span>
+            <Link href="/" onClick={onClose} aria-label={siteConfig.siteName} className="inline-flex">
+              <img
+                src="/images/logo.webp"
+                alt={siteConfig.siteName}
+                width={1100}
+                height={278}
+                decoding="async"
+                className="block h-9 w-auto"
+              />
+            </Link>
             <button
               type="button"
               onClick={onClose}
@@ -93,14 +100,7 @@ export default function MobileNavDrawer({ open, onClose }) {
           </nav>
 
           <div className="border-t border-hairline px-5 py-5">
-            <Link
-              href="/subscribe"
-              onClick={onClose}
-              className="block w-full rounded border border-ink py-2.5 text-center text-sm font-semibold uppercase tracking-wide text-ink hover:bg-ink hover:text-white transition-colors"
-            >
-              Subscribe
-            </Link>
-            <SocialIcons links={siteConfig.footer.socialLinks} className="mt-5 justify-center" />
+            <SocialIcons links={siteConfig.footer.socialLinks} className="justify-center" />
           </div>
         </div>
       </div>

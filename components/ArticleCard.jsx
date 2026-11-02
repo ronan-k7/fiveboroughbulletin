@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ImagePlaceholder from "./ImagePlaceholder";
+import { getCategory } from "@/lib/content";
 
 /**
  * Reusable article teaser card.
@@ -16,8 +17,9 @@ import ImagePlaceholder from "./ImagePlaceholder";
 export default function ArticleCard({ article, variant = "grid", imageAspect = "aspect-[16/10]" }) {
   if (!article) return null;
   const href = `/${article.category}/${article.slug}`;
-  const authorName = article.authorInfo?.name || "";
-  const subLabel = article.subCategoryLabel;
+  // Cards only ever show the label of the category the article belongs to
+  // (e.g. "Finance"), never a sub-category such as "Federal Reserve".
+  const subLabel = article.categoryInfo?.label || getCategory(article.category)?.label;
 
   if (variant === "hero") {
     return (
@@ -31,16 +33,6 @@ export default function ArticleCard({ article, variant = "grid", imageAspect = "
             {article.title}
           </Link>
         </h2>
-        <div className="mt-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-ink-soft">
-          <Link href={`/authors/${article.author}`} className="hover:text-brand-teal transition-colors">
-            {authorName}
-          </Link>
-          {article.commentCount > 0 && (
-            <span className="flex items-center gap-1 normal-case font-normal">
-              <CommentIcon /> {article.commentCount}
-            </span>
-          )}
-        </div>
       </article>
     );
   }
@@ -58,16 +50,6 @@ export default function ArticleCard({ article, variant = "grid", imageAspect = "
               {article.title}
             </Link>
           </h3>
-          <div className="mt-1.5 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-ink-soft">
-            <Link href={`/authors/${article.author}`} className="hover:text-brand-teal transition-colors">
-              {authorName}
-            </Link>
-            {article.commentCount > 0 && (
-              <span className="flex items-center gap-1 normal-case font-normal">
-                <CommentIcon /> {article.commentCount}
-              </span>
-            )}
-          </div>
         </div>
       </article>
     );
@@ -81,16 +63,6 @@ export default function ArticleCard({ article, variant = "grid", imageAspect = "
             {article.title}
           </Link>
         </h3>
-        <div className="mt-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-ink-soft">
-          <Link href={`/authors/${article.author}`} className="hover:text-brand-teal transition-colors">
-            {authorName}
-          </Link>
-          {article.commentCount > 0 && (
-            <span className="flex items-center gap-1 normal-case font-normal">
-              <CommentIcon /> {article.commentCount}
-            </span>
-          )}
-        </div>
       </article>
     );
   }
@@ -109,7 +81,7 @@ export default function ArticleCard({ article, variant = "grid", imageAspect = "
 
   if (variant === "list") {
     // Matches the category/author page reference video: image left,
-    // small-caps sub-category label, serif headline, byline, excerpt.
+    // small-caps category label, serif headline, excerpt. (Author bylines are only shown on the article detail page.)
     return (
       <article className="flex flex-col gap-4 py-6 first:pt-0 sm:flex-row">
         <Link href={href} className="shrink-0 sm:w-[220px]">
@@ -124,16 +96,6 @@ export default function ArticleCard({ article, variant = "grid", imageAspect = "
               {article.title}
             </Link>
           </h3>
-          <div className="mt-1.5 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-ink-soft">
-            <Link href={`/authors/${article.author}`} className="hover:text-brand-teal transition-colors">
-              {authorName}
-            </Link>
-            {article.commentCount > 0 && (
-              <span className="flex items-center gap-1 normal-case font-normal">
-                <CommentIcon /> {article.commentCount}
-              </span>
-            )}
-          </div>
           {article.excerpt && (
             <p className="mt-2 text-[15px] leading-relaxed text-ink-soft">{article.excerpt}</p>
           )}
@@ -154,24 +116,6 @@ export default function ArticleCard({ article, variant = "grid", imageAspect = "
           {article.title}
         </Link>
       </h3>
-      <div className="mt-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-ink-soft">
-        <Link href={`/authors/${article.author}`} className="hover:text-brand-teal transition-colors">
-          {authorName}
-        </Link>
-        {article.commentCount > 0 && (
-          <span className="flex items-center gap-1 normal-case font-normal">
-            <CommentIcon /> {article.commentCount}
-          </span>
-        )}
-      </div>
     </article>
-  );
-}
-
-function CommentIcon() {
-  return (
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-      <path d="M21 12a8 8 0 1 1-3.5-6.6L21 4l-1 3.7A7.96 7.96 0 0 1 21 12Z" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
   );
 }

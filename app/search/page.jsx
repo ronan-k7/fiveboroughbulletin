@@ -15,6 +15,8 @@ export async function generateMetadata({ searchParams }) {
   const query = (q || "").trim();
   return {
     title: query ? `Search results for "${query}"` : "Search",
+    // Internal search results are thin/duplicate pages: crawlable links, but not indexed.
+    robots: { index: false, follow: true },
   };
 }
 

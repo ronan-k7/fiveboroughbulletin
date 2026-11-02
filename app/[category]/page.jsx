@@ -9,6 +9,8 @@ import {
   withRelations,
   getSidebarResolved,
 } from "@/lib/content";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbNode, categoryMetadata, collectionPageNode, graph } from "@/lib/seo";
 
 export function generateStaticParams() {
   return getAllCategories().map((c) => ({ category: c.slug }));
@@ -17,28 +19,8 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { category: categorySlug } = await params;
   const category = getCategory(categorySlug);
-  if (!category) return { title: "vozpópuli" };
-
-  const description = category.description || `${category.label} news from vozpópuli.`;
-  const url = `/${category.slug}`;
-
-  return {
-    title: category.label,
-    description,
-    keywords: category.trendingTags,
-    alternates: { canonical: url },
-    openGraph: {
-      type: "website",
-      title: `${category.label} - vozpópuli`,
-      description,
-      url,
-    },
-    twitter: {
-      card: "summary",
-      title: `${category.label} - vozpópuli`,
-      description,
-    },
-  };
+  if (!category) return { title: "Page not found", robots: { index: false, follow: false } };
+  return categoryMetadata(category, getArticlesByCategory(category.slug).length);
 }
 
 export default async function CategoryPage({ params }) {
@@ -55,6 +37,20 @@ export default async function CategoryPage({ params }) {
 
   return (
     <div className="mx-auto w-full max-w-[1440px] px-4 py-8 sm:px-6">
+      <JsonLd
+        data={graph(
+          collectionPageNode({
+            path: `/${category.slug}`,
+            name: category.seoTitle || `${category.label} News`,
+            description: category.description,
+            articles,
+          }),
+          breadcrumbNode([
+            { name: "Home", path: "/" },
+            { name: category.label, path: `/${category.slug}` },
+          ])
+        )}
+      />
       <p className="text-sm text-ink-soft">
         <Link href="/" className="hover:text-brand-teal transition-colors">
           Home

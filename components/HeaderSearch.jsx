@@ -61,7 +61,7 @@ function matchesQuery(article, q) {
  * background) -- an absolutely-positioned dropdown would get clipped at
  * the header's bottom edge instead of floating over the page content.
  */
-export default function HeaderSearch() {
+export default function HeaderSearch({ mobile = false, onOpenChange }) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [activeIndex, setActiveIndex] = useState(-1);
@@ -72,6 +72,7 @@ export default function HeaderSearch() {
   const containerRef = useRef(null);
   const inputWrapRef = useRef(null);
   const inputRef = useRef(null);
+  const buttonRef = useRef(null);
   const dropdownRef = useRef(null);
   const router = useRouter();
 
@@ -102,11 +103,17 @@ export default function HeaderSearch() {
   }
 
   const recalcPosition = useCallback(() => {
+    if (mobile) {
+      const box = containerRef.current;
+      if (!box) return;
+      setCoords({ top: box.getBoundingClientRect().bottom + 10, left: 12, width: 0 });
+      return;
+    }
     const el = inputWrapRef.current;
     if (!el) return;
     const rect = el.getBoundingClientRect();
     setCoords({ top: rect.bottom + 8, left: rect.left, width: rect.width });
-  }, []);
+  }, [mobile]);
 
   useEffect(() => {
     if (!open) return undefined;
@@ -129,6 +136,10 @@ export default function HeaderSearch() {
     return () => clearTimeout(t);
   }, [open]);
 
+  useEffect(() => {
+    onOpenChange?.(open);
+  }, [open, onOpenChange]);
+
   function closeAndReset() {
     setOpen(false);
     setQuery("");
@@ -144,8 +155,8 @@ export default function HeaderSearch() {
         closeAndReset();
       }
     };
-    document.addEventListener("mousedown", handlePointerDown);
-    return () => document.removeEventListener("mousedown", handlePointerDown);
+    document.addEventListener("pointerdown", handlePointerDown);
+    return () => document.removeEventListener("pointerdown", handlePointerDown);
   }, [open]);
 
   function goTo(article) {
@@ -154,8 +165,14 @@ export default function HeaderSearch() {
   }
 
   function handleToggle() {
-    if (open) closeAndReset();
-    else setOpen(true);
+    if (open) {
+      closeAndReset();
+    } else {
+      // Position before opening so the mobile panel never flashes at the top-left.
+      recalcPosition();
+      setOpen(true);
+      if (mobile) inputRef.current?.focus({ preventScroll: true });
+    }
   }
 
   function handleKeyDown(e) {
@@ -188,83 +205,119 @@ export default function HeaderSearch() {
   const trimmed = query.trim();
   const showDropdown = open && trimmed.length > 0;
 
+  const results = (
+    <>
+      {suggestions.length === 0 ? (
+        <p className="p-4 text-sm text-ink-soft">No results for “{trimmed}”.</p>
+      ) : (
+        <ul>
+          {suggestions.map((a, idx) => (
+            <li key={`${a.category}-${a.slug}`} role="option" aria-selected={idx === activeIndex}>
+              <Link
+                href={`/${a.category}/${a.slug}`}
+                onClick={closeAndReset}
+                onMouseEnter={() => setActiveIndex(idx)}
+                className={`flex items-center gap-3 border-b border-hairline p-3 last:border-0 ${
+                  idx === activeIndex ? "bg-neutral-50" : "hover:bg-neutral-50"
+                }`}
+              >
+                <ImagePlaceholder className="h-12 w-12 shrink-0 rounded-lg" src={a.image} />
+                <span className="min-w-0">
+                  <span className="block text-[11px] font-bold uppercase tracking-wide text-header-cyan-dark">
+                    {getCategory(a.category)?.label || a.category}
+                  </span>
+                  <span className="line-clamp-2 block text-sm font-semibold leading-snug text-ink">
+                    {a.title}
+                  </span>
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
+      {suggestions.length > 0 && (
+        <Link
+          href={`/search?q=${encodeURIComponent(trimmed)}`}
+          onClick={closeAndReset}
+          className="block border-t border-hairline p-3 text-center text-xs font-bold uppercase tracking-wide text-header-cyan-dark hover:bg-neutral-50"
+        >
+          See all results for “{trimmed}”
+        </Link>
+      )}
+    </>
+  );
+
+  const buttonClass = mobile
+    ? "flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-header-navy text-white shadow-[0_0_0_1px_rgba(34,211,238,0.45),0_6px_16px_-4px_rgba(14,165,233,0.6)]"
+    : "flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-header-navy text-white shadow-[0_0_0_1px_rgba(34,211,238,0.45),0_10px_26px_-6px_rgba(14,165,233,0.6)] transition-all hover:shadow-[0_0_0_1px_rgba(34,211,238,0.75),0_12px_30px_-4px_rgba(14,165,233,0.8)]";
+
+  // Desktop: the input slides out to the left of the button (fixed 18rem).
+  // Mobile: the same slide-out, but the container itself grows (flex-grow
+  // 0 -> 1) while the header hides the logo (flex-grow 1 -> 0), so the input
+  // smoothly takes over the whole row between the menu and search buttons.
+  const containerClass = mobile
+    ? `relative flex min-w-0 items-center transition-[flex-grow] duration-300 ease-out ${
+        open ? "grow" : "grow-0"
+      }`
+    : "relative flex items-center";
+  const wrapClass = mobile
+    ? // Closed: zero width so the (invisible) input doesn't reserve ~300px of the
+      // row and squeeze the logo to nothing. Open: fills the row.
+      `min-w-0 overflow-hidden transition-[margin,opacity] duration-300 ease-out ${
+        open ? "mr-2 flex-1 opacity-100" : "mr-0 w-0 flex-none opacity-0"
+      }`
+    : `overflow-hidden transition-all duration-300 ease-out ${
+        open ? "mr-2 w-72 opacity-100" : "mr-0 w-0 opacity-0"
+      }`;
+  const inputClass = mobile
+    ? "h-9 w-full rounded-full border border-hairline bg-white px-4 text-base text-ink shadow-inner outline-none placeholder:text-ink-soft/60 focus:border-header-cyan focus:ring-2 focus:ring-header-cyan/40"
+    : "h-11 w-72 rounded-xl border border-hairline bg-white px-4 text-sm text-ink shadow-inner outline-none placeholder:text-ink-soft/60 focus:border-header-cyan focus:ring-2 focus:ring-header-cyan/40";
+
   return (
-    <div ref={containerRef} className="relative flex items-center">
-      <div
-        ref={inputWrapRef}
-        className={`overflow-hidden transition-all duration-300 ease-out ${
-          open ? "mr-2 w-72 opacity-100" : "mr-0 w-0 opacity-0"
-        }`}
-      >
+    <div ref={containerRef} className={containerClass}>
+      <div ref={inputWrapRef} className={wrapClass}>
         <input
           ref={inputRef}
           type="text"
+          enterKeyHint="search"
           autoComplete="off"
+          tabIndex={open ? 0 : -1}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="Search vozpópuli..."
-          aria-label="Search vozpópuli"
-          className="h-11 w-72 rounded-xl border border-hairline bg-white px-4 text-sm text-ink shadow-inner outline-none placeholder:text-ink-soft/60 focus:border-header-cyan focus:ring-2 focus:ring-header-cyan/40"
+          placeholder="Search the Bulletin..."
+          aria-label="Search Five Borough Bulletin"
+          className={inputClass}
         />
       </div>
 
       <button
+        ref={buttonRef}
         type="button"
         onClick={handleToggle}
         aria-label={open ? "Close search" : "Search"}
         aria-expanded={open}
-        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-header-navy text-white shadow-[0_0_0_1px_rgba(34,211,238,0.45),0_10px_26px_-6px_rgba(14,165,233,0.6)] transition-all hover:shadow-[0_0_0_1px_rgba(34,211,238,0.75),0_12px_30px_-4px_rgba(14,165,233,0.8)]"
+        className={buttonClass}
       >
-        {open ? <CloseIcon /> : <SearchIcon />}
+        {open ? <CloseIcon /> : <SearchIcon className={mobile ? "h-4 w-4" : ""} />}
       </button>
 
+      {/* Suggestions float under the input (desktop: under the input itself,
+          mobile: full-width under the header row) */}
       {mounted &&
         showDropdown &&
         createPortal(
           <div
             ref={dropdownRef}
-            style={{ position: "fixed", top: coords.top, left: coords.left, width: coords.width }}
-            className="z-[100] max-h-[70vh] overflow-y-auto rounded-xl border border-hairline bg-white shadow-[0_20px_45px_-12px_rgba(2,6,15,0.35)]"
+            style={
+              mobile
+                ? { position: "fixed", top: coords.top, left: coords.left, right: coords.left }
+                : { position: "fixed", top: coords.top, left: coords.left, width: coords.width }
+            }
+            className="z-[100] max-h-[70vh] overflow-y-auto overflow-x-hidden rounded-xl border border-hairline bg-white shadow-[0_20px_45px_-12px_rgba(2,6,15,0.35)]"
             role="listbox"
           >
-            {suggestions.length === 0 ? (
-              <p className="p-4 text-sm text-ink-soft">No results for “{trimmed}”.</p>
-            ) : (
-              <ul>
-                {suggestions.map((a, idx) => (
-                  <li key={`${a.category}-${a.slug}`} role="option" aria-selected={idx === activeIndex}>
-                    <Link
-                      href={`/${a.category}/${a.slug}`}
-                      onClick={closeAndReset}
-                      onMouseEnter={() => setActiveIndex(idx)}
-                      className={`flex items-center gap-3 border-b border-hairline p-3 last:border-0 ${
-                        idx === activeIndex ? "bg-neutral-50" : "hover:bg-neutral-50"
-                      }`}
-                    >
-                      <ImagePlaceholder className="h-12 w-12 shrink-0 rounded-lg" src={a.image} />
-                      <span className="min-w-0">
-                        <span className="block text-[11px] font-bold uppercase tracking-wide text-header-cyan-dark">
-                          {getCategory(a.category)?.label || a.category}
-                        </span>
-                        <span className="line-clamp-2 block text-sm font-semibold leading-snug text-ink">
-                          {a.title}
-                        </span>
-                      </span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            )}
-            {suggestions.length > 0 && (
-              <Link
-                href={`/search?q=${encodeURIComponent(trimmed)}`}
-                onClick={closeAndReset}
-                className="block border-t border-hairline p-3 text-center text-xs font-bold uppercase tracking-wide text-header-cyan-dark hover:bg-neutral-50"
-              >
-                See all results for “{trimmed}”
-              </Link>
-            )}
+            {results}
           </div>,
           document.body
         )}
