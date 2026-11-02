@@ -23,6 +23,9 @@ import { formatLongDate, readingMinutes } from "@/lib/format";
  *   4. Footer     - share links, sources, author box
  *                   and a "Keep reading" grid that links on to other stories.
  *
+ * A  { "type": "timeline", title, eyebrow, items: [{ date, text }] }  block in
+ * the article content renders a centred timeline (alternating sides from `sm` up).
+ *
  * Everything is server-rendered HTML (no client JS), so it is fast and fully
  * crawlable. Headline + standfirst carry `data-speakable` for the JSON-LD.
  */
@@ -170,6 +173,7 @@ export default function CenteredArticle({ article, keepReading = [] }) {
           }
           if (block?.type === "pullquote") return <PullQuote key={idx} block={block} />;
           if (block?.type === "stats") return <StatCard key={idx} block={block} />;
+          if (block?.type === "timeline") return <TimelineBlock key={idx} block={block} />;
           return null;
         })}
       </div>
@@ -265,6 +269,57 @@ function PullQuote({ block }) {
         </figcaption>
       )}
     </figure>
+  );
+}
+
+function TimelineBlock({ block }) {
+  const items = block.items || [];
+  if (items.length === 0) return null;
+  const last = items.length - 1;
+  return (
+    <section
+      aria-label={block.title || "Timeline"}
+      className="mx-auto my-8 max-w-[36rem] overflow-hidden rounded-xl bg-header-navy text-white shadow-[0_14px_30px_-16px_rgba(2,6,15,0.6)] ring-1 ring-black/10 sm:my-10"
+      style={{
+        backgroundImage:
+          "radial-gradient(20rem 10rem at 0% 0%, rgba(14,165,233,0.26), transparent 65%), radial-gradient(18rem 10rem at 100% 100%, rgba(34,211,238,0.12), transparent 65%)",
+      }}
+    >
+      <div className="border-b border-white/10 px-4 py-2.5 text-center">
+        <h2 className="flex items-center justify-center gap-2 text-[11px] font-extrabold uppercase tracking-[0.22em] text-header-cyan-bright">
+          <span className="h-1.5 w-1.5 rounded-full bg-header-cyan-bright" aria-hidden="true" />
+          {block.title || "Timeline"}
+        </h2>
+        {block.eyebrow && <p className="mt-0.5 text-[11px] text-white/55">{block.eyebrow}</p>}
+      </div>
+
+      <ol className="relative px-4 py-5 sm:px-6 sm:py-6">
+        <span
+          className="absolute bottom-7 left-[1.6rem] top-7 w-px bg-white/20 sm:left-1/2 sm:-translate-x-1/2"
+          aria-hidden="true"
+        />
+        {items.map((it, i) => {
+          const right = i % 2 === 1;
+          return (
+            <li
+              key={`${it.date}-${i}`}
+              className={`relative pl-8 sm:w-1/2 sm:pl-0 ${i === last ? "" : "pb-5"} ${
+                right ? "sm:ml-[50%] sm:pl-6 sm:text-left" : "sm:pr-6 sm:text-right"
+              }`}
+            >
+              <span
+                className={`absolute left-0 top-[0.3rem] h-2.5 w-2.5 rounded-full ring-4 ring-header-navy sm:top-[0.3rem] ${
+                  right ? "sm:-left-[5px]" : "sm:left-auto sm:-right-[5px]"
+                } ${i === last ? "bg-white" : "bg-header-cyan-bright"}`}
+                aria-hidden="true"
+              />
+              <p className="text-[10.5px] font-extrabold uppercase tracking-[0.14em] text-header-cyan-bright">{it.date}</p>
+              <p className="mt-1 text-[13px] leading-snug text-white/80">{it.text}</p>
+            </li>
+          );
+        })}
+      </ol>
+    </section>
   );
 }
 

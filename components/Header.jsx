@@ -37,66 +37,72 @@ export default function Header({ latestHeadlines = [] }) {
   }, []);
   useEffect(() => () => clearTimeout(logoTimer.current), []);
 
-  // Shrinks the header/logo once the page scrolls past the top strip,
-  // matching the reference video's compact sticky header on scroll.
+  // Compact sticky header on scroll.
   //
-  // This has two feedback-loop hazards, both caused by the header being
-  // `sticky`: collapsing the "Latest" bar shrinks the sticky header, which
-  // shrinks the scrollable area, which the browser reflects by reducing
-  // window.scrollY in real time WHILE the collapse is still animating.
-  // That drop can itself cross back below a "re-expand" threshold and
-  // undo the collapse before it finishes, which un-shrinks the header and
-  // pushes scrollY back up past the "collapse" threshold — repeating
-  // every time the user's scroll position sits anywhere near the top.
+  // The header's LAYOUT height never changes. Collapsing used to animate
+  // max-height / padding / logo height, which resized the sticky header and
+  // reflowed the whole page on every frame: content jumped, the browser
+  // clamped scrollY mid-animation, and the old code needed a 300ms scroll
+  // lock plus wide thresholds to stop it flip-flopping.
   //
-  // Two changes close this off:
-  //  1. The expand threshold sits comfortably below zero-crossing noise
-  //     (0 instead of 8) and the collapse threshold is set well above the
-  //     bar's own height (~70px expanded->collapsed delta, including
-  //     mobile's taller two-row strip), so the animation-driven scrollY
-  //     dip can no longer bridge the gap between the two thresholds.
-  //  2. Scroll events are ignored for the duration of the CSS transition
-  //     once a state flip starts, so the animation's own scroll-position
-  //     side effects can never trigger a second flip before the first one
-  //     has settled.
-  useEffect(() => {
-    const COLLAPSE_AT = 96;
-    const EXPAND_AT = 0;
-    const TRANSITION_MS = 320; // matches the 300ms CSS transition + margin
-    let locked = false;
-    let lockTimer = null;
+  // Now the header keeps its expanded size and the collapse is purely
+  // visual, done with transforms (compositor only, no reflow):
+  //  - the whole header slides up by `collapse` px, tucking the Latest bar
+  //    (and, on md+, the extra row padding) above the viewport;
+  //  - on md+ the row's content is nudged back down and the logo is scaled,
+  //    so the compact row ends up exactly where the old py-2 / h-10 layout was.
+  // With no layout feedback the scroll handler can be a plain hysteresis
+  // check, driven by requestAnimationFrame.
+  const barRef = useRef(null);
+  const [collapse, setCollapse] = useState(0);
 
-    const onScroll = () => {
-      if (locked) return;
-      setScrolled((prev) => {
-        let next = prev;
-        if (!prev && window.scrollY > COLLAPSE_AT) next = true;
-        else if (prev && window.scrollY <= EXPAND_AT) next = false;
-        if (next !== prev) {
-          locked = true;
-          clearTimeout(lockTimer);
-          lockTimer = setTimeout(() => {
-            locked = false;
-          }, TRANSITION_MS);
-        }
-        return next;
-      });
-    };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
+  useEffect(() => {
+    const el = barRef.current;
+    if (!el) return undefined;
+    const mq = window.matchMedia("(min-width: 768px)");
+    // md+: also hide 2 x 16px of row padding (py-4 -> py-2 equivalent).
+    const measure = () => setCollapse(el.offsetHeight + (mq.matches ? 32 : 0));
+    measure();
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
+    mq.addEventListener("change", measure);
     return () => {
-      window.removeEventListener("scroll", onScroll);
-      clearTimeout(lockTimer);
+      ro.disconnect();
+      mq.removeEventListener("change", measure);
     };
   }, []);
 
+  useEffect(() => {
+    const COLLAPSE_AT = 48;
+    const EXPAND_AT = 8;
+    let ticking = false;
+
+    const update = () => {
+      ticking = false;
+      const y = window.scrollY;
+      setScrolled((prev) => {
+        if (!prev && y > COLLAPSE_AT) return true;
+        if (prev && y <= EXPAND_AT) return false;
+        return prev;
+      });
+    };
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-30 bg-white shadow-sm">
-      <div
-        className={`overflow-hidden transition-all duration-300 ease-out ${
-          scrolled ? "max-h-0 opacity-0" : "max-h-20 opacity-100"
-        }`}
-      >
+    <>
+    <header
+      className="sticky top-0 z-30 bg-white shadow-sm transition-transform duration-[380ms] ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform motion-reduce:transition-none"
+      style={{ transform: scrolled ? `translate3d(0, -${collapse}px, 0)` : "translate3d(0, 0, 0)" }}
+    >
+      <div ref={barRef}>
         <LatestNewsBar headlines={latestHeadlines} />
       </div>
 
@@ -104,8 +110,8 @@ export default function Header({ latestHeadlines = [] }) {
       <div className="relative hidden overflow-hidden bg-gradient-to-br from-white via-[#f6f9fb] to-[#eef3f8] md:block">
         <HeaderPattern />
         <div
-          className={`relative mx-auto flex max-w-[1440px] items-center justify-between px-6 transition-[padding] duration-300 ease-out ${
-            scrolled ? "py-2" : "py-4"
+          className={`relative mx-auto flex max-w-[1440px] items-center justify-between px-6 py-4 transition-transform duration-[380ms] ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${
+            scrolled ? "translate-y-4" : ""
           }`}
         >
           <button
@@ -155,7 +161,10 @@ export default function Header({ latestHeadlines = [] }) {
       <MobileNavStrip />
       <div className="border-b border-hairline md:hidden" />
 
-      <MobileNavDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} />
     </header>
+    {/* Outside <header>: the header is transformed, which would otherwise
+        become the containing block for this drawer's position: fixed. */}
+    <MobileNavDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} />
+    </>
   );
 }

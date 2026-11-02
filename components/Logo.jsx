@@ -8,8 +8,9 @@ import siteConfig from "@/data/siteConfig.json";
  * sits cleanly on the header's light gradient). The dark-footer version is
  * /public/images/logo-light.webp and is used in Footer.jsx.
  *
- * `shrink` makes the logo smaller once the page has scrolled, matching the
- * condensed sticky header. Width/height attributes are the file's intrinsic
+ * `shrink` scales the logo down (56px -> 40px) once the page has scrolled.
+ * It is a transform, not a height change, so it never reflows the page.
+ * Width/height attributes are the file's intrinsic
  * size so the browser reserves space and the header never jumps while the
  * image loads.
  */
@@ -27,8 +28,8 @@ export default function Logo({ className = "", shrink = false }) {
         height={278}
         fetchPriority="high"
         decoding="async"
-        className={`block w-auto max-w-full object-contain transition-all duration-300 ease-out ${
-          shrink ? "h-9 md:h-10" : "h-9 sm:h-10 md:h-14"
+        className={`block h-9 w-auto max-w-full origin-center object-contain transition-transform duration-[380ms] ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform motion-reduce:transition-none sm:h-10 md:h-14 ${
+          shrink ? "md:scale-[0.7143]" : ""
         }`}
       />
     </Link>
