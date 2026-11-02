@@ -3,6 +3,8 @@ import Link from "next/link";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import SidebarWidget from "@/components/SidebarWidget";
 import RelatedPicks from "@/components/RelatedPicks";
+import CenteredArticle from "@/components/CenteredArticle";
+import RichText from "@/components/RichText";
 import {
   getAllArticlesFlat,
   getArticleBySlug,
@@ -10,6 +12,7 @@ import {
   withRelations,
   getSidebarResolved,
   getRelatedPicks,
+  getLatestArticles,
 } from "@/lib/content";
 import JsonLd from "@/components/JsonLd";
 import { articleImageAlt, articleMetadata, articlePath, breadcrumbNode, graph, newsArticleNode } from "@/lib/seo";
@@ -37,6 +40,34 @@ export default async function ArticlePage({ params }) {
   // Body paragraphs: insert the related-picks block after the first couple
   // of paragraphs (matches the reference video), then continue the rest,
   // so the body never ends with a sudden empty stretch before it does.
+  // Articles marked  "layout": "centered"  use the centre-aligned feature page
+  // (components/CenteredArticle.jsx); everything else keeps the layout below.
+  const structuredData = (
+    <JsonLd
+      data={graph(
+        newsArticleNode(article, article.authorInfo),
+        breadcrumbNode([
+          { name: "Home", path: "/" },
+          ...(article.categoryInfo
+            ? [{ name: article.categoryInfo.label, path: `/${article.categoryInfo.slug}` }]
+            : []),
+          { name: article.title, path: articlePath(article) },
+        ])
+      )}
+    />
+  );
+  if (article.layout === "centered") {
+    return (
+      <>
+        {structuredData}
+        <CenteredArticle
+          article={article}
+          keepReading={getLatestArticles(3, { category: categorySlug, slug })}
+        />
+      </>
+    );
+  }
+
   const paragraphs = article.content || [];
   const splitPoint = Math.min(2, paragraphs.length);
   const firstHalf = paragraphs.slice(0, splitPoint);
@@ -97,8 +128,8 @@ export default async function ArticlePage({ params }) {
           )}
 
           <div className={`mt-6 space-y-5 text-[17px] leading-relaxed text-ink ${article.italic ? "font-serif italic" : ""}`}>
-            {firstHalf.map((para, idx) => (
-              <p key={idx}>{para}</p>
+            {firstHalf.filter((p) => typeof p === "string").map((para, idx) => (
+              <p key={idx}><RichText text={para} /></p>
             ))}
           </div>
 
@@ -106,8 +137,8 @@ export default async function ArticlePage({ params }) {
 
           {secondHalf.length > 0 && (
             <div className={`space-y-5 text-[17px] leading-relaxed text-ink ${article.italic ? "font-serif italic" : ""}`}>
-              {secondHalf.map((para, idx) => (
-                <p key={idx}>{para}</p>
+              {secondHalf.filter((p) => typeof p === "string").map((para, idx) => (
+                <p key={idx}><RichText text={para} /></p>
               ))}
             </div>
           )}

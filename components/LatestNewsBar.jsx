@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import siteConfig from "@/data/siteConfig.json";
 import HeaderGlow from "./HeaderGlow";
 import MarketTicker from "./MarketTicker";
@@ -9,6 +10,8 @@ import MarketTicker from "./MarketTicker";
 // How long each headline owns the bar on desktop/tablet, fade in + hold +
 // fade out included. Keep in sync with `.latest-fade` in app/globals.css.
 const SLOT_MS = 2500;
+
+const subscribeNoop = () => () => {};
 
 // Mobile marquee speed, in characters per second of scrolling.
 const MARQUEE_CHARS_PER_SEC = 8;
@@ -24,8 +27,15 @@ const MARQUEE_CHARS_PER_SEC = 8;
  *  - below md  : all headlines scroll continuously to the left (marquee).
  */
 export default function LatestNewsBar({ headlines = [] }) {
-  const items = headlines.length
-    ? headlines
+  // On the homepage, skip articles flagged "hideFromHome" in their JSON.
+  // Everywhere else the bar shows the 4 newest stories, flagged or not.
+  // (Applied after mount so the server HTML and the first client render match.)
+  const pathname = usePathname();
+  const mounted = useSyncExternalStore(subscribeNoop, () => true, () => false);
+  const onHome = mounted && pathname === "/";
+  const shown = (onHome ? headlines.filter((h) => !h.hideFromHome) : headlines).slice(0, 4);
+  const items = shown.length
+    ? shown
     : [{ title: siteConfig.latestNewsPlaceholder, href: "/" }];
 
   return (

@@ -20,11 +20,28 @@
  *
  * `alt` sets the <img> alt text (defaults to `label`, then empty).
  *
+ * `position` is a CSS object-position (e.g. "42% 28%", from an article's
+ * `imagePosition`) so a face stays in frame however the box crops the photo.
+ * `priority` marks the above-the-fold photo (eager + high fetch priority) and
+ * `width`/`height` reserve its space so the page doesn't jump while loading.
+ *
  * `variant="ad"` renders the dashed-border "ad space" box instead, which
  * intentionally does NOT use an image since ad slots are a separate
  * concern from article/author photos.
  */
-export default function ImagePlaceholder({ className = "", label, variant = "photo", rounded = "", src, alt }) {
+export default function ImagePlaceholder({
+  className = "",
+  label,
+  variant = "photo",
+  rounded = "",
+  src,
+  alt,
+  position,
+  priority = false,
+  width,
+  height,
+  sizes,
+}) {
   const isAd = variant === "ad";
   const imageSrc = src ? `/images/${src}` : "/images/pay-for-power.webp";
 
@@ -56,6 +73,13 @@ export default function ImagePlaceholder({ className = "", label, variant = "pho
       <img
         src={imageSrc}
         alt={alt ?? label ?? ""}
+        width={width}
+        height={height}
+        sizes={sizes}
+        loading={priority ? "eager" : "lazy"}
+        fetchPriority={priority ? "high" : undefined}
+        decoding="async"
+        style={position ? { objectPosition: position } : undefined}
         className="relative h-full w-full object-cover"
         onError={(e) => {
           e.currentTarget.style.visibility = "hidden";

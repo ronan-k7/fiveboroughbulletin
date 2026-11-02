@@ -221,7 +221,7 @@ export default function HeaderSearch({ mobile = false, onOpenChange }) {
                   idx === activeIndex ? "bg-neutral-50" : "hover:bg-neutral-50"
                 }`}
               >
-                <ImagePlaceholder className="h-12 w-12 shrink-0 rounded-lg" src={a.image} />
+                <ImagePlaceholder className="h-12 w-12 shrink-0 rounded-lg" src={a.image} position={a.imagePosition} />
                 <span className="min-w-0">
                   <span className="block text-[11px] font-bold uppercase tracking-wide text-header-cyan-dark">
                     {getCategory(a.category)?.label || a.category}

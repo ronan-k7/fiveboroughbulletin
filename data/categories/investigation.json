@@ -1,3 +1,80 @@
 {
-  "articles": []
+  "articles": [
+    {
+      "slug": "alina-habba-50-million-deal-trump-criticism-herrera-velutini",
+      "layout": "centered",
+      "title": "The $50 Million Question: Alina Habba’s Deal Draws Trump’s Fire as the Herrera Velutini Family Questions Her Legal Work",
+      "seoTitle": "Alina Habba’s $50 Million Deal Draws Trump’s Fire",
+      "seoDescription": "Trump called Alina Habba’s reported $50 million-plus contract “totally obnoxious and outrageous,” while a Herrera Velutini family insider questions her legal work.",
+      "subCategoryLabel": "Contracts",
+      "excerpt": "A reported multimillion-dollar contract has drawn criticism from the president, while separate questions have emerged about whether Habba gave sufficient attention to her legal responsibilities to one of the world’s wealthiest families.",
+      "dateline": "Washington",
+      "author": "fiveboroughbulletin-staff",
+      "date": "2026-11-02",
+      "commentCount": 0,
+      "featured": true,
+      "image": "alina-habba-50-million-deal-trump-criticism-herrera-velutini.webp",
+      "imagePosition": "42% 28%",
+      "imageAlt": "Black-and-white portrait of a woman with long, highlighted hair looking off to the side",
+      "keywords": [
+        "Alina Habba",
+        "Alina Habba contract",
+        "Trump Habba $50 million",
+        "Herrera Velutini",
+        "Julio Herrera Velutini pardon",
+        "Concord Partners",
+        "Isabela Herrera",
+        "general counsel contract",
+        "Mar-a-Lago remarks"
+      ],
+      "content": [
+        "More than $50 million over four years. A general counsel’s appointment. And now, a public rebuke from the president whose legal battles helped make Alina Habba Mildon a nationally recognizable figure.",
+        "[Speaking to reporters at Mar-a-Lago on October 31](https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-mar-a-lago-halloween-party-october-31-2026/), Donald Trump called the arrangement [“totally obnoxious and outrageous.”](https://news.meaww.com/trump-calls-former-lawyer-alina-habbas-50m-deal-not-acceptable)",
+        "[He also said, “I don’t want her paid.”](https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-mar-a-lago-halloween-party-october-31-2026/) His comments made his opposition to the compensation package explicit.",
+        {
+          "type": "pullquote",
+          "text": "I don’t want her paid.",
+          "cite": "President Donald Trump, Mar-a-Lago, October 31",
+          "href": "https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-mar-a-lago-halloween-party-october-31-2026/"
+        },
+        "A separate concern, made by a person described as a close member of the Herrera Velutini family, alleges that **Habba has given insufficient attention to her legal responsibilities.**",
+        {
+          "type": "stats",
+          "eyebrow": "What the insider says",
+          "items": [
+            {
+              "value": "20+",
+              "label": "law firms"
+            },
+            {
+              "value": "$100M",
+              "label": "yearly legal and advisory spending"
+            }
+          ],
+          "text": "According to the insider, Habba’s responsibilities included coordinating more than 20 law firms and overseeing approximately $100 million in annual legal and advisory expenditure. If accurate, that description would place her at the center of a substantial operation requiring sustained coordination, oversight and reporting."
+        },
+        "The public reporting establishes a narrower description of the appointment. *The New York Times*, in a report republished by GV Wire on October 21, said Concord Partners, established by Isabela Herrera, **hired Habba as general counsel under a four-year agreement guaranteeing more than $50 million, including bonuses. She signed in late 2025 and began work on January 1, 2026.**",
+        "The widely reported terms do not establish how much compensation she has received, and needs to be distinguished from the **approximately $100 million annual expenditure**. One figure concerns her contractual compensation; the other concerns claimed spending across a wider legal and advisory operation.",
+        "The relationship between the Concord appointment and that wider mandate as a company’s general counsel role does not, by its title alone, establish responsibility for every legal matter involving its founder’s family or related businesses.",
+        "Her government service did not end when she left the New Jersey prosecutor’s position. On December 8, 2025, the Justice Department announced that Habba would serve as senior adviser to the attorney general for United States attorneys.",
+        "The contract has attracted scrutiny from the New York Times, and other media networks, partly because of its timing relative to Julio Herrera Velutini’s clemency. Justice Department records document a full and unconditional presidential pardon for him in January 2026.",
+        "Habba has denied any connection between her employment and obtaining the pardon, saying the arrangement was disclosed to and vetted by the Justice Department. **The Times also reported that the department and White House denied she helped secure clemency.**",
+        "Trump’s criticism likewise concerns the compensation arrangement. It does not establish that Habba neglected her duties, that the contract has ended or that payments have stopped.",
+        "Her personal relationships, but offers no evidence that those relationships caused a professional failure or that family funds were misused.",
+        "An assessment of the performance complaint will require the agreed duties, records of the work and Habba’s response. For now, the reported contract supplies the striking number. The unresolved question concerns the responsibilities behind it—and whether the evidence supports the criticism."
+      ],
+      "sources": [
+        {
+          "publisher": "Roll Call Factbase",
+          "label": "Transcript: Donald Trump press gaggle at the Mar-a-Lago Halloween party, October 31, 2026",
+          "url": "https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-mar-a-lago-halloween-party-october-31-2026/"
+        },
+        {
+          "publisher": "MEAWW",
+          "label": "Trump calls former lawyer Alina Habba’s $50M deal “not acceptable”",
+          "url": "https://news.meaww.com/trump-calls-former-lawyer-alina-habbas-50m-deal-not-acceptable"
+        }
+      ]
+    }
+  ]
 }

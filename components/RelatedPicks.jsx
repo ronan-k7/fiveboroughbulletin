@@ -21,7 +21,7 @@ export default function RelatedPicks({ items }) {
             href={`/${item.category}/${item.slug}`}
             className="flex items-center gap-4 py-4 first:pt-0 group"
           >
-            <ImagePlaceholder className="h-20 w-28 shrink-0" src={item.image} />
+            <ImagePlaceholder className="h-20 w-28 shrink-0" src={item.image} position={item.imagePosition} />
             <h3 className="font-serif text-lg font-bold leading-snug text-ink group-hover:underline decoration-2 underline-offset-2">
               {item.title}
             </h3>

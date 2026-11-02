@@ -11,9 +11,12 @@ import { getLatestArticles } from "@/lib/content";
  * data, so the article JSON never has to ship to the browser for it.
  */
 export default function SiteChrome({ children }) {
-  const latestHeadlines = getLatestArticles(4).map((a) => ({
+  // A few extra are fetched so the bar can still show 4 on the homepage,
+  // where articles flagged "hideFromHome" are skipped (see LatestNewsBar).
+  const latestHeadlines = getLatestArticles(6).map((a) => ({
     title: a.title,
     href: `/${a.category}/${a.slug}`,
+    hideFromHome: Boolean(a.hideFromHome),
   }));
 
   return (

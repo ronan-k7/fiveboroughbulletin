@@ -25,21 +25,24 @@ export const metadata = buildPageMetadata({
 /** Newest-first articles of one category, minus anything already shown higher up the page. */
 function newestIn(categorySlug, count, usedKeys) {
   return getArticlesByCategory(categorySlug)
-    .filter((a) => !usedKeys.has(`${categorySlug}/${a.slug}`))
+    .filter((a) => !usedKeys.has(`${categorySlug}/${a.slug}`) && !a.hideFromHome)
     .slice(0, count)
     .map((a) => withRelations(a, categorySlug));
 }
 
 export default function HomePage() {
-  const sidebar = getSidebarResolved();
+  const sidebar = getSidebarResolved({ home: true });
 
   // Everything on this page is picked by date (newest first, then time) --
   // nothing is hand-picked. A new article added to any data/categories/*.json
   // file lands in the top block automatically, and pushes the oldest one out.
   //
+  // Articles flagged "hideFromHome": true in their JSON are skipped here
+  // (and in the sidebar below) but stay live everywhere else on the site.
+  //
   // Top feature, 7 newest stories site-wide: 1 centre story, 3 text items on
   // the left, 1 small-image item on the right and 2 picks under it.
-  const top = getLatestArticles(7);
+  const top = getLatestArticles(7, null, { home: true });
   const featureCenter = top[0];
   const featureLeft = top.slice(1, 4);
   const featureRight = top.slice(4, 5);
@@ -60,7 +63,7 @@ export default function HomePage() {
             path: "/",
             name: SITE_TITLE,
             description: SITE_DESCRIPTION,
-            articles: getLatestArticles(10),
+            articles: getLatestArticles(10, null, { home: true }),
           })
         )}
       />
@@ -87,7 +90,7 @@ export default function HomePage() {
                 <div>
                   <h3 className="font-serif text-2xl font-bold leading-tight text-ink">
                     <a href={`/business/${featuredBusiness.slug}`} className="hover:underline decoration-2 underline-offset-2">
-                      <span className="text-brand-teal">{featuredBusiness.categoryInfo?.label}. </span>
+                      <span className="text-brand-teal">{featuredBusiness.categoryInfo?.label}{featuredBusiness.categoryInfo?.label?.endsWith(".") ? " " : ". "}</span>
                       {featuredBusiness.title}
                     </a>
                   </h3>

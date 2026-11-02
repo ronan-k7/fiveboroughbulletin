@@ -23,6 +23,7 @@
     },
     {
       "slug": "supreme-court-clears-ballroom-construction",
+      "hideFromHome": true,
       "title": "Supreme Court allows White House ballroom construction to continue during legal fight",
       "subCategoryLabel": "Courts",
       "excerpt": "The justices did not rule on the legality of the project itself, finding instead that the preservation group challenging it had not shown it would suffer direct harm.",
