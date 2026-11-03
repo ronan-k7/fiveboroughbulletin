@@ -1,6 +1,7 @@
 import ArticleCard from "@/components/ArticleCard";
 import SidebarWidget from "@/components/SidebarWidget";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
+import AdBanner from "@/components/AdBanner";
 import TripleFeature from "@/components/TripleFeature";
 import JsonLd from "@/components/JsonLd";
 import {
@@ -178,9 +179,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Full-width ad slot — placeholder only. Swap for a real ad unit later. */}
+      {/* Full-width ad slot (panoramic desktop crop, wider mobile crop). */}
       <div className="mt-10">
-        <ImagePlaceholder className="h-32 w-full sm:h-40" label="Ad space — 728x90 / 970x250" variant="ad" />
+        <AdBanner />
       </div>
     </div>
   );

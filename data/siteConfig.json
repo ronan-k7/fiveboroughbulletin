@@ -36,13 +36,16 @@
       { "label": "Sports", "href": "/sports" }
     ],
     "legalLinks": [
-      { "label": "The team", "href": "/the-team" },
-      { "label": "Legal notice", "href": "/legal-notice" },
+      { "label": "About", "href": "/about" },
+      { "label": "Our Team", "href": "/our-team" },
+      { "label": "Source Methodology", "href": "/source-methodology" },
+      { "label": "Right of Reply", "href": "/right-of-reply-policy" },
+      { "label": "Contact", "href": "/contact" },
       { "label": "Privacy Policy", "href": "/privacy-policy" },
-      { "label": "Cookie settings", "href": "/cookie-settings" },
-      { "label": "Cookies", "href": "/cookies" }
+      { "label": "Terms & Conditions", "href": "/terms-and-conditions" },
+      { "label": "Legal", "href": "/legal" }
     ],
-    "copyright": "© Copyright 2026 fiveboroughbulletin.com",
+    "copyright": "© 2026 FiveBoroughBulletin. All rights reserved.",
     "socialLinks": [
       { "label": "Instagram", "icon": "instagram", "href": "https://instagram.com" },
       { "label": "X", "icon": "x", "href": "https://x.com" },

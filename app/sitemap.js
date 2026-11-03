@@ -4,6 +4,7 @@ import {
   getAllCategories,
 } from "@/lib/content";
 import { absoluteUrl, articlePath, imageUrl, modifiedIso } from "@/lib/seo";
+import { getStaticPages, LAST_UPDATED } from "@/lib/staticPages";
 
 /**
  * /sitemap.xml, generated from the same JSON the pages are built from.
@@ -70,6 +71,16 @@ export default function sitemap() {
       lastModified: newest(theirs.map((a) => a.lastMod)),
       changeFrequency: "weekly",
       priority: 0.4,
+    });
+  }
+
+  // Site-information pages (About, Our Team, Contact, Privacy, Terms, Legal, ...)
+  for (const page of getStaticPages()) {
+    entries.push({
+      url: absoluteUrl(page.path),
+      lastModified: toDate(LAST_UPDATED),
+      changeFrequency: "yearly",
+      priority: 0.3,
     });
   }
 
