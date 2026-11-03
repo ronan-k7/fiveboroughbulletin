@@ -12,7 +12,13 @@ import {
   SITE_DESCRIPTION,
   SITE_KEYWORDS,
 } from "@/lib/seo";
-import { getArticlesByCategory, getLatestArticles, withRelations, getSidebarResolved } from "@/lib/content";
+import {
+  getAllArticlesFlat,
+  getArticlesByCategory,
+  getLatestArticles,
+  withRelations,
+  getSidebarResolved,
+} from "@/lib/content";
 
 export const metadata = buildPageMetadata({
   title: SITE_TITLE,
@@ -30,6 +36,28 @@ function newestIn(categorySlug, count, usedKeys) {
     .map((a) => withRelations(a, categorySlug));
 }
 
+const keyOf = (a) => `${a.category}/${a.slug}`;
+
+/**
+ * Fills empty slots without ever repeating a story already on the page.
+ * Candidates are every homepage-eligible story not used yet; the pick always
+ * comes from the category that has appeared the FEWEST times so far (so a
+ * category with no story on the page yet goes first, ties -> newest first).
+ * `used` and `shown` are updated as stories are picked.
+ */
+function freshPicks(count, usedKeys, shown) {
+  const pool = getAllArticlesFlat().filter((a) => !a.hideFromHome && !usedKeys.has(keyOf(a)));
+  const out = [];
+  while (out.length < count && pool.length > 0) {
+    pool.sort((a, b) => (shown[a.category] || 0) - (shown[b.category] || 0)); // stable: keeps newest-first on ties
+    const a = pool.shift();
+    usedKeys.add(keyOf(a));
+    shown[a.category] = (shown[a.category] || 0) + 1;
+    out.push(withRelations(a, a.category));
+  }
+  return out;
+}
+
 export default function HomePage() {
   const sidebar = getSidebarResolved({ home: true });
 
@@ -42,18 +70,41 @@ export default function HomePage() {
   //
   // Top feature, 7 newest stories site-wide: 1 centre story, 3 text items on
   // the left, 1 small-image item on the right and 2 picks under it.
-  const top = getLatestArticles(7, null, { home: true });
+  //
+  // Exception: an article with  "homePin": N  in its JSON is placed in slot N
+  // of this block (1 = centre story, 2 = first left text item, ...) instead of
+  // wherever its date would put it. Everything else keeps its date order
+  // around it. Remove "homePin" to return the article to normal ordering.
+  const pool = getLatestArticles(40, null, { home: true });
+  const pinned = pool.filter((a) => a.homePin).sort((a, b) => a.homePin - b.homePin);
+  const top = pool.filter((a) => !a.homePin).slice(0, 7 - pinned.length);
+  pinned.forEach((a) => top.splice(Math.min(a.homePin - 1, top.length), 0, a));
   const featureCenter = top[0];
   const featureLeft = top.slice(1, 4);
   const featureRight = top.slice(4, 5);
   const featurePicks = top.slice(5, 7);
 
   // Stories already shown in the top block aren't repeated in the sections below.
-  const used = new Set(top.map((a) => `${a.category}/${a.slug}`));
+  const used = new Set(top.map(keyOf));
+  const shown = {}; // how many times each category appears on the page so far
+  const markShown = (list) => list.forEach((a) => (shown[a.category] = (shown[a.category] || 0) + 1));
+  markShown(top);
 
-  const businessGrid = newestIn("business", 4, used);
-  const featuredBusiness = businessGrid[0];
-  const financePicks = newestIn("finance", 3, used);
+  // Business: 1 featured story + a grid of the next ones. The featured story is
+  // NOT repeated in the grid. If business runs short, the empty grid slots are
+  // filled with a story from the category shown least on the page (a category
+  // with nothing on the page yet comes first) -- never with a repeat.
+  const businessPicks = newestIn("business", 5, used);
+  businessPicks.forEach((a) => used.add(keyOf(a)));
+  markShown(businessPicks);
+  const featuredBusiness = businessPicks[0];
+  let financePicks = newestIn("finance", 3, used);
+  financePicks.forEach((a) => used.add(keyOf(a)));
+  markShown(financePicks);
+
+  const businessGrid = businessPicks.slice(1, 5);
+  if (businessGrid.length < 3) businessGrid.push(...freshPicks(3 - businessGrid.length, used, shown));
+  if (financePicks.length < 3) financePicks = [...financePicks, ...freshPicks(3 - financePicks.length, used, shown)];
 
   return (
     <div className="mx-auto w-full max-w-[1440px] px-4 py-6 sm:px-6 md:py-8">

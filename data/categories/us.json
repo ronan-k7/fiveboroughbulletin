@@ -67,6 +67,7 @@
     },
     {
       "slug": "nasa-launches-roman-space-telescope",
+      "hideFromHome": true,
       "title": "NASA launches Nancy Grace Roman Space Telescope on mission to probe dark energy",
       "subCategoryLabel": "Space",
       "excerpt": "The observatory lifted off from Kennedy Space Center on a Falcon Heavy rocket and now begins a months-long journey to its final orbit.",

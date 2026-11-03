@@ -4,6 +4,7 @@ import ImagePlaceholder from "@/components/ImagePlaceholder";
 import SidebarWidget from "@/components/SidebarWidget";
 import RelatedPicks from "@/components/RelatedPicks";
 import CenteredArticle from "@/components/CenteredArticle";
+import ProfileArticle from "@/components/ProfileArticle";
 import RichText from "@/components/RichText";
 import {
   getAllArticlesFlat,
@@ -56,6 +57,18 @@ export default async function ArticlePage({ params }) {
       )}
     />
   );
+  // "layout": "profile" -> long-form profile page (components/ProfileArticle.jsx).
+  if (article.layout === "profile") {
+    return (
+      <>
+        {structuredData}
+        <ProfileArticle
+          article={article}
+          keepReading={getLatestArticles(3, { category: categorySlug, slug })}
+        />
+      </>
+    );
+  }
   if (article.layout === "centered") {
     return (
       <>
