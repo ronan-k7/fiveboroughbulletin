@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 /**
  * Image box used everywhere an article/author photo is needed.
  *
@@ -22,8 +24,10 @@
  *
  * `position` is a CSS object-position (e.g. "42% 28%", from an article's
  * `imagePosition`) so a face stays in frame however the box crops the photo.
- * `priority` marks the above-the-fold photo (eager + high fetch priority) and
- * `width`/`height` reserve its space so the page doesn't jump while loading.
+ * `priority` marks the above-the-fold photo (eager + high fetch priority +
+ * preload). The box always takes its size from `className` (aspect ratio /
+ * height), so the page doesn't jump while the photo loads; `width`/`height`
+ * are accepted for compatibility but no longer needed.
  *
  * `variant="ad"` renders the dashed-border "ad space" box instead, which
  * intentionally does NOT use an image since ad slots are a separate
@@ -44,6 +48,11 @@ export default function ImagePlaceholder({
 }) {
   const isAd = variant === "ad";
   const imageSrc = src ? `/images/${src}` : "/images/pay-for-power.webp";
+  // Served through next/image, so phones get a resized WebP instead of the
+  // full-size original. `sizes` tells the browser how wide the box really is:
+  // avatars (rounded-full) are tiny, everything else defaults to full width
+  // on phones and ~400px from `sm` up unless the caller passes its own.
+  const resolvedSizes = sizes || (rounded.includes("rounded-full") ? "64px" : "(min-width: 640px) 400px, 100vw");
 
   if (isAd) {
     return (
@@ -70,14 +79,12 @@ export default function ImagePlaceholder({
           </span>
         </div>
       </div>
-      <img
+      <Image
         src={imageSrc}
         alt={alt ?? label ?? ""}
-        width={width}
-        height={height}
-        sizes={sizes}
-        loading={priority ? "eager" : "lazy"}
-        fetchPriority={priority ? "high" : undefined}
+        fill
+        sizes={resolvedSizes}
+        priority={priority}
         decoding="async"
         style={position ? { objectPosition: position } : undefined}
         className="relative h-full w-full object-cover"

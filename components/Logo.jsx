@@ -26,7 +26,6 @@ export default function Logo({ className = "", shrink = false }) {
         alt={siteConfig.siteName}
         width={1100}
         height={278}
-        fetchPriority="high"
         decoding="async"
         className={`block h-9 w-auto max-w-full origin-center object-contain transition-transform duration-[380ms] ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform motion-reduce:transition-none sm:h-10 md:h-14 ${
           shrink ? "md:scale-[0.7143]" : ""

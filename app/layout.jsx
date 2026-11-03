@@ -1,20 +1,5 @@
-// Self-hosted fonts (bundled via @fontsource, no external network calls at build/runtime)
-import "@fontsource/inter/400.css";
-import "@fontsource/inter/500.css";
-import "@fontsource/inter/600.css";
-import "@fontsource/inter/700.css";
-import "@fontsource/inter/800.css";
-import "@fontsource/bitter/400.css";
-import "@fontsource/bitter/500.css";
-import "@fontsource/bitter/600.css";
-import "@fontsource/bitter/700.css";
-import "@fontsource/bitter/800.css";
-import "@fontsource/bitter/900.css";
-import "@fontsource/bitter/400-italic.css";
-import "@fontsource/bitter/500-italic.css";
-import "@fontsource/bitter/600-italic.css";
-import "@fontsource/bitter/700-italic.css";
-
+// Self-hosted fonts (Bitter + Inter) are declared in ./fonts.js via next/font.
+import { bitter, inter } from "./fonts";
 import "./globals.css";
 import SiteChrome from "@/components/SiteChrome";
 import JsonLd from "@/components/JsonLd";
@@ -106,7 +91,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${bitter.variable}`}>
       <body className="antialiased bg-white text-neutral-900">
         <JsonLd data={graph(organizationNode(), websiteNode())} />
         <SiteChrome>{children}</SiteChrome>

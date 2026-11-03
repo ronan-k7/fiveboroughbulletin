@@ -7,6 +7,13 @@ const APEX_HOST = "fiveboroughbulletin.com";
 const nextConfig = {
   reactStrictMode: true,
 
+  // Photos are served through next/image (resized WebP). Keep each resized copy
+  // cached for 31 days so repeat visits and PageSpeed runs hit the cache.
+  images: {
+    formats: ["image/webp"],
+    minimumCacheTTL: 60 * 60 * 24 * 31,
+  },
+
   async redirects() {
     return [
       // fiveboroughbulletin.com (http or https)  ->  https://www.fiveboroughbulletin.com

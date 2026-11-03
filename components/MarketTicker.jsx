@@ -66,6 +66,9 @@ export default function MarketTicker({ className = "" }) {
 
   // Fetch + refresh quotes
   useEffect(() => {
+    // The ticker is only visible from md up (see LatestNewsBar). On phones skip
+    // the /api/markets request and the refresh timers entirely.
+    if (!window.matchMedia("(min-width: 768px)").matches) return undefined;
     let cancelled = false;
 
     const load = async () => {
