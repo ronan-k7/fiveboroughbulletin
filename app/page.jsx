@@ -3,6 +3,7 @@ import SidebarWidget from "@/components/SidebarWidget";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 import AdBanner from "@/components/AdBanner";
 import TripleFeature from "@/components/TripleFeature";
+import PoliticsPuertoRicoSection from "@/components/PoliticsPuertoRicoSection";
 import JsonLd from "@/components/JsonLd";
 import {
   buildPageMetadata,
@@ -76,7 +77,15 @@ export default function HomePage() {
   // of this block (1 = centre story, 2 = first left text item, ...) instead of
   // wherever its date would put it. Everything else keeps its date order
   // around it. Remove "homePin" to return the article to normal ordering.
-  const pool = getLatestArticles(40, null, { home: true });
+  //
+  // Politics and Puerto Rico have their own section further down (3 newest
+  // stories each). They are picked FIRST and kept out of the top block and the
+  // fill-in picks, so none of those six stories is ever shown twice.
+  const politicsPicks = newestIn("politics", 3, new Set());
+  const puertoRicoPicks = newestIn("puerto-rico", 3, new Set());
+  const reserved = new Set([...politicsPicks, ...puertoRicoPicks].map(keyOf));
+
+  const pool = getLatestArticles(40, null, { home: true }).filter((a) => !reserved.has(keyOf(a)));
   const pinned = pool.filter((a) => a.homePin).sort((a, b) => a.homePin - b.homePin);
   const top = pool.filter((a) => !a.homePin).slice(0, 7 - pinned.length);
   pinned.forEach((a) => top.splice(Math.min(a.homePin - 1, top.length), 0, a));
@@ -86,10 +95,12 @@ export default function HomePage() {
   const featurePicks = top.slice(5, 7);
 
   // Stories already shown in the top block aren't repeated in the sections below.
-  const used = new Set(top.map(keyOf));
+  const used = new Set([...top.map(keyOf), ...reserved]);
   const shown = {}; // how many times each category appears on the page so far
   const markShown = (list) => list.forEach((a) => (shown[a.category] = (shown[a.category] || 0) + 1));
   markShown(top);
+  markShown(politicsPicks);
+  markShown(puertoRicoPicks);
 
   // Business: 1 featured story + a grid of the next ones. The featured story is
   // NOT repeated in the grid. If business runs short, the empty grid slots are
@@ -168,6 +179,10 @@ export default function HomePage() {
           <SidebarWidget title="Latest" items={sidebar.latest} sticky />
         </div>
       </section>
+
+      {/* Politics & Puerto Rico: dark navy two-desk feature band (3 newest
+          stories of each category, see components/PoliticsPuertoRicoSection.jsx). */}
+      <PoliticsPuertoRicoSection politics={politicsPicks} puertoRico={puertoRicoPicks} />
 
       {/* Finance strip */}
       <section className="mt-10 border-t-2 border-ink pt-6">

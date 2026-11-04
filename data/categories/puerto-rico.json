@@ -1,3 +1,169 @@
 {
-  "articles": []
+  "articles": [
+    {
+      "slug": "puerto-rico-governor-signs-new-judiciary-act-over-chief-justice-objections",
+      "title": "Puerto Rico governor signs new Judiciary Act over the chief justice's objections",
+      "subCategoryLabel": "Courts",
+      "excerpt": "Gov. Jenniffer González signed Senate Bill 1096, replacing the 2003 law that governs the island's courts. Chief Justice Maite Oronoz Rodríguez had urged a veto and now says she will study her options.",
+      "author": "fiveboroughbulletin-staff",
+      "date": "2026-11-03",
+      "time": "20:30 ET",
+      "featured": true,
+      "image": "puerto-rico-governor-signs-judiciary-act-chief-justice-objects.webp",
+      "imageCaption": "The Puerto Rico Supreme Court building in San Juan",
+      "imageAlt": "The Puerto Rico Supreme Court building in San Juan",
+      "keywords": [
+        "Puerto Rico Judiciary Act",
+        "Senate Bill 1096",
+        "Maite Oronoz Rodríguez",
+        "Jenniffer González signs law",
+        "Rivera Schatz judicial reform"
+      ],
+      "content": [
+        "Gov. Jenniffer González Colón signed a sweeping rewrite of Puerto Rico's court laws on Tuesday, siding with the Senate over the objections of the island's chief justice. The measure, Senate Bill 1096, creates a new Puerto Rico Judiciary Act and repeals Act 201-2003, the Judiciary Act of 2003 that has governed the courts for more than two decades, according to a statement from La Fortaleza reported by [Notiuno](https://www.notiuno.com/noticias/gobierno-y-politica/jgo-firma-la-reforma-judicial-de-rivera-schatz-tras-d-as-de-dudas-p-blicas/article_e72fbdd3-1612-406f-beeb-2a0e8f129894.html). It also amends other laws tied to the judicial system.",
+        "The bill was written by Senate President Thomas Rivera Schatz. Its backers say it will make the courts more effective and modern. As filed in February, one of its biggest changes was to eliminate the category of municipal judge, folding all trial-level judges into a single rank of superior court judge.",
+        "The signing came after several days in which the governor said publicly that she was still reviewing the bill. It also arrived at a tense moment between González and Rivera Schatz, who have been trading criticism in recent weeks over how the government is run and over ongoing legislative investigations. Opposition groups had joined the chief justice in asking for a veto. La Fortaleza's announcement did not say when the new structure would take effect or which law number it was assigned. The governor signed three other measures the same day, including one that raises from 70 to 75 the age limit for renewing a driver's license online.",
+        "Chief Justice Maite Oronoz Rodríguez responded within hours. In a written statement carried by [Metro Puerto Rico](https://www.metro.pr/noticias/2026/11/03/jueza-presidenta-del-tribunal-supremo-lamenta-firma-de-reforma-judicial/), she said she deeply regretted the decision and that the court had raised serious constitutional and operational concerns with lawmakers and with the governor directly. Those concerns, she said, were never answered as the bill moved through the legislature.",
+        "Her main objection is about who gets to make decisions. Oronoz argued that the new law shifts authority over essential court administration to other officials without changing the responsibility the Constitution places on the Office of the Chief Justice. In her words, that mismatch between who decides and who answers for the results raises serious questions about how the courts will be run and how quickly they can respond.",
+        "She also warned of practical effects. The changes, she said, could disrupt how resources, staff and services are managed across the island's judicial regions, and could affect how well the courts serve the people who rely on them. \"This is not merely an organizational matter,\" she said.",
+        "What happens next is not yet clear. Oronoz did not say what she might do, only that her office will carefully examine the law's reach and consequences and weigh the legal and institutional options available. She added that she will keep carrying out her constitutional duties and working with the associate justices and judges, and that she will keep defending the independence of the courts.",
+        "For now, Puerto Rico has a new legal framework for its judiciary, and the head of that branch has said on the record that she believes it raises serious constitutional questions."
+      ],
+      "relatedPicks": [
+        "puerto-rico-family-secretary-referred-to-federal-investigators-over-louisiana-trip",
+        "investors-race-puerto-rico-december-31-act-60-deadline"
+      ],
+      "sources": [
+        {
+          "publisher": "Notiuno",
+          "label": "JGO firma la reforma judicial de Rivera Schatz tras dias de dudas publicas",
+          "url": "https://www.notiuno.com/noticias/gobierno-y-politica/jgo-firma-la-reforma-judicial-de-rivera-schatz-tras-d-as-de-dudas-p-blicas/article_e72fbdd3-1612-406f-beeb-2a0e8f129894.html"
+        },
+        {
+          "publisher": "Metro Puerto Rico",
+          "label": "Jueza presidenta del Tribunal Supremo lamenta firma de reforma judicial",
+          "url": "https://www.metro.pr/noticias/2026/11/03/jueza-presidenta-del-tribunal-supremo-lamenta-firma-de-reforma-judicial/"
+        },
+        {
+          "publisher": "Senate of Puerto Rico",
+          "label": "P. del S. 1096 (as filed, February 19, 2026)",
+          "url": "https://senado.pr.gov/document_vault/medidas_legislativas/ps1096-26.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "puerto-rico-family-secretary-referred-to-federal-investigators-over-louisiana-trip",
+      "title": "Puerto Rico senator refers Family secretary to federal investigators over Louisiana trip",
+      "subCategoryLabel": "Government",
+      "excerpt": "NOLA Education, the company picked for a $38.5 million federal-funds program, told the Senate it paid for meals and transportation that Secretary Suzanne Roig said under oath she covered herself. Roig denies wrongdoing and says she will not step aside.",
+      "author": "fiveboroughbulletin-staff",
+      "date": "2026-11-03",
+      "time": "18:45 ET",
+      "image": "puerto-rico-family-secretary-referred-federal-investigators-louisiana-trip.webp",
+      "imageCaption": "The Puerto Rico Capitol in San Juan, where Senate committees have been questioning the Family secretary",
+      "imageAlt": "The Puerto Rico Capitol building in San Juan",
+      "keywords": [
+        "Suzanne Roig",
+        "NOLA Education Puerto Rico",
+        "Star Academy Puerto Rico",
+        "Puerto Rico Family Department",
+        "Juan Oscar Morales referral"
+      ],
+      "content": [
+        "A Puerto Rico senator on Monday sent new documents to state and federal agencies that appear to contradict sworn testimony from the island's Family secretary, the latest turn in a Senate investigation that has run for weeks. Sen. Juan Oscar Morales, a member of the governing New Progressive Party (PNP) who has demanded Secretary Suzanne Roig Fuertes' resignation, referred her to Puerto Rico's Justice Department, the Office of Government Ethics, the Comptroller's Office and the inspector general of the U.S. Department of Health and Human Services, according to [Metro Puerto Rico](https://www.metro.pr/noticias/2026/11/03/senador-pnp-refiere-a-suzanne-roig-a-justicia-y-a-los-federales).",
+        "The controversy began last month, when Blanca Medina Díaz, the former head of the Family Department's socioeconomic development agency (ADSEF), told the Senate under oath that Roig pressured her to approve a $38.5 million contract with NOLA Education. The money would have come from the federal Temporary Assistance for Needy Families (TANF) program, and NOLA is a Louisiana company that runs a school program called Star Academy. Medina Díaz was removed from her post on Sept. 28. Roig denies wrongdoing, and she and the department say no contract was formalized and no public money was paid out. Morales and Senate Vice President Carmelo Ríos, both PNP members, have called on her to resign, and WAPA reported that Puerto Rico's Justice Department has opened an investigation into the contracting process.",
+        "A separate dispute centers on a December 2025 trip to Louisiana. A Puerto Rican delegation traveled there from Dec. 7 to 10 to visit schools using Star Academy. At a public Senate hearing on Oct. 7, Roig testified under oath that she paid for her own dinners in cash, [El Nuevo Día](https://www.elnuevodia.com/english/news/story/nola-education-documents-on-suzanne-roigs-travel-expenses-to-be-referred-to-state-and-federal-authorities/) reported.",
+        "Then, on Friday, NOLA Education sent the Senate a letter saying it had covered the delegation's food and transportation. The company put the total at $13,525.05 in documented and estimated costs. The receipts include nearly $3,000 for a Dec. 8 dinner at Arnaud's in New Orleans, about $2,000 for a group dinner the next night, and $5,407.50 for a shuttle service. The company said those costs covered a group of 13 to 20 people on its side as well as the seven-member Puerto Rican delegation, and that no one from the delegation told it that it could not pay for their meals.",
+        "Morales is asking investigators to examine whether the officials knew NOLA would pay, whether they asked permission to accept that help, and whether the gifts created a conflict of interest. He also wants to know if any employees asked the Family Department to reimburse per diem costs for expenses they did not actually incur, and whether the agency paid. His referral raises the possibility of a perjury case, though no charges have been filed and investigators have not announced any findings.",
+        "NOLA says it never signed a contract and has received no money from the government, which matches what Roig has said. In its letter, the company also said Roig contacted it in early November 2025 to request the school visit and that she told its staff during the trip that the department would issue a request for proposals. NOLA added that Gov. Jenniffer González learned about Star Academy in February 2025 and showed interest in bringing it to the island. La Fortaleza has denied that the governor asked for a meeting or for donations.",
+        "González expressed confidence in Roig in early October, but on Tuesday she again left the matter to investigators and did not say whether she would dismiss her, [Primera Hora](https://www.primerahora.com/noticias/gobierno-politica/notas/gobernadora-deja-en-manos-de-las-agencias-investigadoras-toda-controversia-sobre-la-secretaria-de-la-familia/) reported. Roig has called the scrutiny \"persecution\" and \"stalking\" in written statements and said no political noise will distract her from her responsibilities. She has also said she will not step aside. Senate President Thomas Rivera Schatz blamed the governor on Monday for keeping the situation going, arguing that the documents contradict what Roig told senators. El Nuevo Día has also reported that senators are now asking about a fourth trip, to Mexico, where Roig appeared as a speaker."
+      ],
+      "relatedPicks": [
+        "puerto-rico-governor-signs-new-judiciary-act-over-chief-justice-objections",
+        "investors-race-puerto-rico-december-31-act-60-deadline"
+      ],
+      "sources": [
+        {
+          "publisher": "Metro Puerto Rico",
+          "label": "Senador PNP refiere a Suzanne Roig a Justicia y a los federales",
+          "url": "https://www.metro.pr/noticias/2026/11/03/senador-pnp-refiere-a-suzanne-roig-a-justicia-y-a-los-federales"
+        },
+        {
+          "publisher": "El Nuevo Día",
+          "label": "NOLA Education documents on Suzanne Roig's travel expenses to be referred to state and federal authorities",
+          "url": "https://www.elnuevodia.com/english/news/story/nola-education-documents-on-suzanne-roigs-travel-expenses-to-be-referred-to-state-and-federal-authorities/"
+        },
+        {
+          "publisher": "Primera Hora",
+          "label": "Gobernadora deja en manos de las agencias investigadoras toda controversia sobre la secretaria de la Familia",
+          "url": "https://www.primerahora.com/noticias/gobierno-politica/notas/gobernadora-deja-en-manos-de-las-agencias-investigadoras-toda-controversia-sobre-la-secretaria-de-la-familia/"
+        },
+        {
+          "publisher": "Metro Puerto Rico",
+          "label": "Vicepresidente del Senado exige la renuncia de la secretaria de la Familia",
+          "url": "https://www.metro.pr/noticias/2026/10/23/vicepresidente-del-senado-exige-la-renuncia-de-la-secretaria-de-la-familia/"
+        },
+        {
+          "publisher": "WAPA",
+          "label": "Senadores reaccionan a investigación contra Suzanne Roig y piden su renuncia",
+          "url": "https://wapa.tv/noticias/locales/senadores-reaccionan-a-investigaci-n-contra-suzanne-roig-y-piden-su-renuncia/article_ca4c3e1d-c1a9-4583-9c9f-35a7aafe800f.html"
+        },
+        {
+          "publisher": "WAPA",
+          "label": "Secretaria de la Familia dijo que pagó en efectivo; NOLA reporta $13,500 en gastos del viaje a Luisiana",
+          "url": "https://wapa.tv/noticias/politica/secretaria-de-la-familia-dijo-que-pag-en-efectivo-nola-reporta-13-500-en-gastos/article_0f5d35e6-5f63-41ef-bacc-b5db31bf7b9b.html"
+        }
+      ],
+      "updated": "2026-11-04"
+    },
+    {
+      "slug": "investors-race-puerto-rico-december-31-act-60-deadline",
+      "title": "Investors race to beat Puerto Rico's Dec. 31 Act 60 deadline as the 0% tax rate nears its end",
+      "subCategoryLabel": "Economy",
+      "excerpt": "Applications for the island's resident investor program are surging ahead of a rule change that will put a 4% rate on new applicants starting in January.",
+      "author": "fiveboroughbulletin-staff",
+      "date": "2026-11-03",
+      "time": "09:00 ET",
+      "image": "investors-race-puerto-rico-act-60-deadline.webp",
+      "imageCaption": "The San Juan skyline, where many Act 60 investors have relocated",
+      "imageAlt": "The San Juan, Puerto Rico skyline along the waterfront",
+      "keywords": [
+        "Act 60 deadline",
+        "Puerto Rico Act 38-2026",
+        "Individual Resident Investor Puerto Rico",
+        "Puerto Rico 4% tax rate",
+        "Act 22 decree"
+      ],
+      "content": [
+        "Anyone hoping to move to Puerto Rico and qualify for its best-known tax break has a little under two months left. People who file an application under the island's Individual Resident Investor program by Dec. 31 can lock in a 0% Puerto Rico tax rate on certain investment income. Those who file on Jan. 1 or later will pay 4%. Tax advisers say the approaching cutoff is already driving a surge in demand.",
+        "The change comes from Act 38-2026, which Gov. Jenniffer González signed on March 20. The law, which amends Act 60 (the successor to the old Act 22), extends the investor program by 20 years, to the end of 2055. In exchange, new applicants will owe 4% on interest, dividends and capital gains that they realize after establishing bona fide residency on the island. Applications submitted by Dec. 31 and approved later stay eligible for the 0% rate, which the law firm [MZLS](https://www.mzls.com/insights/act-60-puerto-rico-resident-investor-program-extended-to-2055-what-prospective-applicants-need-to-know) says runs through 2035. People who already hold decrees are grandfathered and keep their current terms.",
+        "Isis Carballo-Irigoyen, who leads the tax practice at the law firm McConnell Valdés, told [El Nuevo Día](https://www.elnuevodia.com/english/business/story/race-against-the-clock-demand-surges-as-investors-rush-to-beat-act-60-changes/) that the current rush is comparable to the one in 2020 and 2021, when remote workers and digital nomads realized they could do their jobs from an island. She said applications continue to arrive from New York, California, Nevada and Massachusetts, and that she has noticed growing interest from Latin America and Europe. Act 60 work now makes up about 20% of her firm's tax practice, and the firm has hired more staff to keep up.",
+        "Some other rules change in January too. Decrees will have to be held by individuals or trusts rather than by corporations, and the exemption that applies to selling a primary residence will also be adjusted. Even so, Carballo-Irigoyen said clients still find the program attractive. She argued that Puerto Rico offers tax savings, a multicultural environment and good private schools, and that other jurisdictions, such as the U.S. Virgin Islands, seem to be losing appeal among this kind of investor.",
+        "She was equally direct about what the program does not allow. A resident investor has to become a true Puerto Rico resident, which means owning property on the island, spending at least 186 days a year there and doing their work from Puerto Rico. Renting a home and visiting now and then does not meet the standard. She warned that anyone audited by the IRS will have to prove they truly meet those requirements, and that the law was not designed to promote a lifestyle. A decree also does not excuse anyone from federal tax obligations.",
+        "The program has long drawn criticism on the island, and Carballo-Irigoyen acknowledged that some decree holders and applicants worry about lingering resentment among local residents and about the state of medical services. She said a handful of concierge health services have started to appear to fill that gap. The investors she works with, she said, range from physicians to mass tort lawyers, and the wealthiest spend locally on housing, aircraft and yacht maintenance, and household staff.",
+        "How the 4% rate affects demand after January is the open question, and Carballo-Irigoyen said she is curious to see what happens once 2027 begins. For anyone still deciding, the clock is the only fixed point: the filing date, not the move date or the approval date, determines which rate applies."
+      ],
+      "relatedPicks": [
+        "puerto-rico-governor-signs-new-judiciary-act-over-chief-justice-objections",
+        "puerto-rico-family-secretary-referred-to-federal-investigators-over-louisiana-trip"
+      ],
+      "sources": [
+        {
+          "publisher": "El Nuevo Dia",
+          "label": "Race Against the Clock: Demand Surges as Investors Rush to Beat Act 60 Changes",
+          "url": "https://www.elnuevodia.com/english/business/story/race-against-the-clock-demand-surges-as-investors-rush-to-beat-act-60-changes/"
+        },
+        {
+          "publisher": "MZLS",
+          "label": "Puerto Rico Act 60 Resident Investor Program Now Runs Through 2055",
+          "url": "https://www.mzls.com/insights/act-60-puerto-rico-resident-investor-program-extended-to-2055-what-prospective-applicants-need-to-know"
+        },
+        {
+          "publisher": "RSM Puerto Rico",
+          "label": "Tax Alert: Proposed changes to Puerto Rico's Individual Resident Investor regime under Act 60",
+          "url": "https://www.rsm.global/puertorico/insights/tax-alert-proposed-changes-puerto-ricos-individual-resident-investor-regime-under-act-60-important-considerations-applicants-after-2026"
+        }
+      ]
+    }
+  ]
 }
