@@ -9,8 +9,11 @@ import { formatLongDate } from "@/lib/format";
  *   - sits on a soft slate-tinted band (the others are white or dark navy)
  *   - LEFT (7/12): Technology, one big photo card with the headline laid over
  *     the image, then two text-only "briefing" cards with a teal top rule
+ *     (the cards stretch if the Sports column ends up taller)
  *   - RIGHT (5/12): Sports, a stack of three white "scorecards" with an amber
- *     left edge and a small thumbnail on the right
+ *     left edge and a small thumbnail on the right. On desktop the LAST card
+ *     stretches to the bottom of the Technology column (and shows a large
+ *     photo) so the two columns always end at the same height, no gap.
  *
  * Props are arrays of articles already resolved with `withRelations`, newest
  * first. The page decides which stories go in; this component only lays them
@@ -63,7 +66,7 @@ function TechColumn({ items }) {
   const [lead, ...rest] = items;
 
   return (
-    <div className="lg:col-span-7">
+    <div className="flex flex-col lg:col-span-7">
       <p className="flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.18em] text-brand-teal">
         <span aria-hidden="true" className="h-0.5 w-6 bg-brand-teal" />
         Technology
@@ -97,7 +100,7 @@ function TechColumn({ items }) {
       )}
 
       {rest.length > 0 && (
-        <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div className="mt-5 grid flex-1 grid-cols-1 gap-4 sm:grid-cols-2">
           {rest.map((a) => (
             <article key={`${a.category}-${a.slug}`} className="border-t-4 border-brand-teal bg-white p-4 shadow-sm">
               <time dateTime={a.date} className="text-xs font-semibold uppercase tracking-wide text-brand-teal">
@@ -121,18 +124,24 @@ function TechColumn({ items }) {
 
 function SportsColumn({ items }) {
   return (
-    <div className="lg:col-span-5">
+    <div className="flex flex-col lg:col-span-5">
       <p className="flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.18em] text-amber-700">
         <span aria-hidden="true" className="h-0.5 w-6 bg-amber-500" />
         Sports
       </p>
 
       {items.length > 0 ? (
-        <ol className="mt-3 space-y-4">
-          {items.map((a) => (
-            <li key={`${a.category}-${a.slug}`}>
-              <article className="group flex items-stretch gap-4 border-l-4 border-amber-500 bg-white p-4 shadow-sm">
-                <div className="min-w-0 flex-1">
+        <ol className="mt-3 flex flex-1 flex-col gap-4">
+          {items.map((a, i) => {
+            const isLast = i === items.length - 1;
+            return (
+            <li key={`${a.category}-${a.slug}`} className={isLast ? "lg:flex lg:flex-1" : ""}>
+              <article
+                className={`group flex items-stretch gap-4 border-l-4 border-amber-500 bg-white p-4 shadow-sm ${
+                  isLast ? "lg:flex-1 lg:flex-col" : ""
+                }`}
+              >
+                <div className={`min-w-0 flex-1 ${isLast ? "lg:flex-none" : ""}`}>
                   <time dateTime={a.date} className="text-xs font-semibold uppercase tracking-wide text-amber-700">
                     {formatLongDate(a.date)}
                   </time>
@@ -142,18 +151,24 @@ function SportsColumn({ items }) {
                     </Link>
                   </h3>
                 </div>
-                <Link href={hrefOf(a)} tabIndex={-1} aria-hidden="true" className="shrink-0 self-center">
+                <Link
+                  href={hrefOf(a)}
+                  tabIndex={-1}
+                  aria-hidden="true"
+                  className={`shrink-0 self-center ${isLast ? "lg:flex lg:min-h-[9rem] lg:w-full lg:flex-1 lg:self-stretch" : ""}`}
+                >
                   <ImagePlaceholder
-                    className="h-20 w-24 sm:h-[88px] sm:w-28"
+                    className={`h-20 w-24 sm:h-[88px] sm:w-28 ${isLast ? "lg:h-auto lg:w-auto lg:flex-1" : ""}`}
                     src={a.image}
                     position={a.imagePosition}
                     alt=""
-                    sizes="112px"
+                    sizes={isLast ? "(min-width: 1024px) 40vw, 112px" : "112px"}
                   />
                 </Link>
               </article>
             </li>
-          ))}
+            );
+          })}
         </ol>
       ) : (
         <p className="mt-4 text-sm text-ink-soft">New stories are on the way.</p>
