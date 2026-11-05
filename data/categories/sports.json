@@ -1,3 +1,175 @@
 {
-  "articles": []
+  "articles": [
+    {
+      "slug": "colts-fire-sale-deepens-after-42-7-loss-to-jaguars-with-trade-deadline-a-week-away",
+      "title": "Colts' fire sale deepens after a 42-7 loss to Jacksonville, with the trade deadline a week away",
+      "subCategoryLabel": "NFL",
+      "excerpt": "Indianapolis has fired its general manager, traded two Pro Bowlers and fallen to 2-6. Now the questions turn to running back Jonathan Taylor, quarterback Daniel Jones and coach Shane Steichen.",
+      "author": "fiveboroughbulletin-staff",
+      "date": "2026-11-03",
+      "time": "13:00 ET",
+      "image": "colts-fire-sale-deepens-after-loss-to-jaguars-trade-deadline.webp",
+      "imageCaption": "Lucas Oil Stadium in Indianapolis, home of the Colts",
+      "imageAlt": "Lucas Oil Stadium in Indianapolis",
+      "keywords": [
+        "Indianapolis Colts",
+        "Colts trade deadline 2026",
+        "Jonathan Taylor trade",
+        "Shane Steichen",
+        "Colts Jaguars 42-7"
+      ],
+      "content": [
+        "A week ago the Indianapolis Colts were a disappointing team. After Sunday, they look like a team in the middle of a teardown. The Jacksonville Jaguars beat them 42-7, dropping Indianapolis to 2-6 with four straight losses and leaving coach Shane Steichen answering questions about whether he will be around much longer.",
+        "The game itself was ugly from the start. Quarterback Daniel Jones completed 19 of 28 passes for 144 yards with one touchdown and two interceptions before giving way late to Anthony Richardson, [Yardbarker reported](https://yardbarker.com/nfl/articles/daniel_jones_colts_future_takes_unexpected_turn/s1_17355_44506709). Steichen declined to commit to either quarterback after the game, saying the staff would evaluate everything, though ESPN reported that he is sticking with Jones as the starter for Sunday's home game against Dallas.",
+        "The roster was already shrinking before kickoff. Colts owner Carlie Irsay-Gordon fired general manager Chris Ballard on Oct. 19, and assistant GM Ed Dodds took over oversight of the personnel department. A week later, on Oct. 27, Indianapolis traded guard Quenton Nelson to Seattle for a 2027 third-round pick and a 2028 fifth-round pick, and sent defensive tackle DeForest Buckner back to San Francisco for a 2027 fourth-rounder, per [Yahoo Sports](https://sports.yahoo.com/articles/jaguars-learn-blatant-colts-reality-001055754.html). Both players were in the final year of their contracts.",
+        "The numbers behind Steichen's situation are not kind. [Athlon Sports](https://athlonsports.com/nfl/indianapolis-colts/shane-steichen-colts-fire-sale-jaguars-loss) pointed out that Indianapolis has lost 13 of its last 15 games, going 2-13 since a hot 8-2 start last season, and that Steichen is 27-31 in his fourth year with the team. The Colts have not made the playoffs since 2020. Steichen was Ballard's hire, and Athlon's headline argued that he should go too.",
+        "The trade deadline is Tuesday, Nov. 10, at 4 p.m. Eastern, and more moves may be coming. ESPN reported there is constant speculation that star running back Jonathan Taylor could be traded as the team tries to recover draft picks, and Steichen confirmed that receiver Josh Downs has asked to be traded. It is not clear whether either will go. The Colts also lack their own first-round picks in 2026 and 2027 after last year's trade for cornerback Sauce Gardner, [The Big Lead noted](https://www.thebiglead.com/2026-nfl-trade-deadline-tracker-grading-every-deal-top-available-candidates/), which helps explain why the front office is looking for extra picks.",
+        "Not everyone is being shipped out. On Tuesday the team agreed to a two-year, $35 million extension with defensive lineman Adetomiwa Adebawore, a 2023 fourth-round pick who has a team-high four sacks this season, ESPN reported. The Colts turned away trade interest in him to get the deal done, which suggests the organization wants to keep some young players while it retools.",
+        "Jacksonville, meanwhile, improved to 5-2 and leads the AFC South, and Seattle and San Francisco, the teams that picked up Nelson and Buckner, are both still in the playoff hunt. For Indianapolis, the next week will show how far the teardown goes. The Colts host the Cowboys on Sunday, and whoever is still on the roster by the Nov. 10 deadline is a player the team has chosen to keep."
+      ],
+      "relatedPicks": [
+        "bears-beat-defending-champion-seahawks-34-17-as-jeffery-simmons-makes-instant-impact",
+        "rockets-beat-celtics-109-93-to-improve-to-7-1-and-take-first-place-in-the-west"
+      ],
+      "sources": [
+        {
+          "publisher": "Athlon Sports",
+          "label": "The Colts Are Selling Off Their Best Players, and a 42-7 Loss Says Shane Steichen Should Go Too",
+          "url": "https://athlonsports.com/nfl/indianapolis-colts/shane-steichen-colts-fire-sale-jaguars-loss"
+        },
+        {
+          "publisher": "Yahoo Sports",
+          "label": "Jaguars Learn Blatant Colts Reality With Quenton Nelson, DeForest Buckner Trades",
+          "url": "https://sports.yahoo.com/articles/jaguars-learn-blatant-colts-reality-001055754.html"
+        },
+        {
+          "publisher": "Yardbarker",
+          "label": "Daniel Jones' Colts Future Takes Unexpected Turn",
+          "url": "https://yardbarker.com/nfl/articles/daniel_jones_colts_future_takes_unexpected_turn/s1_17355_44506709"
+        },
+        {
+          "publisher": "ESPN",
+          "label": "Source: Colts, Adetomiwa Adebawore agree to 2-year, $35M extension",
+          "url": "https://espn.com/nfl/story/_/id/50371976/source-colts-adetomiwa-adebawore-reach-2-year-35m-deal"
+        },
+        {
+          "publisher": "The Big Lead",
+          "label": "2026 NFL trade deadline tracker: Grading every deal, top available candidates",
+          "url": "https://www.thebiglead.com/2026-nfl-trade-deadline-tracker-grading-every-deal-top-available-candidates/"
+        }
+      ]
+    },
+    {
+      "slug": "rockets-beat-celtics-109-93-to-improve-to-7-1-and-take-first-place-in-the-west",
+      "title": "Rockets beat the Celtics 109-93 to improve to 7-1 and take first place in the West",
+      "subCategoryLabel": "NBA",
+      "excerpt": "Alperen Sengun had 26 points and 10 assists as Houston snapped Boston's five-game win streak and moved ahead of Memphis after the Grizzlies lost in overtime.",
+      "author": "fiveboroughbulletin-staff",
+      "date": "2026-11-03",
+      "time": "09:30 ET",
+      "featured": true,
+      "image": "rockets-beat-celtics-7-1-first-place-in-west.webp",
+      "imageCaption": "The Rockets improved to 7-1 at Toyota Center on Monday night",
+      "imageAlt": "A basketball game in progress inside an NBA arena",
+      "keywords": [
+        "Houston Rockets",
+        "Alperen Sengun",
+        "Kevin Durant Rockets",
+        "Celtics Rockets recap",
+        "NBA Western Conference standings"
+      ],
+      "content": [
+        "The Houston Rockets are off to their best start in 12 years, and Monday night gave them company at the top of the Western Conference. Alperen Sengun scored 26 points with 10 assists and seven rebounds as Houston beat the Boston Celtics 109-93 at Toyota Center, improving to 7-1 and snapping Boston's five-game winning streak, [ESPN reported](https://www.espn.com/nba/recap?gameId=401909916).",
+        "The timing helped. The Rockets moved into first place in the West after the previously undefeated Memphis Grizzlies lost to New Orleans in overtime, 135-134. Memphis is now 6-1. Houston's only loss this season came to Dallas in NBA Cup play, and the team has since won twice by a combined 37 points, including a 119-98 win over Oklahoma City on Saturday, [Yahoo Sports noted](https://sports.yahoo.com/articles/rockets-snap-celtics-win-streak-042308950.html).",
+        "Sengun was efficient. He shot 12 of 15 from the field and finished with just one turnover. Jabari Smith Jr. had 14 points and 10 rebounds, Amen Thompson scored 14, and Tari Eason added 13 off the bench. Fred VanVleet handed out nine assists in his return to the lineup. The Rockets shot 54.4% from the field, assisted on 34 of their 43 made baskets and outscored Boston 50-34 in the paint.",
+        "Kevin Durant's night was quiet by his standards. He scored 12 points on 5-of-6 shooting in 33 minutes, and he did not attempt a three-pointer, which [Sports Illustrated pointed out](https://www.si.com/nba/rockets/onsi/3-takeaways-from-the-rockets-109-93-win-over-boston-01m6fsezfa5v) was the first time that had happened since March 15, 2022, when he played for Brooklyn. The Rockets did not need more from him, which says something about the depth around him.",
+        "That depth was tested. Houston was missing center Clint Capela, who has a sprained right ankle, along with Steven Adams, so Oscar Tshiebwe was the only other center available and played about seven minutes. The Rockets still never trailed, and their defense held Boston to 38.6% shooting.",
+        "Jayson Tatum led the Celtics with 19 points but shot 5 of 16, including 1 of 7 from three-point range. Neemias Queta had 16 points and Luka Garza added 14. Boston was playing the second night of a back-to-back, having beaten Orlando 108-97 on Sunday, and rested Paul George. It was the Celtics' first loss since their season opener at Detroit. Marcus Smart, facing his former team, had eight points, four rebounds and four assists for Houston.",
+        "Houston now gets a quick turn. The Rockets host the Minnesota Timberwolves on Wednesday night, and with Memphis only a game back, a lead in early November is a thin one. Still, 7-1 with a perfect 4-0 record at home is a strong place to begin."
+      ],
+      "relatedPicks": [
+        "bears-beat-defending-champion-seahawks-34-17-as-jeffery-simmons-makes-instant-impact",
+        "colts-fire-sale-deepens-after-42-7-loss-to-jaguars-with-trade-deadline-a-week-away"
+      ],
+      "sources": [
+        {
+          "publisher": "ESPN",
+          "label": "Alperen Sengun leads Rockets past Celtics 109-93 as Houston moves into first in West",
+          "url": "https://www.espn.com/nba/recap?gameId=401909916"
+        },
+        {
+          "publisher": "Yahoo Sports",
+          "label": "Rockets Snap Celtics Win Streak Behind Sengun and Gritty Defense",
+          "url": "https://sports.yahoo.com/articles/rockets-snap-celtics-win-streak-042308950.html"
+        },
+        {
+          "publisher": "Sports Illustrated",
+          "label": "3 Takeaways from the Rockets 109-93 Win Over Boston",
+          "url": "https://www.si.com/nba/rockets/onsi/3-takeaways-from-the-rockets-109-93-win-over-boston-01m6fsezfa5v"
+        },
+        {
+          "publisher": "TalkBasket",
+          "label": "Alperen Sengun powers Rockets past Celtics as Houston reaches 7-1",
+          "url": "https://www.talkbasket.net/226025-alperen-sengun-powers-rockets-past-celtics-as-houston-reaches-7-1"
+        }
+      ]
+    },
+    {
+      "slug": "bears-beat-defending-champion-seahawks-34-17-as-jeffery-simmons-makes-instant-impact",
+      "title": "Bears beat the defending champion Seahawks 34-17 as Jeffery Simmons makes an instant impact",
+      "subCategoryLabel": "NFL",
+      "excerpt": "Caleb Williams threw for 247 yards without a turnover and D'Andre Swift ran for three touchdowns as Chicago won its third straight game and improved to 6-2.",
+      "author": "fiveboroughbulletin-staff",
+      "date": "2026-11-03",
+      "time": "08:00 ET",
+      "featured": true,
+      "image": "bears-beat-seahawks-34-17-jeffery-simmons-impact.webp",
+      "imageCaption": "Chicago won in Seattle on Monday Night Football to improve to 6-2",
+      "imageAlt": "A football game under the lights at Lumen Field in Seattle",
+      "keywords": [
+        "Chicago Bears",
+        "Seattle Seahawks",
+        "Caleb Williams",
+        "D'Andre Swift",
+        "Jeffery Simmons trade",
+        "Monday Night Football recap"
+      ],
+      "content": [
+        "The Chicago Bears went to Seattle on Monday night and left with the kind of win that makes the rest of the NFC pay attention. Quarterback Caleb Williams threw for 247 yards and a touchdown without a turnover, running back D'Andre Swift scored three times, and the Bears beat the defending Super Bowl champion Seahawks 34-17 for their third straight victory, [ESPN reported](https://www.espn.com/nfl/recap?gameId=401873036). Chicago is 6-2. Seattle fell to 4-4.",
+        "The Bears set the tone on the opening possession, a 17-play drive that ended with Williams throwing a 1-yard touchdown pass to Luther Burden. They added two field goals in the first half and led 20-9 in the third quarter after Swift's first touchdown, a 1-yard run that capped a 10-play, 69-yard march that ate up more than six minutes. Chicago controlled the ball for 35 minutes to Seattle's 25 and outgained the Seahawks 363 yards to 252, according to the game's official stats.",
+        "Seattle had its moments. Sam Darnold found Jaxon Smith-Njigba for a 43-yard touchdown with 30 seconds left in the first half, and early in the fourth quarter he hit Cooper Kupp for a 7-yard score, followed by a successful two-point conversion that cut the Bears' lead to 20-17. For a moment, it felt like the game might turn.",
+        "It did not. Swift answered with a 5-yard touchdown run, and later James Lynch intercepted a pass that had been tipped at the line by Austin Booker, giving the Bears the ball at Seattle's 6-yard line, the [Chicago Sun-Times reported](https://chicago.suntimes.com/bears/2026/11/02/bears-seahawks-score-13-9-halftime-monday-night-football-caleb-williams-ben-johnson-physicality-nfl). Swift punched in his third touchdown, another 5-yarder, with 4:46 left. He carried 27 times for just 69 yards, but the touchdowns were what mattered.",
+        "Williams was steady more than spectacular. He completed 24 of 34 passes, took one sack and finished with a passer rating of 101.0. The Bears' run game, by contrast, averaged 3.6 yards a carry, and guard Grey Zabel said afterward that the team has to improve quickly in that area.",
+        "The Bears' defense got a boost from a player who had arrived only days earlier. Chicago acquired All-Pro defensive tackle Jeffery Simmons from the Titans on Oct. 29, sending a 2027 first-round pick, a 2028 first-round pick and a 2027 fourth-round pick to Tennessee, while getting a 2028 fifth-rounder back. In his Bears debut, Simmons recorded a sack and led the team with six tackles, [CBS Sports reported](https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-tracker-latest-deals-grades/). Devin Bush and Montez Sweat also had sacks. According to The Big Lead, Simmons is the first defensive tackle of the common draft era to be traded for multiple first-round picks.",
+        "The price was steep, and the win suggests why Chicago was willing to pay it. The Bears already ranked among the league's better defenses before the trade, and Simmons reunites with his college teammate Montez Sweat on the defensive line. After the game, Williams said the Bears are a force to be reckoned with, per UPI.",
+        "Next up for Chicago is a home game against Tampa Bay on Sunday night. Seattle, which had been among the league's stingiest defenses, now has to figure out how to bounce back from a game in which it allowed long, time-consuming drives."
+      ],
+      "relatedPicks": [
+        "rockets-beat-celtics-109-93-to-improve-to-7-1-and-take-first-place-in-the-west",
+        "colts-fire-sale-deepens-after-42-7-loss-to-jaguars-with-trade-deadline-a-week-away"
+      ],
+      "sources": [
+        {
+          "publisher": "ESPN",
+          "label": "Caleb Williams and Jeffery Simmons lead the Bears past the Seahawks 34-17",
+          "url": "https://www.espn.com/nfl/recap?gameId=401873036"
+        },
+        {
+          "publisher": "Chicago Sun-Times",
+          "label": "Bears prove they belong among NFC's elite with decisive 34-17 win vs. defending champs",
+          "url": "https://chicago.suntimes.com/bears/2026/11/02/bears-seahawks-score-13-9-halftime-monday-night-football-caleb-williams-ben-johnson-physicality-nfl"
+        },
+        {
+          "publisher": "CBS Sports",
+          "label": "2026 NFL trade deadline tracker: Latest deals, grades",
+          "url": "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-tracker-latest-deals-grades/"
+        },
+        {
+          "publisher": "UPI / Yahoo Sports",
+          "label": "Williams touts Bears as 'force to be reckoned with' after Seattle win",
+          "url": "https://sports.yahoo.com/articles/williams-touts-bears-force-reckoned-132106482.html"
+        }
+      ]
+    }
+  ]
 }

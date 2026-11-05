@@ -1,3 +1,178 @@
 {
-  "articles": []
+  "articles": [
+    {
+      "slug": "amd-posts-record-quarter-as-data-center-sales-nearly-double-and-guides-to-17-billion",
+      "title": "AMD posts a record quarter as data center sales nearly double, and guides to about $17 billion",
+      "subCategoryLabel": "Chips",
+      "excerpt": "Demand for AI accelerators and server processors pushed AMD's data center revenue up 97%, and its fourth-quarter forecast came in well above what Wall Street expected.",
+      "author": "fiveboroughbulletin-staff",
+      "date": "2026-11-04",
+      "time": "03:30 ET",
+      "featured": true,
+      "image": "amd-record-quarter-data-center-sales-nearly-double.webp",
+      "imageCaption": "AMD's data center business now accounts for nearly two-thirds of its revenue",
+      "imageAlt": "A server rack in a data center with glowing status lights",
+      "keywords": [
+        "AMD earnings",
+        "AMD Q3 2026",
+        "AMD Instinct MI450",
+        "Lisa Su",
+        "AI chips data center"
+      ],
+      "content": [
+        "AMD closed Tuesday's session with a set of numbers that explain why investors keep paying attention to the AI chip race. The company reported record third-quarter revenue of $13.4 billion, up 45% from a year ago and above the high end of its own guidance. Adjusted earnings came in at $2.09 a share against analyst estimates of roughly $1.94, and the stock jumped more than 7% in after-hours trading, according to [Investing.com](https://uk.investing.com/news/stock-market-news/earnings-call-transcript-amd-tops-q3-2026-estimates-as-stock-jumps-after-hours-93CH-4954263) and market wraps.",
+        "The data center business did the heavy lifting. Segment revenue hit a record $8.5 billion, up 97% from a year earlier and up 27% from the previous quarter, [AMD said in its earnings release](https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm). That segment made up 64% of total sales, compared with 47% a year ago. The company credited strong demand for its EPYC server processors and the first sales of its Instinct MI450 series of AI accelerators.",
+        "CEO Lisa Su told analysts that the quarter was the first in which AMD shipped its MI455 chips and Helios rack-scale systems for revenue, and she called it a very major milestone. Helios is AMD's rack-scale system, which packages accelerators into a single unit for large cloud and AI customers.",
+        "Not every part of the business looked as healthy. Combined revenue from the client and gaming segments, which covers PC chips and graphics, was $3.72 billion, down 8% from last year, [according to a breakdown of the report](https://www.tmgm.com/en/analysis/market-insight/amd-revenue-hits-record). In other words, the growth story at AMD right now is almost entirely about servers and AI.",
+        "The forecast is what made the stock move. AMD expects fourth-quarter revenue of about $17 billion, give or take 3%, versus a Wall Street consensus near $16.2 billion. At the midpoint that would be growth of roughly 66% from a year earlier. Adjusted gross margin is expected to land around 55%, a touch below the 55.5% analysts had penciled in, per [BigGo Finance](https://finance.biggo.com/news/043e4acf-19fe-48a1-a630-47d9f350f4ff). Su said growth should accelerate further as the company scales up Helios systems and its next-generation \"Venice\" server processors.",
+        "The comparison with Intel is hard to miss. [ServeTheHome](https://www.servethehome.com/amd-q3-2026-earnings-data-center-growth/) noted that Intel reported data center revenue of $7.3 billion last week, up 78%, while AMD's segment grew faster and is now larger. In data center chips, AMD has moved ahead on both growth and size.",
+        "The report landed on a day when tech stocks were under pressure over high valuations and doubts about how quickly AI spending will pay off. Apple slid after warning about margins, and Palantir lost ground even after beating estimates, [Yahoo Finance reported](https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-3-145801086.html). AMD's results offered a counterpoint: the money flowing into AI infrastructure is still showing up in chipmakers' sales. The fourth quarter, when AMD has to scale up Helios and Venice production, will show how durable that is."
+      ],
+      "relatedPicks": [
+        "apple-posts-record-quarter-but-memory-costs-cloud-holiday-outlook-in-ternus-first-report",
+        "uk-cyber-agency-warns-ai-powered-ransomware-will-likely-hit-critical-infrastructure-by-2028"
+      ],
+      "sources": [
+        {
+          "publisher": "AMD / SEC",
+          "label": "AMD Reports Third Quarter 2026 Financial Results",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm"
+        },
+        {
+          "publisher": "Investing.com",
+          "label": "Earnings call transcript: AMD tops Q3 2026 estimates as stock jumps after hours",
+          "url": "https://uk.investing.com/news/stock-market-news/earnings-call-transcript-amd-tops-q3-2026-estimates-as-stock-jumps-after-hours-93CH-4954263"
+        },
+        {
+          "publisher": "ServeTheHome",
+          "label": "AMD Q3 2026 Earnings Data Center Growth Drives Record Quarter",
+          "url": "https://www.servethehome.com/amd-q3-2026-earnings-data-center-growth/"
+        },
+        {
+          "publisher": "BigGo Finance",
+          "label": "AMD Third-Quarter Revenue Tops Estimates at $13.38 Billion",
+          "url": "https://finance.biggo.com/news/043e4acf-19fe-48a1-a630-47d9f350f4ff"
+        },
+        {
+          "publisher": "Yahoo Finance",
+          "label": "Stock Market Today (Nov. 3, 2026)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-3-145801086.html"
+        }
+      ]
+    },
+    {
+      "slug": "uk-cyber-agency-warns-ai-powered-ransomware-will-likely-hit-critical-infrastructure-by-2028",
+      "title": "UK cyber agency warns AI-powered ransomware will likely hit critical infrastructure by 2028",
+      "subCategoryLabel": "Cybersecurity",
+      "excerpt": "Britain's National Cyber Security Centre says AI will mostly speed up old attack methods, and it is urging organizations to fix known weaknesses before attackers find them faster.",
+      "author": "fiveboroughbulletin-staff",
+      "date": "2026-11-03",
+      "time": "14:00 ET",
+      "image": "uk-cyber-agency-warns-ai-ransomware-critical-infrastructure-2028.webp",
+      "imageCaption": "Power stations, airports and hospitals are among the targets the agency named",
+      "imageAlt": "A person working at a laptop in a dark room with code on the screen",
+      "keywords": [
+        "NCSC State of the Cyber Nation",
+        "AI ransomware 2028",
+        "UK critical national infrastructure",
+        "Richard Horne NCSC",
+        "AI cyber threat"
+      ],
+      "content": [
+        "Britain's top cyber authority has put a date on a warning that security experts have been making in general terms for a while. In its annual review published Tuesday, the National Cyber Security Centre, which is part of the GCHQ intelligence agency, said it is highly likely that AI-powered malware will be used in a ransomware attack on the country's critical national infrastructure by 2028, [Infosecurity Magazine reported](https://www.infosecurity-magazine.com/news/ncsc-ai-ransomware-threat-uk-cni/). The report names power stations, airports and hospitals as the kinds of targets at risk from financially motivated criminals.",
+        "The wording matters. The agency is not describing a brand-new kind of attack. NCSC chief executive Richard Horne said in a speech marking the report's release that long-tolerated weaknesses in software and networks are the source of the coming rise in incidents, and that AI lets attackers find and exploit those weaknesses at a scale that used to be unimaginable, according to an [Associated Press account carried by Quartz](https://qz.com/uk-ai-ransomware-critical-infrastructure-ncsc-warning-110326). He did not point to new attack methods. The review's AI section says the technology's biggest effect will be to speed up and scale existing tactics.",
+        "The agency's phrase for the problem is \"tech on the cheap.\" Organizations that have put off updates, patching and basic security spending are the ones most exposed, the NCSC said, because AI tools make it easier to turn a known flaw into a working attack. The review urges companies to adopt Cyber Essentials, the government-backed minimum standard built around five controls: firewalls, secure configuration, security update management, user access control and malware protection.",
+        "The review also looks outward. It names China as the state best placed to use AI against critical infrastructure, and it warns that China, Russia and other governments will use what it calls AI cyber capabilities to pursue their geopolitical goals. [The Register](https://www.theregister.com/security/2026/11/03/britain-on-notice-ai-powered-ransomware-attacks-to-arrive-by-2028/5307200) noted that the NCSC's more pessimistic 2028 scenario involves a sharp rise in the frequency and sophistication of attacks worldwide, with AI tools making it harder to tell who is behind them. Separately, the agency flagged continued state-backed espionage aimed at politicians and government officials.",
+        "There is some good news in the report as well. The NCSC said AI is already changing how vulnerabilities are found and fixed, and that its own use of AI has uncovered hundreds of potential security issues, including critical ones. It also expects that skilled people will still be needed to direct and check AI-assisted attacks, which means experienced operators stand to gain the most.",
+        "The government paired the warning with money. Coverage of the report from [AI Weekly](https://aiweekly.co/alerts/ncsc-warns-ai-ransomware-likely-to-hit-uk-infrastructure-by-2028) said the government is putting £60 million into the first phase of a national Cyber Shield aimed at developing \"agentic\" cyber defenses with industry, £70 million into a new vulnerability-tracking center at the NCSC, and setting up an AI Cyber Security Centre of Excellence in Manchester. The review puts the yearly cost of malicious cyber activity to UK organizations at about £14.7 billion.",
+        "Not everyone thinks the deadline is ambitious enough. Anthony Young, chief executive of the infrastructure security firm Bridewell, said the two-year window \"feels generous,\" according to Infosecurity Magazine. For businesses and public bodies that run essential services, the practical message from the review is simple and not very glamorous: fix the old problems first, because the tools for exploiting them are getting cheaper."
+      ],
+      "relatedPicks": [
+        "amd-posts-record-quarter-as-data-center-sales-nearly-double-and-guides-to-17-billion",
+        "apple-posts-record-quarter-but-memory-costs-cloud-holiday-outlook-in-ternus-first-report"
+      ],
+      "sources": [
+        {
+          "publisher": "Infosecurity Magazine",
+          "label": "NCSC Chief Warns of Imminent AI Ransomware Threat to UK Critical Infrastructure",
+          "url": "https://www.infosecurity-magazine.com/news/ncsc-ai-ransomware-threat-uk-cni/"
+        },
+        {
+          "publisher": "Quartz (AP)",
+          "label": "U.K. warns AI-powered ransomware will likely hit critical infrastructure by 2028",
+          "url": "https://qz.com/uk-ai-ransomware-critical-infrastructure-ncsc-warning-110326"
+        },
+        {
+          "publisher": "The Register",
+          "label": "Britain on notice: AI-powered ransomware attacks to arrive by 2028",
+          "url": "https://www.theregister.com/security/2026/11/03/britain-on-notice-ai-powered-ransomware-attacks-to-arrive-by-2028/5307200"
+        },
+        {
+          "publisher": "AI Weekly",
+          "label": "NCSC warns AI ransomware likely to hit UK infrastructure by 2028",
+          "url": "https://aiweekly.co/alerts/ncsc-warns-ai-ransomware-likely-to-hit-uk-infrastructure-by-2028"
+        }
+      ]
+    },
+    {
+      "slug": "apple-posts-record-quarter-but-memory-costs-cloud-holiday-outlook-in-ternus-first-report",
+      "title": "Apple posts a record quarter, but memory costs cloud the holiday outlook in Ternus's first report",
+      "subCategoryLabel": "Earnings",
+      "excerpt": "Revenue topped $114.5 billion and iPhone sales jumped 17%, yet Apple guided to its thinnest profit margin in about three years as the AI-driven memory shortage pushes component prices higher.",
+      "author": "fiveboroughbulletin-staff",
+      "date": "2026-11-03",
+      "time": "09:30 ET",
+      "featured": true,
+      "image": "apple-record-quarter-memory-costs-cloud-holiday-outlook.webp",
+      "imageCaption": "Apple reported its first earnings under CEO John Ternus on Monday",
+      "imageAlt": "An Apple Store storefront with the lit Apple logo",
+      "keywords": [
+        "Apple earnings Q4 2026",
+        "John Ternus CEO",
+        "memory chip prices",
+        "iPhone Duo",
+        "Apple gross margin forecast"
+      ],
+      "content": [
+        "Apple's first earnings report under CEO John Ternus delivered a record September quarter and a warning in the same breath. The company said Monday that revenue rose 12% to $114.5 billion. Then its chief financial officer guided to a gross margin of 45% to 46% for the holiday quarter, below the 46.3% analysts expected, and blamed a global shortage of memory chips that has pushed component prices sharply higher, [CNBC reported](https://www.cnbc.com/2026/11/02/apple-aapl-q4-2026-earnings-live-updates.html). Ternus took over from Tim Cook on Sept. 1.",
+        "Most of the headline numbers were strong. iPhone revenue grew 17% to $57.6 billion, ahead of the roughly $56.5 billion analysts were looking for, and Apple said Services reached an all-time high. Net income was $30.7 billion, and earnings per share of $2.10 beat the roughly $2.00 forecast. Mac revenue climbed to $10.8 billion from $8.7 billion a year earlier despite supply limits, [MacRumors reported](https://www.macrumors.com/2026/11/02/apple-q4-2026-earnings-takeaways/). For the full fiscal year, revenue reached a record of about $479 billion, up 15%. Apple's [release](https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm) credited the iPhone 18 Pro lineup and the new iPhone Duo.",
+        "There were soft spots. iPad sales fell short of estimates, and Greater China revenue rose 21% to $17.54 billion, a September-quarter record that still came in below the $18.75 billion Wall Street had expected, [Yahoo Finance said](https://finance.yahoo.com/markets/stocks/live/apple-earnings-live-apple-beats-q4-estimates-on-strong-iphone-sales-but-misses-on-china-revenue-221806957.html).",
+        "The memory problem was the main event of the call. Ternus described current memory pricing as \"unprecedented\" and said Apple expects costs to rise again in the December quarter and keep climbing after that. The shortage comes as AI data centers compete with consumer electronics makers for the same chips. Apple raised some prices in June and September to offset part of the pressure, and it benefited from older, cheaper inventory and lower costs on other components.",
+        "The margin math is blunt. Apple's 47.9% gross margin in the September quarter included about one percentage point from tariff refunds, and without them the company said margins would have fallen by about a point from June, mostly because of memory. CFO Kevan Parekh said the December forecast also includes costs tied to the rollout of the upgraded Siri AI. At the midpoint, [Quartz noted](https://qz.com/apple-stock-memory-costs-holiday-margin-forecast-110326), that margin would be Apple's weakest since the fiscal fourth quarter of 2023.",
+        "The sales outlook was still upbeat. Apple expects revenue to grow 7% to 10% in the December quarter, which it said would be the best quarter in its history, with Services growing 8% to 9%. Parekh added that the forecast reflects constrained supply, and Apple expects shortages on the Mac, the iPad and the iPhone Duo because demand has been stronger than planned.",
+        "Investors focused on the margin. Apple shares fell about 4% in premarket trading Tuesday, according to Quartz, and Yahoo Finance's market wrap listed the iPad miss and the weak margin outlook among the reasons the stock lost ground. For shoppers, the more practical takeaway may be about availability: if Apple's own supply estimates hold, some Macs, iPads and iPhones could be hard to find this holiday season even if demand stays strong."
+      ],
+      "relatedPicks": [
+        "amd-posts-record-quarter-as-data-center-sales-nearly-double-and-guides-to-17-billion",
+        "uk-cyber-agency-warns-ai-powered-ransomware-will-likely-hit-critical-infrastructure-by-2028"
+      ],
+      "sources": [
+        {
+          "publisher": "Apple / SEC",
+          "label": "Apple reports fourth quarter results (Form 8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm"
+        },
+        {
+          "publisher": "CNBC",
+          "label": "Apple's stock drops on weak margin forecast in Ternus' first earnings report",
+          "url": "https://www.cnbc.com/2026/11/02/apple-aapl-q4-2026-earnings-live-updates.html"
+        },
+        {
+          "publisher": "MacRumors",
+          "label": "Apple's Q4 2026 Earnings Call Takeaways",
+          "url": "https://www.macrumors.com/2026/11/02/apple-q4-2026-earnings-takeaways/"
+        },
+        {
+          "publisher": "Yahoo Finance",
+          "label": "Apple beats Q4 estimates on strong iPhone sales but misses on China revenue, stock falls",
+          "url": "https://finance.yahoo.com/markets/stocks/live/apple-earnings-live-apple-beats-q4-estimates-on-strong-iphone-sales-but-misses-on-china-revenue-221806957.html"
+        },
+        {
+          "publisher": "Quartz",
+          "label": "Apple stock falls as memory costs push holiday profit margin forecast below estimates",
+          "url": "https://qz.com/apple-stock-memory-costs-holiday-margin-forecast-110326"
+        }
+      ]
+    }
+  ]
 }

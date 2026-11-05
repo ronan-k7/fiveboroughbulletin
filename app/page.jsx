@@ -4,6 +4,7 @@ import ImagePlaceholder from "@/components/ImagePlaceholder";
 import AdBanner from "@/components/AdBanner";
 import TripleFeature from "@/components/TripleFeature";
 import PoliticsPuertoRicoSection from "@/components/PoliticsPuertoRicoSection";
+import TechSportsSection from "@/components/TechSportsSection";
 import JsonLd from "@/components/JsonLd";
 import {
   buildPageMetadata,
@@ -83,7 +84,14 @@ export default function HomePage() {
   // fill-in picks, so none of those six stories is ever shown twice.
   const politicsPicks = newestIn("politics", 3, new Set());
   const puertoRicoPicks = newestIn("puerto-rico", 3, new Set());
-  const reserved = new Set([...politicsPicks, ...puertoRicoPicks].map(keyOf));
+  //
+  // Technology and Sports also have their own section (3 newest stories each),
+  // reserved the same way so they never repeat in the top block or fill-ins.
+  const technologyPicks = newestIn("technology", 3, new Set());
+  const sportsPicks = newestIn("sports", 3, new Set());
+  const reserved = new Set(
+    [...politicsPicks, ...puertoRicoPicks, ...technologyPicks, ...sportsPicks].map(keyOf)
+  );
 
   const pool = getLatestArticles(40, null, { home: true }).filter((a) => !reserved.has(keyOf(a)));
   const pinned = pool.filter((a) => a.homePin).sort((a, b) => a.homePin - b.homePin);
@@ -101,6 +109,8 @@ export default function HomePage() {
   markShown(top);
   markShown(politicsPicks);
   markShown(puertoRicoPicks);
+  markShown(technologyPicks);
+  markShown(sportsPicks);
 
   // Business: 1 featured story + a grid of the next ones. The featured story is
   // NOT repeated in the grid. If business runs short, the empty grid slots are
@@ -193,6 +203,11 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* Technology & Sports: slate band, photo-overlay lead + briefing cards on
+          the left, amber scorecard stack on the right (see
+          components/TechSportsSection.jsx). */}
+      <TechSportsSection technology={technologyPicks} sports={sportsPicks} />
 
       {/* Full-width ad slot (panoramic desktop crop, wider mobile crop). */}
       <div className="mt-10">
