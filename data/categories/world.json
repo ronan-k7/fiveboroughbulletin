@@ -1,6 +1,41 @@
 {
   "articles": [
     {
+      "slug": "paraguay-ousted-president-pena-held-before-trial-ueno-bank-collapse",
+      "title": "Paraguay's ousted president ordered held before trial over Ueno Bank collapse",
+      "subCategoryLabel": "Latin America",
+      "excerpt": "A judge ordered Santiago Peña held a day after the Senate removed him over Ueno Bank's failure, which locked nearly three million Paraguayans out of savings.",
+      "author": "fiveboroughbulletin-staff",
+      "date": "2026-11-09",
+      "time": "04:30 ET",
+      "homePin": 5,
+      "featured": true,
+      "image": "paraguay-ousted-president-pena-held-before-trial-ueno-bank-collapse.webp",
+      "imageCaption": "depositors queuing outside a closed Ueno branch",
+      "imageAlt": "depositors queuing outside a closed Ueno branch",
+      "keywords": ["Paraguay Ueno Bank collapse", "Santiago Peña impeached", "Peña pretrial detention", "Pedro Alliana president", "Paraguay banking crisis"],
+      "content": [
+        "A Paraguayan judge on Saturday ordered former President Santiago Peña held in pretrial detention, a day after the Senate removed him from office over the collapse of Ueno Bank, a fast-growing digital lender tied to his government. Judge Humberto Otazú said detention was necessary to keep Peña in the country while prosecutors investigate his links to the bank, [Reuters](https://www.spokesman.com/stories/2026/nov/07/judge-orders-paraguays-ex-president-pena-held-befo/) reported. [Al Jazeera](https://www.aljazeera.com/economy/2026/11/7/paraguays-ousted-president-charged-over-banking-scandal) said he is being held at the headquarters of the Presidential Escort Regiment, a military facility, rather than in a conventional prison.",
+        "Peña is charged with breach of trust and administration for personal gain, and prosecutor Nancy Salomón said each count carries up to 10 years in prison. Prosecutors allege he used the presidency to pressure government agencies and state-owned entities into keeping large public deposits at Ueno despite his own financial ties to the lender; he held shares in its holding company until March 2025. His lawyer, Ricardo Preda, said Peña is pleading not guilty and will cooperate with the investigation, adding: \"I am sure that when this investigation is over the result will be the dismissal.\" Peña has denied wrongdoing and describes the bank's problems as a regulatory matter.",
+        "Judge Otazú also ordered Carlos Carvallo, the former central bank chief, held while the case proceeds. He is charged with breach of trust, producing false public documents and administration for personal gain. Carvallo ran the finance company that became Ueno until 2023, when Peña named him to lead the central bank that supervises it.",
+        "The case grows out of the failure of Ueno, which regulators seized on Tuesday, Nov. 3, after its capital fell below half the legal minimum, according to the [Associated Press](https://www.ksat.com/business/2026/11/03/paraguay-seizes-major-digital-bank-tied-to-president-leaving-millions-of-customers-in-limbo/). Ueno had gone from an obscure finance company to a household name in under five years, courting first-time account holders with supermarket cash-back deals and putting its name on the country's main stadium. When it was seized, nearly three million customers, close to half the country's population, lost access to their accounts and cards. More than $800 million in public money sat in the bank, including a $355 million deposit from the state pension fund that lawmakers say exceeded legal limits.",
+        "The warning signs had been there for months. Central bank inspectors found risky lending to companies tied to Ueno's owners in June, according to Paraguayan outlet ABC Color as relayed by the AP, yet Peña defended the bank as recently as October, calling the concerns a smear campaign. Weeks before the failure, Washington had welcomed him as a key ally of the Trump administration.",
+        "Peña offered to resign on Thursday in a video posted to X, apologizing to the public without accepting responsibility. Congress refused to take the resignation. The lower house voted 78-0 to impeach him within minutes, and on Friday all 44 senators present voted to remove him for misconduct in office, [the AP reported](https://www.ksat.com/news/2026/11/06/pena-skips-senate-impeachment-trial-as-paraguay-reels-from-ueno-bank-collapse/). Opposition lawmakers had argued that a resignation would let him become a senator for life, with legal protections that could block prosecution; removal ended that possibility. Peña is the second Paraguayan president ousted by impeachment since the end of Alfredo Stroessner's dictatorship in 1989, and crowds outside Congress cheered the verdict.",
+        "His own party helped bring him down. Horacio Cartes, the former president and Colorado Party leader who made Peña his finance minister and twice backed him for president, publicly called for his ouster. \"Cartes put the nail in the coffin,\" Andrew Nickson, a Paraguay specialist at the University of Birmingham, told the AP. Vice President Pedro Alliana, a Colorado Party veteran who once presided over the lower house, was sworn in on Friday to serve out the term through August 2028, [Euronews](https://www.euronews.com/2026/11/07/pedro-alliana-sworn-in-as-paraguay-president-after-santiago-penas-impeachment) reported. \"The Paraguay we receive today has urgent needs,\" he said. Alliana is also under investigation in connection with the bank, and some protesters have voiced frustration at his rise, Al Jazeera reported.",
+        "Depositors are being repaid in stages under a state guarantee fund that Congress created in a rush on Wednesday. The central bank said as of Saturday that the equivalent of about $160 million had been paid to nearly 1.2 million savers. The fund insures balances up to roughly $36,000, which the central bank says fully protects about 97% of customers, though holders of larger balances have no promise of full repayment. The damage has spread beyond savers: the state power company says $21 million in development loans meant for public works is trapped at the bank, and Paraguay's bonds posted some of the worst losses in emerging markets this week as the guaraní slid against the dollar.",
+        "Six Ueno directors, including founder Miguel Vázquez, are in pretrial detention, and prosecutors have charged 27 people in a separate case against the bank's executives and associates. No trial date has been reported for Peña, and the investigation is continuing."
+      ],
+      "relatedPicks": ["norway-king-harald-dies-son-becomes-king", "glacier-collapse-triggers-nepal-flooding"],
+      "sources": [
+        { "publisher": "Reuters (via The Spokesman-Review)", "label": "Judge orders Paraguay's ex-president Peña held before trial", "url": "https://www.spokesman.com/stories/2026/nov/07/judge-orders-paraguays-ex-president-pena-held-befo/" },
+        { "publisher": "Associated Press", "label": "Ousted Paraguayan president placed under house arrest after bank collapse", "url": "https://www.ksat.com/news/2026/11/06/pena-skips-senate-impeachment-trial-as-paraguay-reels-from-ueno-bank-collapse/" },
+        { "publisher": "Associated Press", "label": "Paraguay seizes major digital bank tied to president, leaving millions of customers in limbo", "url": "https://www.ksat.com/business/2026/11/03/paraguay-seizes-major-digital-bank-tied-to-president-leaving-millions-of-customers-in-limbo/" },
+        { "publisher": "Al Jazeera", "label": "Paraguay's ousted president charged over banking scandal", "url": "https://www.aljazeera.com/economy/2026/11/7/paraguays-ousted-president-charged-over-banking-scandal" },
+        { "publisher": "Euronews", "label": "Pedro Alliana sworn in as Paraguay president after Santiago Peña's impeachment", "url": "https://www.euronews.com/2026/11/07/pedro-alliana-sworn-in-as-paraguay-president-after-santiago-penas-impeachment" }
+      ],
+      "updated": "2026-11-09"
+    },
+    {
       "slug": "glacier-collapse-triggers-nepal-flooding",
       "title": "Glacier collapse triggers catastrophic flooding along Nepal-Tibet border",
       "subCategoryLabel": "Disaster",
@@ -10,6 +45,7 @@
       "time": "09:00 ET",
       "commentCount": 16,
       "featured": true,
+      "hideFromHome": true,
       "image": "glacier-collapse-triggers-nepal-flooding.webp",
       "imageCaption": "Rescuers search the debris along the Trishuli River in Nepal",
       "keywords": ["Nepal floods 2026", "Himalayan glacier collapse", "Trishuli River disaster", "Tibet flooding"],

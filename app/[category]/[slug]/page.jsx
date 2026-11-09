@@ -155,6 +155,30 @@ export default async function ArticlePage({ params }) {
               ))}
             </div>
           )}
+
+          {/* Sources: same box as the centered/profile layouts (articles that list `sources`). */}
+          {article.sources?.length > 0 && (
+            <aside aria-labelledby="sources-heading" className="mt-10 rounded-xl border border-hairline bg-neutral-50 p-5 sm:p-6">
+              <h2 id="sources-heading" className="text-[11px] font-extrabold uppercase tracking-[0.2em] text-brand-teal">
+                Sources &amp; further reading
+              </h2>
+              <ul className="mt-4 divide-y divide-hairline">
+                {article.sources.map((s) => (
+                  <li key={s.url} className="py-3 first:pt-0 last:pb-0">
+                    <a href={s.url} target="_blank" rel="noopener noreferrer" className="group block">
+                      <span className="block text-[11px] font-bold uppercase tracking-[0.14em] text-ink-soft">{s.publisher}</span>
+                      <span className="mt-0.5 block font-serif text-[15.5px] font-semibold leading-snug text-ink underline decoration-brand-teal/0 decoration-2 underline-offset-4 transition group-hover:text-brand-teal group-hover:decoration-brand-teal">
+                        {s.label}
+                        <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" className="ml-1.5 inline-block" aria-hidden="true">
+                          <path d="M7 17L17 7M9 7h8v8" />
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </aside>
+          )}
         </article>
 
         {/* Right rail: "Other news" + "Most read" grouped together and
