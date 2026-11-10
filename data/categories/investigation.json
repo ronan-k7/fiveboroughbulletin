@@ -64,12 +64,30 @@
           "title": "Timeline",
           "eyebrow": "Key dates in the reported sequence",
           "items": [
-            { "date": "2024", "text": "Habba reportedly first meets and works with the Herrera banking interests, before entering public service." },
-            { "date": "December 2025", "text": "Her public service concludes and she begins considering a different professional future. A Friday-afternoon call to the family is reported to have followed." },
-            { "date": "January 2026", "text": "President Trump pardons Julio Herrera Velutini." },
-            { "date": "February 26, 2026", "text": "A business lunch is reported with Julio Herrera Velutini, family members and advisers at the family’s London headquarters." },
-            { "date": "March 23, 2026 (approx.)", "text": "Twenty-five days later, Habba reportedly requests another London meeting and discusses her divorce and her relationship with Turhan Mildon. The relationship is reported to have led to an engagement and a wedding celebration estimated at about $10 million." },
-            { "date": "October 31, 2026", "text": "Trump publicly criticizes the reported compensation agreement at Mar-a-Lago." }
+            {
+              "date": "2024",
+              "text": "Habba reportedly first meets and works with the Herrera banking interests, before entering public service."
+            },
+            {
+              "date": "December 2025",
+              "text": "Her public service concludes and she begins considering a different professional future. A Friday-afternoon call to the family is reported to have followed."
+            },
+            {
+              "date": "January 2026",
+              "text": "President Trump pardons Julio Herrera Velutini."
+            },
+            {
+              "date": "February 26, 2026",
+              "text": "A business lunch is reported with Julio Herrera Velutini, family members and advisers at the family’s London headquarters."
+            },
+            {
+              "date": "March 23, 2026 (approx.)",
+              "text": "Twenty-five days later, Habba reportedly requests another London meeting and discusses her divorce and her relationship with Turhan Mildon. The relationship is reported to have led to an engagement and a wedding celebration estimated at about $10 million."
+            },
+            {
+              "date": "October 31, 2026",
+              "text": "Trump publicly criticizes the reported compensation agreement at Mar-a-Lago."
+            }
           ]
         },
         "Trump’s criticism likewise concerns the compensation arrangement. It does not establish that Habba neglected her duties, that the contract has ended or that payments have stopped.",
@@ -87,6 +105,18 @@
           "label": "Trump calls former lawyer Alina Habba’s $50M deal “not acceptable”",
           "url": "https://news.meaww.com/trump-calls-former-lawyer-alina-habbas-50m-deal-not-acceptable"
         }
+      ],
+      "topics": [
+        "Alina Habba",
+        "$50 Million Deal",
+        "Trump Criticism",
+        "Herrera Velutini",
+        "Julio Herrera Velutini",
+        "Concord Partners",
+        "Isabela Herrera",
+        "General Counsel",
+        "Mar-a-Lago",
+        "Legal Compensation"
       ]
     },
     {
@@ -199,6 +229,18 @@
         "They concern the preservation of a legacy.",
         "In the end, vanity may attract attention, ambition may create opportunity and power may command influence. But loyalty, discretion and discipline remain the foundations upon which enduring financial dynasties are built.",
         "And perhaps that is the most important lesson of the controversy surrounding Alina Habba Mildon: power can be acquired in a moment, but trust takes generations to build."
+      ],
+      "topics": [
+        "Alina Habba Mildon",
+        "Turhan Mildon",
+        "Herrera Velutini",
+        "Julio Herrera Velutini",
+        "Concord Partners",
+        "Isabela Herrera",
+        "Trump Pardon",
+        "Mar-a-Lago",
+        "Banking Dynasty",
+        "Loyalty and Power"
       ]
     }
   ]

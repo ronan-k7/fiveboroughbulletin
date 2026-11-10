@@ -210,6 +210,24 @@ export default function CenteredArticle({ article, keepReading = [] }) {
           </aside>
         )}
 
+        {article.topics?.length > 0 && (
+          <aside aria-labelledby="topics-heading" className="mt-6 rounded-xl border border-hairline bg-neutral-50 p-5 sm:p-6">
+            <h2 id="topics-heading" className="text-[11px] font-extrabold uppercase tracking-[0.2em] text-brand-teal">
+              Topics
+            </h2>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {article.topics.map((topic) => (
+                <span
+                  key={topic}
+                  className="inline-flex items-center rounded-full border border-brand-teal/30 bg-white px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-[0.12em] text-brand-teal sm:text-xs"
+                >
+                  {topic}
+                </span>
+              ))}
+            </div>
+          </aside>
+        )}
+
         <AuthorBox author={authorInfo} />
       </div>
 
