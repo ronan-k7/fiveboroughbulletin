@@ -1,5 +1,8 @@
+import { Fragment } from "react";
 import Link from "next/link";
 import ImagePlaceholder from "./ImagePlaceholder";
+import NytCoverageCard from "./NytCoverageCard";
+import { hasNytCoverage } from "@/lib/nytCoverage";
 import ArticleCard from "./ArticleCard";
 import RichText from "./RichText";
 import { ICONS } from "./SocialIcons";
@@ -43,6 +46,7 @@ export default function CenteredArticle({ article, keepReading = [] }) {
 
   const lastParaIndex = findLastParagraphIndex(article.content || []);
   const firstParaIndex = (article.content || []).findIndex((b) => typeof b === "string");
+  const showNyt = hasNytCoverage(article);
 
   return (
     <article className="flex-1 bg-white">
@@ -156,19 +160,20 @@ export default function CenteredArticle({ article, keepReading = [] }) {
           if (typeof block === "string") {
             const isFirst = idx === firstParaIndex;
             return (
-              <p
-                key={idx}
-                className={`font-serif text-[1.075rem] leading-[1.85] text-ink sm:text-[1.2rem] ${idx === 0 ? "" : "mt-6"} ${
-                  isFirst
-                    ? "first-letter:float-left first-letter:mr-3 first-letter:mt-1.5 first-letter:font-black first-letter:text-brand-teal first-letter:text-[3.9rem] first-letter:leading-[0.8] sm:first-letter:text-[4.7rem]"
-                    : ""
-                }`}
-              >
-                <RichText text={block} />
-                {idx === lastParaIndex && (
-                  <span className="ml-2 inline-block h-2 w-2 bg-brand-teal align-middle" aria-hidden="true" />
-                )}
-              </p>
+              <Fragment key={idx}>
+                <p
+                  className={`font-serif text-[1.075rem] leading-[1.85] text-ink sm:text-[1.2rem] ${idx === 0 ? "" : "mt-6"} ${
+                    isFirst
+                      ? "first-letter:float-left first-letter:mr-3 first-letter:mt-1.5 first-letter:font-black first-letter:text-brand-teal first-letter:text-[3.9rem] first-letter:leading-[0.8] sm:first-letter:text-[4.7rem]"
+                      : ""
+                  }`}
+                >
+                  <RichText text={block} />
+                  {idx === lastParaIndex && (
+                    <span className="ml-2 inline-block h-2 w-2 bg-brand-teal align-middle" aria-hidden="true" />
+                  )}
+                </p>
+              </Fragment>
             );
           }
           if (block?.type === "pullquote") return <PullQuote key={idx} block={block} />;
@@ -180,6 +185,9 @@ export default function CenteredArticle({ article, keepReading = [] }) {
 
       {/* ---------------------------------------------------------- footer */}
       <div className="mx-auto w-full max-w-[58.25rem] px-5 pb-12 sm:px-6">
+        {/* "Now in The New York Times" card, just before "Share this story" */}
+        {showNyt && <NytCoverageCard />}
+
         <ShareRow title={article.seoTitle || article.title} url={url} />
 
         {article.sources?.length > 0 && (

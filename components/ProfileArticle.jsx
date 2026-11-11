@@ -1,5 +1,7 @@
 import Link from "next/link";
 import ImagePlaceholder from "./ImagePlaceholder";
+import NytCoverageCard from "./NytCoverageCard";
+import { hasNytCoverage } from "@/lib/nytCoverage";
 import ArticleCard from "./ArticleCard";
 import RichText from "./RichText";
 import { ICONS } from "./SocialIcons";
@@ -46,6 +48,7 @@ export default function ProfileArticle({ article, keepReading = [] }) {
   const content = article.content || [];
   const firstIdx = content.findIndex((b) => typeof b === "string");
   const lastIdx = findLastParagraphIndex(content);
+  const showNyt = hasNytCoverage(article);
 
   return (
     <article className="flex-1 bg-white">
@@ -218,6 +221,9 @@ export default function ProfileArticle({ article, keepReading = [] }) {
 
       {/* ---------------------------------------------------------- footer */}
       <div className="mx-auto w-full max-w-[44rem] px-5 pb-12 sm:px-6">
+        {/* "Now in The New York Times" card (compact), just before "Share this story" */}
+        {showNyt && <NytCoverageCard variant="compact" />}
+
         <div className="mt-6 flex flex-col items-center gap-3 border-t border-hairline pt-8">
           <h2 className="text-[11px] font-extrabold uppercase tracking-[0.2em] text-ink-soft">Share this story</h2>
           <ShareLinks title={article.seoTitle || article.title} url={url} />
