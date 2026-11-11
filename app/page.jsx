@@ -89,8 +89,12 @@ export default function HomePage() {
   // reserved the same way so they never repeat in the top block or fill-ins.
   const technologyPicks = newestIn("technology", 3, new Set());
   const sportsPicks = newestIn("sports", 3, new Set());
+  //
+  // Business is reserved the same way (5 newest: 1 featured + 4 grid), so a fresh
+  // business story always lands in the Business section -- never in the top block.
+  const businessPicks = newestIn("business", 5, new Set());
   const reserved = new Set(
-    [...politicsPicks, ...puertoRicoPicks, ...technologyPicks, ...sportsPicks].map(keyOf)
+    [...politicsPicks, ...puertoRicoPicks, ...technologyPicks, ...sportsPicks, ...businessPicks].map(keyOf)
   );
 
   const pool = getLatestArticles(40, null, { home: true }).filter((a) => !reserved.has(keyOf(a)));
@@ -111,14 +115,12 @@ export default function HomePage() {
   markShown(puertoRicoPicks);
   markShown(technologyPicks);
   markShown(sportsPicks);
+  markShown(businessPicks);
 
   // Business: 1 featured story + a grid of the next ones. The featured story is
   // NOT repeated in the grid. If business runs short, the empty grid slots are
   // filled with a story from the category shown least on the page (a category
   // with nothing on the page yet comes first) -- never with a repeat.
-  const businessPicks = newestIn("business", 5, used);
-  businessPicks.forEach((a) => used.add(keyOf(a)));
-  markShown(businessPicks);
   const featuredBusiness = businessPicks[0];
   let financePicks = newestIn("finance", 3, used);
   financePicks.forEach((a) => used.add(keyOf(a)));
