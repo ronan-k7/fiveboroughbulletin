@@ -1,6 +1,40 @@
 {
   "articles": [
     {
+      "slug": "microsoft-restores-outlook-teams-global-outage-7-billion-productivity-loss",
+      "title": "Microsoft restores Outlook and Teams after global outage that may have cost businesses $7 billion",
+      "subCategoryLabel": "Outages",
+      "excerpt": "Microsoft said early Saturday it had fixed the network fault that cut off Outlook, Teams and Copilot for more than 24 hours across more than 70 countries, as one think tank put lost productivity near $7 billion.",
+      "author": "fiveboroughbulletin-staff",
+      "date": "2026-11-14",
+      "time": "05:30 ET",
+      "commentCount": 0,
+      "image": "microsoft-restores-outlook-teams-global-outage-7-billion-productivity-loss.webp",
+      "imageCaption": "Microsoft's headquarters campus in Redmond, Washington",
+      "imageAlt": "Microsoft's headquarters campus in Redmond, Washington",
+      "keywords": ["Microsoft outage", "Outlook outage", "Microsoft Teams", "Microsoft 365", "Copilot", "Charles Lamanna", "Anderson Economic Group", "cloud reliability"],
+      "content": [
+        "Microsoft said early Saturday that it had finished repairing the fault behind a global outage that cut off Outlook, Teams and its Copilot assistant for more than 24 hours, restoring service to the last affected customers and regions, [CBS News](https://www.cbsnews.com/news/microsoft-battling-major-outage/) and the Associated Press reported. The disruption began shortly before 1 p.m. ET on Thursday, [ABC News](https://abcnews.com/US/outlook-down-microsoft-outage-reported-mail/story?id=138088203) reported, and reached users in more than 70 countries and territories, according to Downdetector. The [Australian Associated Press](https://www.crookwellgazette.com.au/story/9391504/microsoft-services-fully-recover-after-global-outage/) described it as one of the longest outages in Microsoft's history.",
+        "Microsoft said the failure was a technical problem rather than a cyberattack, and that artificial intelligence agents played no role. The company traced it to a flaw introduced during an earlier network capacity upgrade that surfaced after a more recent network change, [ABC News](https://abcnews.com/US/outlook-down-microsoft-outage-reported-mail/story?id=138088203) reported. Engineers paused deployments, moved traffic off the affected infrastructure and restarted servers, and [CNBC](https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html) reported that some servers were failing automated health checks. Early Friday, Microsoft reported positive results for server stability after patching an upstream authentication and routing configuration component on part of its infrastructure, [NBC News](https://nbcnews.com/tech/tech-news/live-blog/microsoft-outage-outlook-teams-updates-fix-rcna609118) reported. Charles Lamanna, the executive who oversees Copilot, agents and the platform, said technical challenges made the recovery harder than normal and promised a post-mortem with a step-by-step timeline and repair items, according to CBS News.",
+        "The reach was wide. Downdetector logged more than 130,000 user reports on Thursday alone, CBS News said, and more than 7.4 million worldwide over the whole incident, peaking at nearly 20,000 a minute, according to the Australian Associated Press. Microsoft says more than 430 million people use its 365 apps, CBS News noted, though it is unclear how many were affected. New York City's emergency management agency warned residents of delays reaching city agencies, ABC News reported, and CBS News and the Associated Press reported that Singapore's government technology agency said official email was down, Japan's government said its IT infrastructure was affected, and the Philippine Supreme Court reported disruptions. Workhorse Group delayed a quarterly earnings call because of the outage, and OpenAI and Anthropic each reported problems connecting to Microsoft 365 tools, according to the same report. The outage also delayed trading firms and kept some companies from publishing earnings, the Australian Associated Press said.",
+        "Estimates of the cost are already in the billions. Anderson Economic Group, a Michigan think tank, put the lost productivity at about $7 billion, [CNN](https://www.cnn.com/2026/11/12/tech/microsoft-outage-cripples-office-workers-nationwide) reported, with its president, Patrick Anderson, saying as many as 26 million users on Thursday and 51 million on Friday suffered a real economic loss. CNN's [live coverage](https://www.cnn.com/2026/11/12/business/live-news/microsoft-global-outage-intl-hnk) added that the firm is known for cautious estimates, that many affected users likely faced only annoyance, and that customer refund claims could push the total above $7 billion. The hit to insurers looks far smaller: Mario De Cicco of Morningstar DBRS put global insured losses at $300 million to $500 million, below the $400 million to $1.5 billion toll of the 2024 CrowdStrike outage, the Australian Associated Press reported. In Australia, an RSM risk adviser said professional-services firms could lose hundreds of thousands of dollars an hour, [ABC News Australia](https://www.abc.net.au/news/2026-11-13/microsoft-outlook-outage-cost-to-businesses/107381570) reported.",
+        "Investors largely looked past it. Microsoft shares were down about 3 percent in premarket trading Friday, [CNBC](https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html) reported, but recovered during the session and closed flat at $523.88, the Australian Associated Press said. The stock is up roughly 8 percent this year. Dan Ives of Yorkville Ives & Co. said the episode raises major questions for the company, CBS News reported. The longer-term worry is reliability: eToro analyst Josh Gilbert said a recurring problem would give IT departments a reason to think twice about putting more business with one provider, while other analysts noted that steep switching costs make defections unlikely, according to the Australian Associated Press. The wire report noted that Microsoft 365 also suffered outages in January this year and last October, and that its Azure cloud platform had one last month.",
+        "Microsoft has apologized and said it takes the trust of its customers seriously. Australia's home affairs minister, Tony Burke, said Microsoft likened the incident to the 2024 CrowdStrike outage, where a faulty update went awry, CBS News and the Associated Press reported. Ookla analyst Luke Kehoe said the episode shows how much of the working day runs through one provider's email and collaboration tools, according to the Australian Associated Press. As of early Saturday, Microsoft had not yet published its promised post-mortem."
+      ],
+      "relatedPicks": ["nvidia-hires-ex-prosecutor-lead-huang-probe-shares-slide", "nvidia-posts-record-quarterly-revenue"],
+      "sources": [
+        { "publisher": "CBS News (with the Associated Press)", "label": "Microsoft says it has \"restored\" service and addressed \"underlying issue\" after worldwide outage", "url": "https://www.cbsnews.com/news/microsoft-battling-major-outage/" },
+        { "publisher": "ABC News", "label": "Outlook outage updates: Microsoft apologizes for email disruption, says there was no hack", "url": "https://abcnews.com/US/outlook-down-microsoft-outage-reported-mail/story?id=138088203" },
+        { "publisher": "Australian Associated Press (via Crookwell Gazette)", "label": "Microsoft services fully recover after global outage", "url": "https://www.crookwellgazette.com.au/story/9391504/microsoft-services-fully-recover-after-global-outage/" },
+        { "publisher": "CNN", "label": "Massive Microsoft outage disrupts businesses, schools and governments around the world", "url": "https://www.cnn.com/2026/11/12/tech/microsoft-outage-cripples-office-workers-nationwide" },
+        { "publisher": "CNN", "label": "Microsoft says email service is 'approaching normal levels' following widespread global outage (live updates)", "url": "https://www.cnn.com/2026/11/12/business/live-news/microsoft-global-outage-intl-hnk" },
+        { "publisher": "CNBC", "label": "Microsoft apologizes for massive outage that took down Outlook and other 365 services", "url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html" },
+        { "publisher": "CNBC", "label": "Nasdaq falls on Friday as Nvidia sells off, but index notches best week since August: Live updates", "url": "https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html" },
+        { "publisher": "NBC News", "label": "Microsoft scrambles to fix major outage affecting millions worldwide", "url": "https://nbcnews.com/tech/tech-news/live-blog/microsoft-outage-outlook-teams-updates-fix-rcna609118" },
+        { "publisher": "ABC News Australia", "label": "Microsoft Outlook outage cost to businesses 'billions'", "url": "https://www.abc.net.au/news/2026-11-13/microsoft-outlook-outage-cost-to-businesses/107381570" }
+      ]
+    },
+    {
       "slug": "nvidia-hires-ex-prosecutor-lead-huang-probe-shares-slide",
       "title": "Nvidia hires former federal prosecutor to lead Huang probe as shares slide for a second day",
       "subCategoryLabel": "Governance",
@@ -49,6 +83,7 @@
       "time": "16:30 ET",
       "commentCount": 11,
       "featured": true,
+      "hideFromHome": true,
       "image": "lakers-sold-record-price-kushner-iger.webp",
       "keywords": ["Lakers sale", "Josh Kushner", "Bob Iger", "NBA franchise valuation", "Mark Walter"],
       "content": [

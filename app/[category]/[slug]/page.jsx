@@ -14,6 +14,7 @@ import {
   getSidebarResolved,
   getRelatedPicks,
   getLatestArticles,
+  getMostReadArticles,
 } from "@/lib/content";
 import JsonLd from "@/components/JsonLd";
 import { articleImageAlt, articleMetadata, articlePath, breadcrumbNode, graph, newsArticleNode } from "@/lib/seo";
@@ -37,6 +38,19 @@ export default async function ArticlePage({ params }) {
   const article = withRelations(raw, categorySlug);
   const related = getRelatedPicks(raw, categorySlug);
   const sidebar = getSidebarResolved({ exclude: { category: categorySlug, slug } });
+
+  // Right rail: every story appears at most once across "Other news" and
+  // "Most read", and never the article being read. "Other news" keeps its
+  // 5 newest stories; "Most read" then skips those (and this article) and
+  // takes the next-ranked ones, so the two lists never repeat a headline.
+  const otherNews = sidebar.latest;
+  const railKeys = new Set([
+    `${categorySlug}/${slug}`,
+    ...otherNews.map((a) => `${a.category}/${a.slug}`),
+  ]);
+  const mostRead = getMostReadArticles(60)
+    .filter((a) => !railKeys.has(`${a.category}/${a.slug}`))
+    .slice(0, 6);
 
   // Body paragraphs: insert the related-picks block after the first couple
   // of paragraphs (matches the reference video), then continue the rest,
@@ -205,8 +219,8 @@ export default async function ArticlePage({ params }) {
             and leaving a gap above the footer once the article body
             (left column) ends. */}
         <div className="lg:sticky lg:top-24 lg:self-start space-y-8">
-          <SidebarWidget title="Other news" items={sidebar.latest} numbered={false} />
-          <SidebarWidget title="Most read" items={sidebar.mostRead} />
+          <SidebarWidget title="Other news" items={otherNews} numbered={false} />
+          <SidebarWidget title="Most read" items={mostRead} />
         </div>
       </div>
     </div>
