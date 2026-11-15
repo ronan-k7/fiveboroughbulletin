@@ -1,6 +1,70 @@
 {
   "articles": [
     {
+      "slug": "commanders-rally-past-giants-24-21-as-jayden-daniels-hits-stefon-diggs-with-57-seconds-left",
+      "title": "Commanders rally past the Giants 24-21 as Jayden Daniels hits Stefon Diggs with 57 seconds left",
+      "subCategoryLabel": "NFL",
+      "excerpt": "Daniels threw his first two interceptions of the season, then found Diggs for a 32-yard touchdown to leave Washington two games behind the NFC East-leading Giants and holding the tiebreaker.",
+      "author": "fiveboroughbulletin-staff",
+      "date": "2026-11-15",
+      "time": "09:00 ET",
+      "featured": true,
+      "image": "commanders-rally-past-giants-24-21-jayden-daniels-stefon-diggs.webp",
+      "imageCaption": "MetLife Stadium in East Rutherford, N.J., where Washington beat the Giants on Thursday night",
+      "imageAlt": "MetLife Stadium in East Rutherford, New Jersey, home of the New York Giants",
+      "keywords": [
+        "New York Giants",
+        "Washington Commanders",
+        "Jayden Daniels",
+        "Stefon Diggs",
+        "J.J. McCarthy",
+        "Giants Commanders 24-21",
+        "NFC East standings 2026"
+      ],
+      "content": [
+        "The Washington Commanders got the one drive they needed on Thursday night. Jayden Daniels threw a 32-yard touchdown pass to Stefon Diggs with 57 seconds left, and Washington beat the New York Giants 24-21 at MetLife Stadium in a division game that both teams treated as close to a must-win, [the Associated Press reported](https://www.cbsnews.com/newyork/news/commanders-beat-giants/). Cornerback Rasul Douglas then intercepted J.J. McCarthy with 25 seconds on the clock to end it.",
+        "The win came after a rough fourth quarter for Daniels. He had gone 207 pass attempts this season without an interception, then threw two on back-to-back drives, [NFL.com noted](https://www.nfl.com/news/commanders-giants-on-thursday-night-football-what-we-learned-from-washington-s-24-21-win), the first to Jevon Holland and the second to Ar'Darius Washington. Midway through the quarter, McCarthy hit tight end Isaiah Likely in stride for a 66-yard touchdown that put the Giants ahead 21-17. McCarthy finished with a career-high 293 yards passing, and Likely had nine catches for 127 yards.",
+        "New York could not close it out. The Giants punted the ball back to Washington several times, and NFL.com counted six plays, 10 yards and less than three minutes of clock over two of those possessions. Daniels then got help from a defensive pass interference penalty drawn by Treylon Burks, a call NFL.com described as controversial. On third-and-four from the Giants' 32, [Sports Illustrated wrote](https://www.si.com/nfl/commanders/onsi/commanders-giants-winners-losers-week-10), Diggs beat his man at the line. He caught the ball over the middle and fell backward into the end zone.",
+        "The touchdown was the 80th of Diggs' career as a receiver, [according to the AP](https://abc7ny.com/post/giants-commanders-new-york-loses-24-21-metlife/20037394/), making him the 30th player in league history to reach that mark. NFL Research added that it was the second time he has caught a winning touchdown with less than a minute left. The first was the 2017 \"Minneapolis Miracle\" for the Vikings. Diggs finished with six catches for 83 yards.",
+        "The result keeps Washington (3-5-1) in the NFC East race. The Commanders are two games behind the first-place Giants (5-3-1), with Dallas (4-5) in between, and they hold the tiebreaker after the teams tied in Week 5, [FOX Sports reported](https://www.foxsports.com/stories/nfl/commanders-giants-finish-dan-quinn-jayden-daniels-quotes). NFL.com put Washington's playoff probability at 19% after the win and called the odds slim. Daniels is now 4-0-1 against the Giants, who have gone six straight meetings without beating Washington, the first time that has happened since a stretch from 1981 to 1984.",
+        "\"We needed that. We needed every bit of it,\" Commanders coach Dan Quinn said afterward. He added that it would have been easy to lose faith after the interceptions and said he was proud of how Daniels responded. Daniels finished 23 of 33 for 249 yards and three touchdowns, with the two interceptions, and ran for 28 yards. His other scoring throws went to rookie Antonio Williams from 31 yards out and to tight end Ben Sinnott from a yard away just before halftime.",
+        "Not everything about the win was reassuring. NFL.com's Grant Gordon wrote that Daniels has to play at a near-spectacular level for Washington to win without Terry McLaurin and Jacory Croskey-Merritt. The rookie defenders were the other bright spot. Giants first-rounder Arvell Reese and Commanders first-rounder Sonny Styles, who were teammates at Ohio State, each made 13 tackles, and Styles added four quarterback pressures.",
+        "The Giants outgained Washington 399-340, and Cam Skattebo ran for two touchdowns in his return from a hamstring injury. But after the Likely touchdown, McCarthy went 0 for 3 with an interception against Washington's blitzes, according to Next Gen Stats, and it was his first loss as New York's starter. Kicker Dominic Zvada also missed a 33-yard field goal wide left, while Washington's Drew Stevens made a 46-yarder.",
+        "The Giants host Jacksonville on Sunday, Nov. 22, and still control the division race. NFL.com noted that the next four games, which include the Jaguars, 49ers and Seahawks, are tougher. A division title would be their first since 2011. Washington hosts the Cincinnati Bengals on Monday night, Nov. 23."
+      ],
+      "relatedPicks": [
+        "bears-beat-defending-champion-seahawks-34-17-as-jeffery-simmons-makes-instant-impact",
+        "colts-fire-sale-deepens-after-42-7-loss-to-jaguars-with-trade-deadline-a-week-away"
+      ],
+      "sources": [
+        {
+          "publisher": "NFL.com",
+          "label": "Commanders-Giants on 'Thursday Night Football': What We Learned from Washington's 24-21 win",
+          "url": "https://www.nfl.com/news/commanders-giants-on-thursday-night-football-what-we-learned-from-washington-s-24-21-win"
+        },
+        {
+          "publisher": "CBS News New York / AP",
+          "label": "Jayden Daniels, Commanders rally to stun Giants 24-21",
+          "url": "https://www.cbsnews.com/newyork/news/commanders-beat-giants/"
+        },
+        {
+          "publisher": "FOX Sports",
+          "label": "Commanders Coach Dan Quinn Talks 'Needed' Win, Being 'Proud' Of Jayden Daniels",
+          "url": "https://www.foxsports.com/stories/nfl/commanders-giants-finish-dan-quinn-jayden-daniels-quotes"
+        },
+        {
+          "publisher": "ABC7 New York / AP",
+          "label": "Giants come up short against the Commanders in 24-21 loss",
+          "url": "https://abc7ny.com/post/giants-commanders-new-york-loses-24-21-metlife/20037394/"
+        },
+        {
+          "publisher": "Sports Illustrated",
+          "label": "Commanders Winners and Losers vs. Giants: A 24–21 Win They Nearly Gave Away",
+          "url": "https://www.si.com/nfl/commanders/onsi/commanders-giants-winners-losers-week-10"
+        }
+      ]
+    },
+    {
       "slug": "colts-fire-sale-deepens-after-42-7-loss-to-jaguars-with-trade-deadline-a-week-away",
       "title": "Colts' fire sale deepens after a 42-7 loss to Jacksonville, with the trade deadline a week away",
       "subCategoryLabel": "NFL",
@@ -122,6 +186,7 @@
       "author": "fiveboroughbulletin-staff",
       "date": "2026-11-03",
       "time": "08:00 ET",
+      "hideFromHome": true,
       "featured": true,
       "image": "bears-beat-seahawks-34-17-jeffery-simmons-impact.webp",
       "imageCaption": "Chicago won in Seattle on Monday Night Football to improve to 6-2",
