@@ -1,6 +1,76 @@
 {
   "articles": [
     {
+      "slug": "openai-launches-chatgpt-wallet-so-dots-ai-agents-can-pay-for-purchases-as-big-merchants-shut-agents-out",
+      "title": "OpenAI launches ChatGPT Wallet so its dots AI agents can pay for purchases, even as big merchants shut agents out",
+      "subCategoryLabel": "AI Agents",
+      "excerpt": "The Pro-only feature swaps a shopper's card number for a payment token and asks for a Face ID or fingerprint check on every purchase, but Amazon, eBay and United are among the companies limiting what outside agents can do.",
+      "author": "fiveboroughbulletin-staff",
+      "date": "2026-11-16",
+      "time": "08:30 ET",
+      "featured": true,
+      "image": "openai-chatgpt-wallet-dots-agents-purchases.webp",
+      "imageCaption": "ChatGPT Wallet asks for a Face ID or fingerprint check before a dot completes a purchase",
+      "imageAlt": "A person holding a smartphone and paying with a fingerprint check at an online checkout",
+      "keywords": [
+        "ChatGPT Wallet",
+        "OpenAI dots",
+        "agentic commerce",
+        "AI agents shopping",
+        "United Airlines AI agents ban"
+      ],
+      "content": [
+        "OpenAI has given its AI agents a way to pay. On Friday, Nov. 13, the company launched ChatGPT Wallet, a payment feature that lets its agents, called dots, help a user decide what to buy and then complete the purchase, [TechCrunch reported](https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/). The rollout is deliberately small. At first it is open to a limited number of U.S. ChatGPT Pro subscribers who are 18 or older and hold a U.S.-issued Visa, Mastercard or American Express card. [Online Tech Tips](https://www.online-tech-tips.com/openai-chatgpt-wallet-agent-purchases-user-approval/) added that OpenAI's help pages also list Chase cards, and only for the primary cardholder.",
+        "Setup is a one-time step. A subscriber saves an eligible card to the Wallet and then asks a dot for help with a purchase. Before anything is bought, the user sees the items, the total and the card that will be charged, and approves it with a security check such as Face ID or a fingerprint, which also creates a record of the transaction, according to TechCrunch. At checkout the Wallet charges the card through a payment token that stands in for the real number, so neither the dot nor the merchant ever sees the card details. [CNBC reported](https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html) that OpenAI built the system with American Express, Mastercard and Visa, and that the company is not taking a cut of transactions to start.",
+        "OpenAI says shoppers keep their card rewards and the dispute protections that come with their cards. The merchant receives what it needs to fill the order, such as a shipping address and contact details, from the dot. The scope is narrow, though. Based on OpenAI's help documentation, Online Tech Tips said Wallet currently works only in conversations with dots, not in standard ChatGPT chats, ChatGPT Work or standalone Codex threads. It also noted that approving a purchase in ChatGPT does not guarantee the merchant will confirm the order.",
+        "Dots are the always-on personal agents OpenAI launched on September 29, which [Al Jazeera described](https://www.aljazeera.com/economy/2026/9/30/openai-launches-dots-personal-ai-assistant-built-to-handle-everything) as built to handle tasks from restaurant bookings to website design. OpenAI says it expects users eventually to hand purchases over to an agent by setting spending limits, purchase categories or time periods and pre-approving buys within them, with added safeguards.",
+        "The harder problem may be the stores themselves. OpenAI's own announcement says websites need to make sure agents are not accidentally blocked, and that payment and risk systems must recognize legitimate agent purchases. The company also published a Commerce Partner Playbook to help merchants prepare, TechCrunch reported. Several large names are moving the other way. Amazon blocks outside agents from browsing or shopping entirely, while Target lets them in some cases and blocks them in others, [The Paypers reported](https://thepaypers.com/payments/news/ebay-restricts-third-party-ai-agents-including-metas-muse) in a story on eBay limiting third-party agent access. TechCrunch said Amazon wants shoppers steered to its own assistant, Alexa.",
+        "United Airlines joined the list on Wednesday, Nov. 11. It said it will restrict unauthorized third-party personal AI agents on its own platforms and through travel agencies and aggregators, citing security risks, the chance of unintended purchases and possible conflicts with federal rules, [CBS News reported](https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/). An aviation analyst told CBS the airline does not want to add another powerful intermediary between itself and its customers. Others are leaning in: Southwest has made its flights viewable to ChatGPT users.",
+        "Early demand for agent shopping is still unproven. TechCrunch noted that DoorDash and Uber have reported low numbers of orders placed by AI agents so far, while Meta says shopping has become a top activity in its Muse agent, which has more than 10 million users. Whether Wallet changes that picture may depend less on the payment token than on how many merchants let a dot reach the checkout page."
+      ],
+      "relatedPicks": [
+        "amd-posts-record-quarter-as-data-center-sales-nearly-double-and-guides-to-17-billion",
+        "uk-cyber-agency-warns-ai-powered-ransomware-will-likely-hit-critical-infrastructure-by-2028"
+      ],
+      "sources": [
+        {
+          "publisher": "OpenAI",
+          "label": "Introducing ChatGPT Wallet",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet/"
+        },
+        {
+          "publisher": "TechCrunch",
+          "label": "ChatGPT's new Wallet lets AI agents shop and check out for you",
+          "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/"
+        },
+        {
+          "publisher": "CNBC",
+          "label": "OpenAI launches ChatGPT Wallet, allowing its 'dots' AI agents to make purchases for users",
+          "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html"
+        },
+        {
+          "publisher": "Online Tech Tips",
+          "label": "OpenAI introduces ChatGPT Wallet for agent purchases with user approval",
+          "url": "https://www.online-tech-tips.com/openai-chatgpt-wallet-agent-purchases-user-approval/"
+        },
+        {
+          "publisher": "CBS News",
+          "label": "United Airlines bans AI agents from booking flights on behalf of travelers",
+          "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/"
+        },
+        {
+          "publisher": "The Paypers",
+          "label": "eBay limits third-party AI agent access",
+          "url": "https://thepaypers.com/payments/news/ebay-restricts-third-party-ai-agents-including-metas-muse"
+        },
+        {
+          "publisher": "Al Jazeera",
+          "label": "OpenAI launches 'dots,' personal AI assistant 'built to handle everything'",
+          "url": "https://www.aljazeera.com/economy/2026/9/30/openai-launches-dots-personal-ai-assistant-built-to-handle-everything"
+        }
+      ]
+    },
+    {
       "slug": "amd-posts-record-quarter-as-data-center-sales-nearly-double-and-guides-to-17-billion",
       "title": "AMD posts a record quarter as data center sales nearly double, and guides to about $17 billion",
       "subCategoryLabel": "Chips",
@@ -122,6 +192,7 @@
       "author": "fiveboroughbulletin-staff",
       "date": "2026-11-03",
       "time": "09:30 ET",
+      "hideFromHome": true,
       "featured": true,
       "image": "apple-record-quarter-memory-costs-cloud-holiday-outlook.webp",
       "imageCaption": "Apple reported its first earnings under CEO John Ternus on Monday",
