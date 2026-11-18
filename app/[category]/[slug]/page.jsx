@@ -5,6 +5,7 @@ import SidebarWidget from "@/components/SidebarWidget";
 import RelatedPicks from "@/components/RelatedPicks";
 import CenteredArticle from "@/components/CenteredArticle";
 import ProfileArticle from "@/components/ProfileArticle";
+import CaseFileArticle from "@/components/CaseFileArticle";
 import RichText from "@/components/RichText";
 import {
   getAllArticlesFlat,
@@ -77,6 +78,18 @@ export default async function ArticlePage({ params }) {
       <>
         {structuredData}
         <ProfileArticle
+          article={article}
+          keepReading={getLatestArticles(3, { category: categorySlug, slug })}
+        />
+      </>
+    );
+  }
+  // "layout": "casefile" -> document-driven explainer page (components/CaseFileArticle.jsx).
+  if (article.layout === "casefile") {
+    return (
+      <>
+        {structuredData}
+        <CaseFileArticle
           article={article}
           keepReading={getLatestArticles(3, { category: categorySlug, slug })}
         />

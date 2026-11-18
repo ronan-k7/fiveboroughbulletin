@@ -242,6 +242,198 @@
         "Banking Dynasty",
         "Loyalty and Power"
       ]
+    },
+    {
+      "slug": "what-mark-rossini-case-reveals-about-presidential-pardon-power",
+      "layout": "casefile",
+      "title": "What the Mark Rossini Case Reveals About Presidential Pardon Power",
+      "seoTitle": "What the Mark Rossini Case Reveals About Presidential Pardon Power",
+      "seoDescription": "The Mark Rossini pardon puts presidential clemency under the microscope: what the warrants say, how the court treated the acceptance, and what a pardon does not settle.",
+      "excerpt": "The Mark Rossini pardon has brought a constitutional power into sharp public focus: the President’s authority to grant clemency for federal offenses.",
+      "dateline": "Washington, D.C.",
+      "author": "fiveboroughbulletin-staff",
+      "date": "2026-11-18",
+      "commentCount": 0,
+      "homePin": 5,
+      "featured": true,
+      "image": "what-mark-rossini-case-reveals-presidential-pardon-power.webp",
+      "imagePosition": "50% 30%",
+      "imageAlt": "Mark Rossini pardon explainer: presidential clemency power and the federal court record",
+      "imageCaption": "The Mark Rossini pardon: how a presidential warrant, acceptance notices and a court dismissal fit together.",
+      "caseFile": {
+        "title": "Case file",
+        "items": [
+          {
+            "label": "Case",
+            "value": "United States v. Mark T. Rossini, 3:25-cr-298"
+          },
+          {
+            "label": "Authority",
+            "value": "Article II, Section 2, Clause 1 of the Constitution"
+          },
+          {
+            "label": "Warrants",
+            "value": "January 15 and January 20"
+          },
+          {
+            "label": "Court",
+            "value": "U.S. District Court, District of Puerto Rico"
+          },
+          {
+            "label": "Outcome",
+            "value": "Criminal matters dismissed as moot after the pardons were accepted"
+          }
+        ]
+      },
+      "keywords": [
+        "Mark Rossini",
+        "Mark Rossini pardon",
+        "presidential pardon power",
+        "Article II pardon clause",
+        "United States v. Mark T. Rossini",
+        "Wanda Vázquez Garced",
+        "Julio Herrera Velutini",
+        "Puerto Rico pardon case",
+        "pardon dismissal moot"
+      ],
+      "content": [
+        "The Mark Rossini pardon has brought a constitutional power into sharp public focus: the President’s authority to grant clemency for federal offenses. The [January 20 warrant](https://www.justice.gov/pardon/media/1425091/dl?inline=) states that President Donald Trump acted under Article II, Section 2, Clause 1, of the Constitution and granted Rossini a full and unconditional pardon for the offenses listed in a separate federal case.",
+        {
+          "type": "people",
+          "label": "Named in the warrant",
+          "items": [
+            {
+              "name": "Mark Rossini",
+              "role": "Pardon recipient",
+              "image": "mark-rossini.webp",
+              "imagePosition": "50% 25%"
+            },
+            {
+              "name": "Donald Trump",
+              "role": "President of the United States",
+              "image": "donald-trump.webp",
+              "imagePosition": "50% 25%"
+            }
+          ]
+        },
+        "The constitutional language is broad, but the process is specific. A presidential pardon must identify the recipient and the offenses covered. In Rossini’s case, [the warrant names Mark T. Rossini](https://www.justice.gov/pardon/media/1425091/dl?inline=) and identifies *United States v. Mark T. Rossini*, 3:25-cr-298. The document also authorizes the Pardon Attorney to administer and sign the grant as the President’s representative.",
+        "That wording matters because executive clemency is not the same as a judicial acquittal. A judge or jury determines whether the government proved its case. A pardon is issued by the executive branch. It may forgive federal criminal liability or prevent certain consequences from continuing, but it does not require a finding that the recipient did not commit the conduct described by prosecutors.",
+        {
+          "type": "compare",
+          "eyebrow": "Two different outcomes",
+          "left": {
+            "title": "Judicial acquittal",
+            "items": [
+              "Decided by a judge or jury",
+              "Determines whether the government proved its case"
+            ]
+          },
+          "right": {
+            "title": "Presidential pardon",
+            "items": [
+              "Issued by the executive branch",
+              "May forgive federal criminal liability or prevent certain consequences from continuing",
+              "Does not require a finding that the recipient did not commit the conduct described by prosecutors"
+            ]
+          }
+        },
+        "The legal effect became especially visible after Rossini [accepted the pardon through counsel](https://www.primerahora.com/noticias/gobierno-politica/notas/exagente-federal-del-caso-contra-wanda-vazquez-es-el-primero-en-aceptar-el-perdon-presidencial/). Federal courts must know whether a defendant accepts the grant before treating it as a basis for ending a case. Rossini’s acceptance notice asked the District of Puerto Rico to dismiss the remaining charges. A federal judge later [concluded that the criminal matters were moot](https://www.metro.pr/noticias/2026/01/27/jueza-federal-desestima-caso-contra-wanda-vazquez-herrera-velutini-y-rossini-tras-indultos-presidenciales) after the defendants accepted their pardons.",
+        "The Mark Rossini case also demonstrates the difference between power and process. The President may issue a pardon, but the court still must determine how that pardon affects the docket. Defense lawyers file notices. Prosecutors state their position. The judge evaluates whether any live controversy remains. The executive action does not bypass every procedural step.",
+        "The underlying prosecution added another layer to the debate. Rossini was charged alongside Vázquez Garced and Herrera Velutini in a case involving alleged political influence, campaign support, and pressure connected to Puerto Rico’s financial regulator. The prosecution later ended in pleas to a lesser campaign-finance offense. The pardons arrived before sentencing was completed, making the exercise of clemency a direct interruption of the normal criminal process.",
+        {
+          "type": "people",
+          "label": "Charged alongside Rossini",
+          "items": [
+            {
+              "name": "Wanda Vázquez Garced",
+              "role": "Co-defendant",
+              "image": "wanda-vazquez-garced.webp",
+              "imagePosition": "50% 25%"
+            },
+            {
+              "name": "Julio Herrera Velutini",
+              "role": "Co-defendant",
+              "image": "julio-herrera-velutini.webp",
+              "imagePosition": "50% 25%"
+            }
+          ]
+        },
+        "Supporters of the pardon can point to the President’s constitutional authority and to the fact that clemency has long been used in politically charged cases. Critics can argue that pardoning defendants connected to a public-corruption investigation weakens deterrence and makes the public less confident that powerful people face equal accountability. Both positions can be reported without treating either as an established legal conclusion.",
+        "The documents also help answer what the pardon did not do. It did not automatically declare Rossini innocent. It did not provide a judicial account of the facts. It did not resolve every civil or administrative question outside the federal criminal case. And it did not prevent journalists, lawmakers, or the public from continuing to examine the allegations and the reasons for the President’s decision.",
+        {
+          "type": "checklist",
+          "eyebrow": "The limits of clemency",
+          "title": "What the pardon did not do",
+          "items": [
+            "It did not automatically declare Rossini innocent.",
+            "It did not provide a judicial account of the facts.",
+            "It did not resolve every civil or administrative question outside the federal criminal case.",
+            "It did not prevent journalists, lawmakers, or the public from continuing to examine the allegations and the reasons for the President’s decision."
+          ]
+        },
+        "A pardon can also raise questions about timing. Rossini received the first warrant on January 15 and a second warrant on January 20 that named his separate case. The later document suggests that the parties wanted the scope of clemency to be clear across both federal dockets. This was a [legal clarification](https://www.justice.gov/pardon/media/1425091/dl?inline=), not necessarily a new factual development in the underlying allegations.",
+        "The court’s dismissal therefore should be understood as a consequence of clemency, not as a verdict. The case ended because the executive branch issued pardons and the defendants accepted them. The court then [found that no live criminal controversy remained](https://www.metro.pr/noticias/2026/01/27/jueza-federal-desestima-caso-contra-wanda-vazquez-herrera-velutini-y-rossini-tras-indultos-presidenciales). That is different from a trial in which evidence is tested and a jury or judge enters a finding of guilt or innocence.",
+        {
+          "type": "pullquote",
+          "text": "The case ended because the executive branch issued pardons and the defendants accepted them.",
+          "cite": "A consequence of clemency, not a verdict"
+        },
+        "For readers interested in Mark Rossini, the most reliable way to understand the story is to read the documents in order. Start with the January 15 warrant, then the [January 20 warrant](https://www.justice.gov/pardon/media/1425091/dl?inline=), then the [acceptance notices](https://www.primerahora.com/noticias/gobierno-politica/notas/exagente-federal-del-caso-contra-wanda-vazquez-es-el-primero-en-aceptar-el-perdon-presidencial/) and the [court’s dismissal order](https://www.metro.pr/noticias/2026/01/27/jueza-federal-desestima-caso-contra-wanda-vazquez-herrera-velutini-y-rossini-tras-indultos-presidenciales). Together, they show how constitutional authority, legal representation, and judicial procedure interacted.",
+        {
+          "type": "doctrail",
+          "eyebrow": "The document trail",
+          "title": "Read the documents in this order",
+          "items": [
+            {
+              "label": "The executive warrants",
+              "text": "January 15 and January 20: the grant of clemency and its scope across both federal dockets.",
+              "href": "https://www.justice.gov/pardon/media/1425091/dl?inline="
+            },
+            {
+              "label": "The acceptance notices",
+              "text": "Rossini accepted through counsel and asked the District of Puerto Rico to dismiss the remaining charges.",
+              "href": "https://www.primerahora.com/noticias/gobierno-politica/notas/exagente-federal-del-caso-contra-wanda-vazquez-es-el-primero-en-aceptar-el-perdon-presidencial/"
+            },
+            {
+              "label": "The court’s dismissal order",
+              "text": "The judge found no live criminal controversy remained.",
+              "href": "https://www.metro.pr/noticias/2026/01/27/jueza-federal-desestima-caso-contra-wanda-vazquez-herrera-velutini-y-rossini-tras-indultos-presidenciales"
+            }
+          ]
+        },
+        "The broader lesson is that presidential clemency is both powerful and limited. It can end a federal prosecution, but it cannot settle every question of history, public trust, or political accountability. The Mark Rossini case will remain a reference point in that debate because the pardon came in a high-profile Puerto Rico case where the original allegations had not been tested at trial.",
+        {
+          "type": "basis",
+          "text": "**Reporting basis:** [Executive warrant](https://www.justice.gov/pardon/media/1425091/dl?inline=); [acceptance filing report](https://www.primerahora.com/noticias/gobierno-politica/notas/exagente-federal-del-caso-contra-wanda-vazquez-es-el-primero-en-aceptar-el-perdon-presidencial/); and [dismissal report](https://www.metro.pr/noticias/2026/01/27/jueza-federal-desestima-caso-contra-wanda-vazquez-herrera-velutini-y-rossini-tras-indultos-presidenciales)."
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "U.S. Department of Justice, Office of the Pardon Attorney",
+          "label": "Executive warrant granting the Rossini pardon",
+          "url": "https://www.justice.gov/pardon/media/1425091/dl?inline="
+        },
+        {
+          "publisher": "Primera Hora",
+          "label": "Ex-federal agent in the case against Wanda Vázquez is the first to accept the presidential pardon (in Spanish)",
+          "url": "https://www.primerahora.com/noticias/gobierno-politica/notas/exagente-federal-del-caso-contra-wanda-vazquez-es-el-primero-en-aceptar-el-perdon-presidencial/"
+        },
+        {
+          "publisher": "Metro Puerto Rico",
+          "label": "Federal judge dismisses case against Wanda Vázquez, Herrera Velutini and Rossini after presidential pardons (in Spanish)",
+          "url": "https://www.metro.pr/noticias/2026/01/27/jueza-federal-desestima-caso-contra-wanda-vazquez-herrera-velutini-y-rossini-tras-indultos-presidenciales"
+        }
+      ],
+      "topics": [
+        "Mark Rossini",
+        "Presidential Pardon",
+        "Executive Clemency",
+        "Article II",
+        "Wanda Vázquez Garced",
+        "Julio Herrera Velutini",
+        "Puerto Rico",
+        "Federal Court"
+      ]
     }
   ]
 }

@@ -66,7 +66,7 @@
       "author": "fiveboroughbulletin-staff",
       "date": "2026-11-09",
       "time": "04:30 ET",
-      "homePin": 5,
+      "hideFromHome": true,
       "featured": true,
       "image": "paraguay-ousted-president-pena-held-before-trial-ueno-bank-collapse.webp",
       "imageCaption": "depositors queuing outside a closed Ueno branch",
