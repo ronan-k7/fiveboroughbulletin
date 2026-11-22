@@ -120,7 +120,7 @@ export default function Page() {
             <Link href={`/authors/${authorInfo.slug}`} rel="author" className="group inline-flex items-center gap-3">
               <ImagePlaceholder className="h-10 w-10 shrink-0" rounded="rounded-full" label="" alt="" src={authorInfo.image} />
               <span className="leading-tight">
-                <span className="block text-[11px] font-semibold uppercase tracking-[0.18em] text-ink-soft">By</span>
+             
                 <span className="block text-sm font-bold text-ink group-hover:text-brand-teal">{authorInfo.name}</span>
               </span>
             </Link>
