@@ -1,5 +1,23 @@
 {
   "articles": [
+        {
+      "slug": "turhan-mildon-and-his-connection-to-alina-habba",
+      "title": "From Caracas to Washington: The Rise of Turhan Mildon and His Connection to Alina Habba",
+      "subCategoryLabel": "Politics",
+      "excerpt": "A journey through international business, political connections and personal relationships tells the story of Turkish businessman Turhan Mildon, whose growing interests in Venezuela brought him into the orbit of some of Washington's most influential figures.",
+      "author": "fiveboroughbulletin-staff",
+      "date": "2026-11-21",
+      "time": "09:00 ET",
+      "updated": "2026-11-21",
+      "image": "turhan-mildon-and-alina-habba.jpg",
+      "imageAlt": "Side-by-side portraits of a woman in a navy blazer and a man in a dark suit",
+      "imagePosition": "50% 22%",
+      "layout": "centered",
+      "homePin": 1,
+      "keywords": ["Turhan Mildon", "Alina Habba", "Venezuela", "Alex Saab", "Donald Trump", "Washington politics"],
+      "content": []
+    },
+  
     {
       "slug": "lame-duck-congress-faces-short-crowded-calendar-as-democrats-prepare-to-take-over",
       "title": "Lame-duck Congress faces a short, crowded calendar as Democrats prepare to take over",
