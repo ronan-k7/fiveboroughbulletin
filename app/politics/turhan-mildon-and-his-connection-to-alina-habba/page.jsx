@@ -35,7 +35,6 @@ const ARTICLE = {
   date: "2026-11-21",
   time: "09:00 ET",
   image: "turhan-mildon-and-alina-habba.jpg",
-  imageCaption: "REPLACE: photo credit / caption",
   imageAlt: "Side-by-side portraits of a woman in a navy blazer and a man in a dark suit",
   imagePosition: "50% 22%",
   layout: "centered",
@@ -111,9 +110,9 @@ const ARTICLE = {
     // { publisher: "Publisher name", label: "Headline of the source", url: "https://..." },
   ],
   topics: [],
-  // Keep the placeholder out of Google until the real text is in.
-  // Set to false (or delete the line) when you publish.
-  noindex: true,
+  seoTitle: "Turhan Mildon and Alina Habba: From Caracas to Washington",
+  seoDescription: "Turkish businessman Turhan Mildon's Venezuelan interests, his marriage to Alina Habba and the questions raised by a New York Times investigation.",
+  updated: "2026-11-21",
 };
 
 const article = withRelations(ARTICLE, "politics");
@@ -124,7 +123,7 @@ export const metadata = articleMetadata(article, article.authorInfo);
 export default function Page() {
   const { categoryInfo, authorInfo } = article;
   const url = absoluteUrl(articlePath(article));
-  const keepReading = getLatestArticles(3);
+  const keepReading = getLatestArticles(3, { category: "politics", slug: ARTICLE.slug });
 
   // "From Caracas to Washington: The Rise of ..." -> cyan kicker + headline.
   const colon = article.title.indexOf(": ");
