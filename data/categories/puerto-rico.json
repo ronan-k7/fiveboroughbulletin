@@ -1,5 +1,64 @@
 {
   "articles": [
+     {
+      "slug": "300000-dollar-allegation-requires-answers-wanda-vazquez-case",
+      "title": "The Three Hundred Thousand Dollar Allegation Requires Answers in the Wanda Vázquez Case",
+      "seoTitle": "The $300,000 Allegation in the Wanda Vázquez Case Requires Answers",
+      "seoDescription": "Alleged consultant payments should not leave readers thinking Wanda Vázquez personally received $300,000. What the charges, plea and pardon show.",
+      "subCategoryLabel": "Analysis",
+      "excerpt": "Alleged payments to outside consultants should not leave readers with an unsupported impression that Puerto Rico's former governor personally received that money.",
+      "author": "fiveboroughbulletin-staff",
+      "date": "2026-11-22",
+      "time": "10:00 ET",
+      "updated": "2026-11-22",
+      "image": "wanda-vazquez-300000-allegation-follow-the-money.webp",
+      "imageAlt": "Diagram showing payor, recipient and claimed benefit linked by money transfers",
+      "layout": "analysis",
+      "keywords": [
+        "Wanda Vázquez",
+        "Puerto Rico",
+        "Julio Herrera Velutini",
+        "Mark Rossini",
+        "Justice Department",
+        "clemency",
+        "Trump pardon",
+        "campaign finance"
+      ],
+      "content": [
+        "A reader encountering the figure $300,000 beside Wanda Vázquez Garced's name could reasonably ask a simple question: who received the money? The answer matters because an allegation about payments to political consultants can leave a very different impression when retold as money accepted by a governor. Vázquez's case deserves an account that follows the money carefully enough to preserve that distinction.",
+        "The federal Justice Department's August 2022 announcement alleged that Julio Herrera Velutini and Mark Rossini paid more than $300,000 to consultants supporting Vázquez's campaign. It described an alleged exchange involving the banking commissioner. It did not identify a $300,000 deposit into her personal account. The allegation came from federal prosecutors, rather than Puerto Rico's territorial Department of Justice. [1]",
+        "The plea record supplies a different, precisely qualified figure. For sentencing guidelines purposes, the parties stipulated that the promised contribution exceeded $15,000 but did not exceed $25,000. The stipulated purpose was support for her political committee, rather than personal monetary gain. Those terms do not mathematically disprove every alleged consultant expenditure; they do identify what the negotiated monetary band represented. [6]",
+        "A fair account should explain both measures. Outside expenditures, the value attributed to a promised contribution and personal receipt of cash cannot be substituted for one another. The public should be told which transaction each number describes. Otherwise, a figure introduced to explain the government's case can become an accusation of personal enrichment without the writer ever stating, much less demonstrating, how that conclusion follows.",
+        "The prosecution did not abandon its broader account of spending. Its October 2025 sentencing memorandum cited consultant payments and communications in support of its recommendation. Vázquez's lawyers subsequently challenged the use of larger amounts and disputed allegations at sentencing. Those filings establish a disagreement requiring explanation, rather than an admission by the government that its original announcement was knowingly false. [13] [5]",
+        "That limitation still leaves Vázquez with a substantial argument about fairness. Public authorities choose how to describe a case when they announce it. They should expect to explain the relationship between their most prominent accusation and the terms eventually accepted in a plea. The fact that different legal measures can coexist makes an explanation more necessary. It does not justify leaving the public to assume that the figures are interchangeable.",
+        "Vázquez pleaded guilty on August 27, 2025, to a misdemeanor involving acceptance of a promised contribution from a foreign national. President Donald Trump granted her clemency in January 2026, and her federal cases were dismissed after she accepted the pardons. Those events do not amount to a bribery acquittal or a finding that the prosecution lied. They belong in any current description of the case. [6] [7]",
+        "The lawfare concern is about the durability of an accusation. A governor can become identified with a large sum while the qualifications remain inside a court file. The burden of correcting that impression then falls on the person accused, even when the underlying material is publicly accessible. Requiring a clear explanation from officials is a reasonable response to that imbalance of authority and attention.",
+        "An adequate public accounting would identify the alleged payor and recipient of each expenditure, explain its claimed campaign benefit and distinguish the financial records from interpretations of their purpose. It would also state the offense Vázquez admitted. Readers could then consider the prosecution's case and her defense with a clearer understanding of what the respective numbers actually measure.",
+        "Vázquez should not have to accept personal enrichment as an unspoken addition to her plea. Her defense is strongest when it insists on identifying the payor, the recipient and the claimed benefit before any amount becomes a judgment about her. Until those categories are stated separately, readers are being asked to assess a number without knowing which transaction it measures."
+      ],
+      "references": [
+        {
+          "n": 1,
+          "label": "US Department of Justice announcement of the original charges"
+        },
+        {
+          "n": 6,
+          "label": "Puerto Rico Supreme Court opinion In re Wanda Vázquez Garced 2026 TSPR 27"
+        },
+        {
+          "n": 13,
+          "label": "Government sentencing memorandum in the Vázquez misdemeanor case Docket 13"
+        },
+        {
+          "n": 5,
+          "label": "Docket 29 Vázquez motion to strike the government sentencing memorandum"
+        },
+        {
+          "n": 7,
+          "label": "US Department of Justice official clemency grants list"
+        }
+      ]
+    },
     {
       "slug": "puerto-rico-governor-signs-new-judiciary-act-over-chief-justice-objections",
       "title": "Puerto Rico governor signs new Judiciary Act over the chief justice's objections",
