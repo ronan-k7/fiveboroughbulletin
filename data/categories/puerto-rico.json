@@ -37,10 +37,13 @@
         "Vázquez should not have to accept personal enrichment as an unspoken addition to her plea. Her defense is strongest when it insists on identifying the payor, the recipient and the claimed benefit before any amount becomes a judgment about her. Until those categories are stated separately, readers are being asked to assess a number without knowing which transaction it measures."
       ],
       "references": [
-        {
-          "n": 1,
-          "label": "US Department of Justice announcement of the original charges"
-        },
+       
+{
+  "n": 1,
+  "label": "US Department of Justice announcement of the original charges",
+  "url": "https://www.justice.gov/PUT-ACTUAL-SOURCE-PATH-HERE"
+},
+
         {
           "n": 6,
           "label": "Puerto Rico Supreme Court opinion In re Wanda Vázquez Garced 2026 TSPR 27"
