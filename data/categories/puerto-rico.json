@@ -41,24 +41,28 @@
 {
   "n": 1,
   "label": "US Department of Justice announcement of the original charges",
-  "url": "https://www.justice.gov/PUT-ACTUAL-SOURCE-PATH-HERE"
+  "url": "https://www.justice.gov/usao-pr/pr/former-governor-puerto-rico-arrested-bribery-scheme"
 },
 
         {
           "n": 6,
-          "label": "Puerto Rico Supreme Court opinion In re Wanda Vázquez Garced 2026 TSPR 27"
+          "label": "Puerto Rico Supreme Court opinion In re Wanda Vázquez Garced 2026 TSPR 27",
+          "url":"https://dts.poderjudicial.pr/ts/2026/2026tspr27.pdf"
         },
         {
           "n": 13,
-          "label": "Government sentencing memorandum in the Vázquez misdemeanor case Docket 13"
+          "label": "Government sentencing memorandum in the Vázquez misdemeanor case Docket 13",
+          "url":"https://cdn.noticel.com/2025/10/06142158/Docket-13-Sentencing-Memo-USA.pdf"
         },
         {
           "n": 5,
-          "label": "Docket 29 Vázquez motion to strike the government sentencing memorandum"
+          "label": "Docket 29 Vázquez motion to strike the government sentencing memorandum",
+          "url":"https://cdn.noticel.com/2026/01/08194533/Mocion-de-Wanda-Vazquez-para-eliminar-recomendacion-de-carcel.pdf"
         },
         {
           "n": 7,
-          "label": "US Department of Justice official clemency grants list"
+          "label": "US Department of Justice official clemency grants list",
+          "url":"https://www.justice.gov/pardon/clemency-grants-president-donald-j-trump-2025-present"
         }
       ]
     },
