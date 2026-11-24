@@ -93,8 +93,27 @@ export default function HomePage() {
   // Business is reserved the same way (5 newest: 1 featured + 4 grid), so a fresh
   // business story always lands in the Business section -- never in the top block.
   const businessPicks = newestIn("business", 5, new Set());
+  //
+  // Finance: a story flagged  "homeSection": "finance"  in its JSON is reserved
+  // for the Finance strip below (it never appears in the top block or the
+  // fill-ins), so a fresh finance story lands in the Finance section the same way
+  // a fresh business story lands in Business. The strip stays sorted by date, so
+  // the flagged story sits first (newest) and the oldest finance story drops out
+  // of the homepage -- it stays on the category page, author page and search.
+  // Remove the flag later to hand the story back to normal date ordering.
+  const financeFlagged = getArticlesByCategory("finance")
+    .filter((a) => a.homeSection === "finance" && !a.hideFromHome)
+    .map((a) => withRelations(a, "finance"));
+  const financeFlaggedKeys = new Set(financeFlagged.map(keyOf));
   const reserved = new Set(
-    [...politicsPicks, ...puertoRicoPicks, ...technologyPicks, ...sportsPicks, ...businessPicks].map(keyOf)
+    [
+      ...politicsPicks,
+      ...puertoRicoPicks,
+      ...technologyPicks,
+      ...sportsPicks,
+      ...businessPicks,
+      ...financeFlagged,
+    ].map(keyOf)
   );
 
   const pool = getLatestArticles(40, null, { home: true }).filter((a) => !reserved.has(keyOf(a)));
@@ -122,7 +141,10 @@ export default function HomePage() {
   // filled with a story from the category shown least on the page (a category
   // with nothing on the page yet comes first) -- never with a repeat.
   const featuredBusiness = businessPicks[0];
-  let financePicks = newestIn("finance", 3, used);
+  let financePicks = getArticlesByCategory("finance")
+    .map((a) => withRelations(a, "finance"))
+    .filter((a) => !a.hideFromHome && (financeFlaggedKeys.has(keyOf(a)) || !used.has(keyOf(a))))
+    .slice(0, 3);
   financePicks.forEach((a) => used.add(keyOf(a)));
   markShown(financePicks);
 

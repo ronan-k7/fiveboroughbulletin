@@ -1,6 +1,96 @@
 {
   "articles": [
       {
+        "slug": "nvidia-reinstates-jensen-huang-wall-street-best-day-since-april-2025",
+        "title": "Wall Street posts its best day since April 2025 as Nvidia reinstates Jensen Huang, recouping over half of last week's rout",
+        "subCategoryLabel": "Markets",
+        "excerpt": "The S&P 500 jumped 4.7% and the Nasdaq 6.5% after Nvidia's board brought its founder back as CEO, ending a seven-day S&P losing streak and adding about $950 billion to the chipmaker's market value in one session.",
+        "author": "fiveboroughbulletin-staff",
+        "date": "2026-11-24",
+        "time": "07:15 ET",
+        "commentCount": 0,
+        "homeSection": "finance",
+        "featured": true,
+        "image": "nvidia-reinstates-jensen-huang-wall-street-best-day-since-april-2025.webp",
+        "imageCaption": "The New York Stock Exchange on Wall Street, where U.S. stocks staged their best day since April 2025 on Monday",
+        "imageAlt": "The columned facade of the New York Stock Exchange with a large American flag, where U.S. stocks surged on Monday after Nvidia reinstated Jensen Huang",
+        "keywords": [
+          "Nvidia Jensen Huang reinstated",
+          "stock market rally",
+          "S&P 500 best day since April 2025",
+          "Nasdaq 6.5%",
+          "Nvidia stock surge",
+          "AI stocks",
+          "Fed December rate hike",
+          "Wall Street"
+        ],
+        "content": [
+          "Wall Street staged its strongest rally in more than a year on Monday after Nvidia's board reinstated co-founder Jensen Huang as chief executive, reversing a punishing sell-off that had pushed the S&P 500 and the Dow into correction territory. The S&P 500 jumped 4.7 percent, the Nasdaq Composite rose 6.5 percent and the Dow Jones Industrial Average gained nearly 1,450 points, or 3 percent, according to the [Associated Press](https://www.irishnews.com/news/world/us-stocks-surge-after-jensen-huang-returns-as-nvidias-chief-executive-TZ4G7S63IJIW7FSLCTPQCNVNMU/). The S&P 500 finished at roughly 7,237, ending a seven-day losing streak, and both it and the Nasdaq posted their best day since April 2025, when President Donald Trump paused most of his Liberation Day tariffs. [CNN](https://www.cnn.com/2026/11/23/business/live-news/jensen-huang-reinstated-as-ceo-of-nvidia) noted that the Dow's advance was its strongest since Nov. 4, when stocks rallied after the midterm elections.",
+          "Nvidia was both the catalyst and the biggest winner. Its shares surged 31.5 percent to close at $165.05, according to [Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/u-stock-futures-steady-nvidia-004836470.html), adding about $950 billion in market value in a single session, which [NBC News](https://www.nbcnews.com/business/markets/stocks-rebound-ai-tech-selloff-nvidia-rcna610833) described as the largest one-day gain in market capitalization any company has recorded. [CNBC](https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html) said it was the stock's best day since May 2003 and followed a slump of more than 40 percent over the previous month. Even so, Nvidia remains about 30 percent below its early-October record, NBC reported. The buying was broad, with 26 of the 30 Dow components finishing higher, and shares of CoreWeave, which rents out cloud access to Nvidia chips, shot up 22.3 percent, the AP said.",
+          "The reversal capped a dramatic two weeks for the chipmaker. Huang resigned on Nov. 12 after reports of extramarital affairs, including one with a Megaspeed executive suspected of being a Chinese agent, [Yahoo Finance reported](https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-nvidia-reinstates-jensen-huang-141511975.html). Less than a week before Monday's announcement the board had turned down an offer from Huang to return, the AP said; this time it voted unanimously to restore him as CEO, president and board director, effective immediately. The board said it had received input from senior levels of the U.S. government and is confident his return poses no national security risk, although its independent investigation into his ties to the Megaspeed executive will continue and a new National Security and Export Control Committee has been formed. The board had opened an [independent inquiry led by a former federal prosecutor](/business/nvidia-hires-ex-prosecutor-lead-huang-probe-shares-slide) only days before Huang stepped down.",
+          "Washington's role is a large part of the story. President Trump had publicly urged the board to bring Huang back, and he told CNBC on Monday, \"I believe my intervention was very important,\" the [AP](https://www.irishnews.com/news/world/us-stocks-surge-after-jensen-huang-returns-as-nvidias-chief-executive-TZ4G7S63IJIW7FSLCTPQCNVNMU/) reported. [CNN](https://www.cnn.com/2026/11/23/business/live-news/jensen-huang-reinstated-as-ceo-of-nvidia) framed the reinstatement as coming under pressure from the president, a point that may keep questions about the board's independence alive even as the stock recovers.",
+          "Monday's gains erased only part of last week's damage. The Nasdaq fell 10 percent last week, its worst week since the early days of Covid in 2020, [CNBC](https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html) reported, leaving all three major averages in correction territory and the Nasdaq negative for 2026. The S&P 500 dropped 3.7 percent on Friday alone, to 6,910.39, according to [Schwab](https://www.schwab.com/learn/story/stock-market-update-open), and Yahoo Finance estimated that about $8 trillion had been wiped from the index since its Oct. 6 peak. The AP calculated that U.S. stocks recovered just over half of last week's loss, and the Nasdaq-100 is still almost 15 percent below its last record, NBC News noted. One AI name sat out the rally: Anthropic, which [priced its IPO at $83 a share](/finance/anthropic-prices-ipo-at-83-a-share-above-range-1-5-trillion-valuation-nasdaq-debut), was down about 1.7 percent and below $88 late Monday morning after a 17 percent debut-day jump and a 9 percent drop on Friday, Yahoo Finance said.",
+          "Strategists cautioned against reading the move as an all-clear. Nomura's Charlie McElligott said much of the surge reflected forced buying as short sellers covered and options dealers unwound hedges, and he warned that stubborn inflation, rising borrowing costs and cooling expectations for corporate AI spending have not gone away, [Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-nvidia-reinstates-jensen-huang-141511975.html) reported. The AP said Monday's strength could easily give way to more losses, pointing to fears of an AI bubble, the prospect of tougher regulation from a Democratic-controlled Congress and high bond yields that make the AI build-out costlier to finance. On the other side of the ledger, S&P 500 companies are on track for third-quarter earnings growth of nearly 33 percent, according to FactSet figures cited by the AP, and Barclays analysts wrote that the risks should make the AI build-out slower and more selective rather than derail it.",
+          "Attention now turns to the Federal Reserve and a holiday-shortened week. Traders see about a 96 percent chance of a quarter-point rate increase at the Fed's Dec. 8-9 meeting, according to CME Group's FedWatch tool as cited by [Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/u-stock-futures-steady-nvidia-004836470.html). On Wednesday, the October core PCE inflation reading is forecast at 3.2 percent from a year earlier, up from 3.1 percent, alongside third-quarter GDP and the Fed's Beige Book, [FXStreet](https://www.fxstreet.com/news/us-stock-indices-rebound-as-nvidia-reinstates-jensen-huang-202611232157) said. U.S. markets close Thursday for Thanksgiving and shut at 1 p.m. Eastern on Friday, [Proactive Investors](https://www.proactiveinvestors.com/companies/news/1102277/week-ahead-wall-street-looks-for-thanksgiving-lift-as-nvidia-rebound-puts-ai-trade-back-in-focus-1102277.html) noted, and [ABC News](https://www.abc.net.au/news/2026-11-24/asx-markets-business-news-live-updates-nov-24-2026/107419524) reported that S&P 500 futures were flat early Tuesday, leaving open whether Monday's surge marks a lasting turn or a short-lived squeeze."
+        ],
+        "relatedPicks": [
+          "anthropic-prices-ipo-at-83-a-share-above-range-1-5-trillion-valuation-nasdaq-debut",
+          "wall-street-posts-best-day-since-april-as-oil-slides-ahead-of-cpi"
+        ],
+        "sources": [
+          {
+            "publisher": "Associated Press (via The Irish News)",
+            "label": "US stocks surge after Jensen Huang returns as Nvidia's chief executive",
+            "url": "https://www.irishnews.com/news/world/us-stocks-surge-after-jensen-huang-returns-as-nvidias-chief-executive-TZ4G7S63IJIW7FSLCTPQCNVNMU/"
+          },
+          {
+            "publisher": "CNBC",
+            "label": "Tech stocks see monster rally after Jensen Huang returns as Nvidia CEO",
+            "url": "https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html"
+          },
+          {
+            "publisher": "CNN",
+            "label": "Nvidia shares soar 30% after board reinstates Jensen Huang under Trump pressure",
+            "url": "https://www.cnn.com/2026/11/23/business/live-news/jensen-huang-reinstated-as-ceo-of-nvidia"
+          },
+          {
+            "publisher": "NBC News",
+            "label": "Stocks surge in best day since 2025, adding trillions in value after Jensen Huang returns to Nvidia",
+            "url": "https://www.nbcnews.com/business/markets/stocks-rebound-ai-tech-selloff-nvidia-rcna610833"
+          },
+          {
+            "publisher": "Yahoo Finance",
+            "label": "Stock market today: Dow, S&P 500, Nasdaq surge as Jensen Huang's reinstatement at Nvidia sparks stunning rally",
+            "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-nvidia-reinstates-jensen-huang-141511975.html"
+          },
+          {
+            "publisher": "Yahoo Finance (via Investing.com)",
+            "label": "U.S. stock futures tick higher after Nvidia-led Wall Street rally",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/u-stock-futures-steady-nvidia-004836470.html"
+          },
+          {
+            "publisher": "Charles Schwab",
+            "label": "Jensen Huang Reinstated at Nvidia, Stocks Rally",
+            "url": "https://www.schwab.com/learn/story/stock-market-update-open"
+          },
+          {
+            "publisher": "FXStreet",
+            "label": "US stock indices rebound as Nvidia reinstates Jensen Huang",
+            "url": "https://www.fxstreet.com/news/us-stock-indices-rebound-as-nvidia-reinstates-jensen-huang-202611232157"
+          },
+          {
+            "publisher": "Proactive Investors",
+            "label": "Week ahead: Wall Street looks for Thanksgiving lift as Nvidia rebound puts AI trade back in focus",
+            "url": "https://www.proactiveinvestors.com/companies/news/1102277/week-ahead-wall-street-looks-for-thanksgiving-lift-as-nvidia-rebound-puts-ai-trade-back-in-focus-1102277.html"
+          },
+          {
+            "publisher": "ABC News (Australia)",
+            "label": "Wall St's one-day rally bigger than ASX 200 as Nvidia reinstates Jensen Huang",
+            "url": "https://www.abc.net.au/news/2026-11-24/asx-markets-business-news-live-updates-nov-24-2026/107419524"
+          }
+        ]
+      },
+      {
         "slug": "anthropic-prices-ipo-at-83-a-share-above-range-1-5-trillion-valuation-nasdaq-debut",
         "title": "Anthropic prices IPO at $83 a share, above its range, valuing Claude maker at $1.5 trillion before Nasdaq debut",
         "subCategoryLabel": "IPOs",
