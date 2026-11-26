@@ -1,6 +1,82 @@
 {
   "articles": [
     {
+      "slug": "fcc-clears-spacex-to-put-up-to-1-million-starmind-data-center-satellites-in-orbit-though-launching-them-is-a-far-bigger-test",
+      "title": "FCC clears SpaceX to put up to 1 million Starmind data center satellites in orbit, though launching them is a far bigger test",
+      "subCategoryLabel": "Space Tech",
+      "excerpt": "The first U.S. approval of a constellation of orbital data centers sets deadlines running to 2040 and attaches debris conditions, but astronomers, rivals and physicists are questioning whether the plan can work.",
+      "author": "fiveboroughbulletin-staff",
+      "date": "2026-11-26",
+      "time": "08:00 ET",
+      "featured": true,
+      "image": "fcc-clears-spacex-1-million-starmind-data-center-satellites.webp",
+      "imageCaption": "The FCC's approval covers up to 1 million Starmind satellites in six orbital shells",
+      "imageAlt": "A satellite constellation orbiting above Earth with the sun rising over the planet's curve",
+      "keywords": [
+        "SpaceX Starmind",
+        "FCC orbital data centers",
+        "1 million satellites",
+        "Brendan Carr FCC",
+        "space-based AI data centers"
+      ],
+      "content": [
+        "The Federal Communications Commission has approved what it calls the first constellation of data centers in space. On Wednesday, Nov. 25, the agency authorized SpaceX to deploy up to 1 million satellites, a network the company calls Starmind, to process artificial intelligence workloads in orbit, [CBS News reported](https://www.cbsnews.com/news/spacex-fcc-approval-data-centers-space/). FCC Chairman Brendan Carr announced the decision on X, and Elon Musk replied that the project would be a great asset to America and the world. [SiliconANGLE reported](https://siliconangle.com/2026/11/25/fcc-clears-spacex-to-put-up-to-1-million-starmind-data-centers-in-space/) that the order was issued by the FCC's Space Bureau under delegated authority, and that the agency described it as the first authorization of its kind in U.S. history.",
+        "SpaceX filed its application on Jan. 30, [Gizmodo reported](https://gizmodo.com/feds-approve-spacexs-ai-data-center-satellites-all-1-million-of-them-2000845526), pitching Starmind as a fleet of solar-powered computing satellites linked to one another by lasers and processing data for use back on Earth. In the filing, the company called the project a first step toward a Kardashev II-level civilization, a reference to one that could tap its star's entire energy output, according to CBS. Under the approval, the satellites would sit in six orbital shells at altitudes of 500 to 1,002 kilometers, with most communications running over optical links to other satellites, including those in SpaceX's Starlink network, SiliconANGLE said. The license also covers a backup radio system for emergency telemetry, tracking and commands.",
+        "The authorization comes with a long timetable and conditions. SiliconANGLE reported that SpaceX must have its first Starmind satellite operating by Nov. 25, 2033, and that the schedule then calls for 100,000 satellites by 2035, 500,000 by 2038 and the full 1 million by 2040. [Newsweek noted](https://www.newsweek.com/fcc-approves-1-million-spacex-satellites-as-china-ai-race-heats-up-12769380) that the order does not spell out whether SpaceX is obliged to launch every one of them. On debris, the FCC found SpaceX's plan compliant only for satellites below 600 kilometers, and four of the six shells sit above that line, so the company must file a modification with a final debris plan before deploying higher. A request to move some high-altitude satellites into disposal orbits, instead of letting them re-enter the atmosphere within five years, was deferred for lack of information.",
+        "The FCC overrode objections to get there. It rejected petitions to deny from Amazon's Amazon Leo satellite business, Viasat and the American Astronomical Society, SiliconANGLE reported. In March, Amazon had called the plan a \"lofty ambition rather than a real plan,\" [CNBC reported](https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html). The commission also declined to run a comprehensive environmental review, saying several concerns, including astronomers' worries about infrared brightness, fell outside what a radio license covers, according to Gizmodo and SiliconANGLE. The astronomical society said it was disheartened and dismayed, warning that the satellites would be larger, brighter and more numerous than existing ones and visible in the night sky for longer, [the Associated Press reported](https://www.wral.com/news/ap/b9897-fcc-says-spacex-can-deploy-1-million-satellites-for-data-centers-in-space-scientists-are-skeptical/).",
+        "Scientists are doubtful the system can be built at all. Astrophysicist Adam Becker told the AP that a million data center satellites is \"a fantasy,\" pointing to basic physical limits on shedding heat in a vacuum, where objects hold warmth much like a thermos. He and others also warned about pollution from launches and reentries and about a cascade of collisions that could fill low Earth orbit with debris, putting weather and communications satellites at risk. Gizmodo added that approval does not settle the practical question: the plan leans heavily on Starship, and putting up hundreds of thousands of satellites would take a launch cadence and payload capacity beyond what conventional rockets could economically provide.",
+        "The push comes as ground-based data centers meet growing resistance. CBS noted that communities are objecting to the noise and the electricity and water demands of the thousands of facilities now being built, and that voters in the midterms approved dozens of measures aimed at restricting them. SpaceX told the FCC that satellites drawing near-constant sunlight would be cheaper and more efficient to run and would reduce the environmental footprint of terrestrial data centers, [NBC News reported](https://www.nbcnews.com/science/space/spacex-fcc-authorizes-1-million-satellites-data-centers-space-rcna611341).",
+        "SpaceX has tied the idea to its finances. CBS reported that, in its IPO filing, the company said it expects to begin deploying orbital AI compute satellites as early as 2028, and SiliconANGLE said the concept featured in its pitch to investors before the June listing. SpaceX shares closed up 1.3% on Wednesday, SiliconANGLE reported. SiliconANGLE also said Musk has indicated the first-generation Starmind satellite, called AI1 and built around a space-optimized version of Nvidia's Vera Rubin NVL72 system, could reach orbit as early as the third quarter of next year.",
+        "SpaceX is not alone in the race Carr referred to. SiliconANGLE reported that Blue Origin applied in March for Project Sunrise, a planned network of up to 51,600 data center satellites, and that the startup Starcloud raised $250 million at a $2.3 billion valuation in August. Gizmodo said Google is also pursuing orbital computing. For now, the FCC has granted permission rather than proof: the next visible steps are the AI1 launch Musk has described and the debris filing the commission requires before any Starmind satellites go above 600 kilometers."
+      ],
+      "relatedPicks": [
+        "openai-launches-chatgpt-wallet-so-dots-ai-agents-can-pay-for-purchases-as-big-merchants-shut-agents-out",
+        "amd-posts-record-quarter-as-data-center-sales-nearly-double-and-guides-to-17-billion"
+      ],
+      "sources": [
+        {
+          "publisher": "Federal Communications Commission",
+          "label": "FCC authorizes 1 million satellites for data centers in space",
+          "url": "https://www.fcc.gov/document/fcc-authorizes-1-million-satellites-data-centers-space-0"
+        },
+        {
+          "publisher": "CBS News",
+          "label": "SpaceX gets FCC approval for 1 million satellites to build data centers in space, Brendan Carr says",
+          "url": "https://www.cbsnews.com/news/spacex-fcc-approval-data-centers-space/"
+        },
+        {
+          "publisher": "Gizmodo",
+          "label": "Feds approve SpaceX's AI data center satellites, all 1 million of them",
+          "url": "https://gizmodo.com/feds-approve-spacexs-ai-data-center-satellites-all-1-million-of-them-2000845526"
+        },
+        {
+          "publisher": "Associated Press",
+          "label": "FCC says SpaceX can deploy 1 million satellites for data centers in space. Scientists are skeptical",
+          "url": "https://www.wral.com/news/ap/b9897-fcc-says-spacex-can-deploy-1-million-satellites-for-data-centers-in-space-scientists-are-skeptical/"
+        },
+        {
+          "publisher": "SiliconANGLE",
+          "label": "FCC clears SpaceX to put up to 1 million Starmind data centers in space",
+          "url": "https://siliconangle.com/2026/11/25/fcc-clears-spacex-to-put-up-to-1-million-starmind-data-centers-in-space/"
+        },
+        {
+          "publisher": "CNBC",
+          "label": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
+          "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html"
+        },
+        {
+          "publisher": "NBC News",
+          "label": "SpaceX gets green light to deploy 1 million satellites for data centers in space",
+          "url": "https://www.nbcnews.com/science/space/spacex-fcc-authorizes-1-million-satellites-data-centers-space-rcna611341"
+        },
+        {
+          "publisher": "Newsweek",
+          "label": "FCC approves 1 million SpaceX satellites as China AI race heats up",
+          "url": "https://www.newsweek.com/fcc-approves-1-million-spacex-satellites-as-china-ai-race-heats-up-12769380"
+        }
+      ]
+    },
+    {
       "slug": "openai-launches-chatgpt-wallet-so-dots-ai-agents-can-pay-for-purchases-as-big-merchants-shut-agents-out",
       "title": "OpenAI launches ChatGPT Wallet so its dots AI agents can pay for purchases, even as big merchants shut agents out",
       "subCategoryLabel": "AI Agents",
